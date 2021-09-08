@@ -4,11 +4,11 @@ import {
   ZoomableGroup,
   Geographies,
   Geography,
-  Marker,
+  //Marker,
 } from "react-simple-maps";
 import { Link } from "react-router-dom";
 import geoUrl from "../data/france.json";
-import bigcities from "../data/bigcitites.json";
+//import bigcities from "../data/bigcitites.json";
 
 const MapChart = React.memo(({ setTooltipContent }) => {
   return (
@@ -17,9 +17,10 @@ const MapChart = React.memo(({ setTooltipContent }) => {
         data-tip=""
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          rotate: [0, -44, 0],
+          rotate: [0, -46.5, 0],
           scale: 2300,
         }}
+        height="400"
       >
         <ZoomableGroup>
           <Geographies geography={geoUrl}>
@@ -40,12 +41,12 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                       onClick={() => {}}
                       style={{
                         default: {
-                          fill: "#D6D6DA",
-                          stroke: "#F53",
+                          fill: "transparent",
+                          stroke: "#074A5E",
                           outline: "none",
                         },
                         hover: {
-                          fill: "#F53",
+                          fill: "#074A5E",
                           outline: "none",
                         },
                         pressed: {
@@ -59,7 +60,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
               })
             }
           </Geographies>
-          {bigcities.map(({ Name, Latitude, Longitude }) => (
+          {/* {bigcities.map(({ Name, Latitude, Longitude }) => (
             <Marker key={Name} coordinates={[Longitude, Latitude]}>
               <circle r={5} fill="#F00" />
               <text
@@ -73,8 +74,8 @@ const MapChart = React.memo(({ setTooltipContent }) => {
               >
                 {Name}
               </text>
-            </Marker>
-          ))}
+            </Marker> }
+          ))*/}
         </ZoomableGroup>
       </ComposableMap>
     </>
