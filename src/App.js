@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import ReactTooltip from "react-tooltip";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import MapChart from "./components/MapChart";
+import Department from "./components/Department"
 
-function App() {
+const App = () => {
+  const [content, setContent] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <MapChart setTooltipContent={setContent} />
+            <ReactTooltip>{content}</ReactTooltip>
+          </Route>
+          <Route path="/department/:id">
+              <Department />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  )
+};
 
 export default App;
