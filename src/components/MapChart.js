@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   ComposableMap,
   ZoomableGroup,
   Geographies,
   Geography,
-  //Marker,
+  Marker,
 } from "react-simple-maps";
 import { Link } from "react-router-dom";
 import geoUrl from "../data/france.json";
-//import bigcities from "../data/bigcitites.json";
+import bigcities from "../data/bigcitites.json";
 
 const MapChart = React.memo(({ setTooltipContent }) => {
+  const [loadingMap, setLoadingMap] = useState(true);
+
+  useEffect(() => {
+    setLoadingMap(false);
+  }, []);
+
   return (
     <>
       <ComposableMap
@@ -38,11 +44,10 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                       onMouseLeave={() => {
                         setTooltipContent("");
                       }}
-                      onClick={() => {}}
                       style={{
                         default: {
                           fill: "transparent",
-                          stroke: "#074A5E",
+                          stroke: "#0082A3",
                           outline: "none",
                         },
                         hover: {
@@ -60,22 +65,35 @@ const MapChart = React.memo(({ setTooltipContent }) => {
               })
             }
           </Geographies>
-          {/* {bigcities.map(({ Name, Latitude, Longitude }) => (
-            <Marker key={Name} coordinates={[Longitude, Latitude]}>
-              <circle r={5} fill="#F00" />
-              <text
-                textAnchor="middle"
-                y={15}
-                style={{
-                  fontFamily: "system-ui",
-                  fill: "#5D5A6D",
-                  fontSize: "10px",
-                }}
-              >
-                {Name}
-              </text>
-            </Marker> }
-          ))*/}
+          {bigcities.map(({ Name, Latitude, Longitude }) =>
+            loadingMap ? null : (
+              <Link to={`/department/${Name}`}>
+                <Marker key={Name} coordinates={[Longitude, Latitude]}>
+                  <circle
+                    onMouseEnter={() => {
+                      setTooltipContent(`${Name}`);
+                    }}
+                    onMouseLeave={() => {
+                      setTooltipContent("");
+                    }}
+                    r={4}
+                    fill="#074A5E"
+                  />
+                  <text
+                    textAnchor="middle"
+                    y={10}
+                    style={{
+                      fontFamily: ['Lato', "sans-serif"],
+                      fill: "#074A5E",
+                      fontSize: "10px",
+                    }}
+                  >
+                    {Name}
+                  </text>
+                </Marker>
+              </Link>
+            )
+          )}
         </ZoomableGroup>
       </ComposableMap>
     </>

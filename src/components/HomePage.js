@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import ReactTooltip from "react-tooltip";
 import MapChart from "./MapChart";
 import backgroundVideo from "../data/background.mp4";
-// import SideBar from "./SideBar";
+import SideBar from "./SideBar";
 
 export default function HomePage() {
   const [content, setContent] = useState("");
@@ -14,7 +14,9 @@ export default function HomePage() {
         videoRef.current.addEventListener("loadeddata", () => {
             setLoadingVideo(false);
         });
-        videoRef.current.removeEventListener("loadeddata", () => {})
+        videoRef.current.removeEventListener("loadeddata", () => {
+          setLoadingVideo(true);
+        })
       }
   })
   return (
@@ -36,7 +38,7 @@ export default function HomePage() {
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
-      {/* <SideBar /> */}
+      <SideBar />
       <MapChart setTooltipContent={setContent} />
       <ReactTooltip>{content}</ReactTooltip>
     </>
