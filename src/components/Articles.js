@@ -31,8 +31,6 @@ export default function Articles({ location }) {
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
   return (
-    <div>
-      {/* <ArticlesGrid data={data}/> */}
-    </div>
+    <ArticlesGrid data={data}/>
   );
 }

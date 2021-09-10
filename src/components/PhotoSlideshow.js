@@ -35,11 +35,10 @@ export default function PhotoSlideshow({ data }) {
       >
         {photosData.map((photo) => (
           <div className="slideset" key={photo.id}>
-            <img className="slide" src={photo.urls.regular} alt=""/>
+            <img className="slide" src={photo.urls.regular} alt="" />
           </div>
         ))}
       </div>
-
       <div className="slideshowDots">
         {photosData.map((_, index) => (
           <div
