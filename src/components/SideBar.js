@@ -9,48 +9,51 @@ import {
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-//import { BiHomeSmile } from "react-icons/bi";
 import { FaList, FaRegHeart } from "react-icons/fa";
-import {
-  FiLogOut,
-  FiArrowLeftCircle,
-  FiArrowRightCircle,
-} from "react-icons/fi";
+import { FiLogOut } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 
 export default function SideBar() {
-  const [menuCollapse, setMenuCollapse] = useState(false);
-  const menuIconClick = () => {
-    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  const [isCollapse, setIsCollapse] = useState(false);
+  const toggleCollapse = () => {
+    setIsCollapse(!isCollapse);
   };
   return (
-    <>
-      <div className="header">
-        <ProSidebar collapsed={menuCollapse}>
-          <SidebarHeader>
-            <Link to="/home/" className="header-title">
-              <h1>Francovery</h1>
-            </Link>
-            <div className="closemenu" onClick={menuIconClick}>
-              {menuCollapse ? <FiArrowRightCircle /> : <FiArrowLeftCircle />}
-            </div>
-          </SidebarHeader>
-          <SidebarContent>
-            <Menu iconShape="square">
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
-              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
-            </Menu>
-          </SidebarContent>
-          <SidebarFooter>
-            <Menu iconShape="square">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
-            </Menu>
-          </SidebarFooter>
-        </ProSidebar>
-      </div>
-    </>
+    <div className="header">
+      <ProSidebar collapsed={isCollapse} >
+        <SidebarHeader className="header-title" onClick={toggleCollapse}>
+          {isCollapse ? <h1>Fra</h1> : <h1>Francovery</h1>}
+        </SidebarHeader>
+        <SidebarContent>
+          <Menu iconShape="square">
+          <Link to="/home">
+              <MenuItem icon={<FaList />}>
+                {isCollapse ? null : <h4>Home</h4>}
+              </MenuItem>
+          </Link>
+            <MenuItem icon={<FaList />}>
+              {isCollapse ? null : <h4>Photo</h4>}
+            </MenuItem>
+            <MenuItem icon={<FaRegHeart />}>
+              {isCollapse ? null : <h4>Photo</h4>}
+            </MenuItem>
+            <MenuItem icon={<RiPencilLine />}>
+              {isCollapse ? null : <h4>Photo</h4>}
+            </MenuItem>
+            <MenuItem icon={<BiCog />}>
+              {isCollapse ? null : <h4>Photo</h4>}
+            </MenuItem>
+          </Menu>
+        </SidebarContent>
+        <SidebarFooter>
+          <Menu iconShape="square">
+            <MenuItem icon={<FiLogOut />}>
+              {isCollapse ? null : <h4>Photo</h4>}
+            </MenuItem>
+          </Menu>
+        </SidebarFooter>
+      </ProSidebar>
+    </div>
   );
 }

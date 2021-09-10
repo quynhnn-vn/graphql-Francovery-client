@@ -1,22 +1,27 @@
 .header {
   position: absolute;
-  width: 30%;
-  background: white;
-  color: #074A5E;
+  flex: 20%;
+  background: #282828;
+  color: white;
+  min-height: 100%;
 
   .header-title {
     text-decoration: none;
+    color: white;
     h1 {
-      color: white;
-      background: #074A5E;
       margin: 0;
       padding: 20px;
       text-align: center;
+      box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+    }
+    &:hover {
+      cursor: pointer;
+      color: #074a5e;
     }
   }
 
   .closemenu {
-    color: black;
+    color: white;
     position: absolute;
     right: 0;
     z-index: 9999;
@@ -37,8 +42,6 @@
     }
   }
   .pro-sidebar-inner {
-    background-color: white;
-    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
     .pro-sidebar-layout {
       overflow-y: hidden;
 
@@ -53,18 +56,15 @@
           }
         }
       }
-
-      &:active {
-        background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%);
-      }
     }
-
+  }
+  &:active {
+    background-image: linear-gradient(0deg, #074a5e 0%, #282828 100%);
   }
 }
 
-
-  @media only screen and (max-width: 720px) {
-    html {
-      overflow: hidden;
-    }
+@media only screen and (max-width: 720px) {
+  html {
+    overflow: hidden;
   }
+}

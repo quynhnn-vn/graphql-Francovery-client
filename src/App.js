@@ -7,11 +7,13 @@ import {
 } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Department from "./components/Department";
+import SideBar from "./components/SideBar";
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="App">
+        <SideBar />
         <Switch>
           <Route exact path="/">
             <HomePage />
@@ -19,7 +21,7 @@ const App = () => {
           <Route path="/home">
             <HomePage />
           </Route>
-          <Route path="/department/:location">
+          <Route path="/:location">
               <Department />
           </Route>
         </Switch>

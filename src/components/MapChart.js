@@ -24,9 +24,9 @@ const MapChart = React.memo(({ setTooltipContent }) => {
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
           rotate: [0, -46.5, 0],
-          scale: 2300,
+          scale: 2000,
         }}
-        height="400"
+        height="350"
       >
         <ZoomableGroup>
           <Geographies geography={geoUrl}>
@@ -34,7 +34,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
               geographies.map((geo) => {
                 const { NAME_1, NAME_2 } = geo.properties;
                 return (
-                  <Link to={`/department/${NAME_2}`}>
+                  <Link to={`/${NAME_2.split(" ").join("-")}`}>
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
@@ -67,7 +67,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
           </Geographies>
           {bigcities.map(({ Name, Latitude, Longitude }) =>
             loadingMap ? null : (
-              <Link to={`/department/${Name}`}>
+              <Link to={`/${Name}`}>
                 <Marker key={Name} coordinates={[Longitude, Latitude]}>
                   <circle
                     onMouseEnter={() => {

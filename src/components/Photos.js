@@ -1,26 +1,29 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
+//import PhotoSlideshow from "./PhotoSlideshow";
+import BackgroundSlider from "react-background-slider";
 
 /** PHOTOS gql query to retreive all photos */
 export const GET_PHOTOS = gql`
-query getPhotos($location: String!) {
-  photos(location: $location) {
-    results {
-      id
-      user {
+  query getPhotos($location: String!) {
+    photos(location: $location) {
+      results {
         id
-        username
-        portfolio_url
-        profile_image {
-          small
+        user {
+          id
+          username
+          portfolio_url
+          profile_image {
+            small
+          }
         }
-      }
-      urls {
-        full
+        urls {
+          regular
+          full
+        }
       }
     }
   }
-}
 `;
 
 /*
@@ -32,11 +35,11 @@ export default function Photos({ location }) {
   });
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
+  const photosData = data.photos.results.map((photo) => photo.urls.regular);
   return (
+    //<PhotoSlideshow data={data}/>
     <div>
-      {data.photos.results.map((photo) => (
-        <img key={photo.id} src={photo.urls.full} alt="" />
-      ))}
+      <BackgroundSlider images={photosData} duration={8} transition={2} />
     </div>
   );
 }
