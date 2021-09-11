@@ -38,6 +38,6 @@ export default function Photos({ location }) {
   //const photosData = data.photos.results.map((photo) => photo.urls.regular);
   return (
     //<BackgroundSlider images={photosData} duration={8} transition={2} />
-    <PhotoSlideshow data={data}/>
+    <PhotoSlideshow data={data} location={location} />
   );
 }

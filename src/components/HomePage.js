@@ -6,6 +6,8 @@ import backgroundVideo from "../data/background.mp4";
 export default function HomePage() {
   const [content, setContent] = useState("");
   const [loadingVideo, setLoadingVideo] = useState(true);
+  const options = ["commun", "department", "city"];
+  const [option, setOption] = useState(options[0]);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -37,7 +39,12 @@ export default function HomePage() {
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
-      <MapChart setTooltipContent={setContent} />
+      <div>
+        <button onClick={() => setOption(options[0])}>Commun</button>
+        <button onClick={() => setOption(options[1])}>Department</button>
+        <button onClick={() => setOption(options[2])}>City</button>
+      </div>
+      <MapChart setTooltipContent={setContent} option={option}/>
       <ReactTooltip>{content}</ReactTooltip>
     </>
   );

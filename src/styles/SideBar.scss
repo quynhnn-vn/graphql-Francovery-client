@@ -1,8 +1,8 @@
 .header {
   position: absolute;
   flex: 20%;
-  background: #282828;
-  color: white;
+  background: white;
+  color: #282828;
   min-height: 100%;
   position: fixed;
   left: 0;
@@ -10,7 +10,6 @@
 
   .header-title {
     text-decoration: none;
-    color: white;
     h1 {
       margin: 0;
       padding: 20px;

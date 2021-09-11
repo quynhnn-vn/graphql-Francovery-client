@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/PhotoSlideshow.scss";
 
-const delay = 3000;
+const delay = 5000;
 
-export default function PhotoSlideshow({ data }) {
+export default function PhotoSlideshow({ data, location }) {
   const [slideNumber, setSlideNumber] = useState(0);
   const timeoutRef = useRef(null);
   const photosData = data.photos.results;
@@ -29,10 +29,11 @@ export default function PhotoSlideshow({ data }) {
 
   return (
     <div className="slideshow">
+      <h1>{location.split("-").join(" ").toUpperCase()}</h1>
       <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-slideNumber * 100}%, 0, 0)` }}
-      >
+      > 
         {photosData.map((photo) => (
           <div className="slideset" key={photo.id}>
             <img className="slide" src={photo.urls.regular} alt="" />
