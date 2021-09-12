@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import ReactTooltip from "react-tooltip";
 import MapChart from "./MapChart";
 import backgroundVideo from "../data/background.mp4";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const [content, setContent] = useState("");
   const [loadingVideo, setLoadingVideo] = useState(true);
-  const options = ["regions", "departements", "communes"];
-  const [option, setOption] = useState(options[0]);
   const videoRef = useRef(null);
+
+  const options = ["regions", "departements", "communes"];
 
   useEffect(() => {
       if (videoRef) {
@@ -40,11 +41,13 @@ export default function HomePage() {
         <source src={backgroundVideo} type="video/mp4" />
       </video>
       <div>
-        <button onClick={() => setOption(options[0])}>Régions</button>
-        <button onClick={() => setOption(options[1])}>Départements</button>
-        <button onClick={() => setOption(options[2])}>Communes</button>
+        {options.map(option => (
+          <button>
+            <Link to={`/home/${option}`}>{option}</Link>
+          </button>
+        ))}
       </div>
-      <MapChart setTooltipContent={setContent} option={option}/>
+      <MapChart setTooltipContent={setContent}/>
       <ReactTooltip>{content}</ReactTooltip>
     </>
   );

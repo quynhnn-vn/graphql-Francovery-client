@@ -11,6 +11,7 @@ import departements from "../data/departements.json";
 import communes from "../data/communes.json";
 import france from "../data/france.json";
 import regions from "../data/regions.json";
+import { useParams } from "react-router";
 
 const chartStyle = {
   default: {
@@ -28,17 +29,18 @@ const chartStyle = {
   },
 };
 
-const MapChart = React.memo(({ setTooltipContent, option }) => {
+const MapChart = React.memo(({ setTooltipContent }) => {
   const [loadingMap, setLoadingMap] = useState(true);
+  const { option } = useParams();
   let geoUrl;
   let communesData = communes.slice(0, 10);
-  if (option === "regions") {
-    geoUrl = regions;
+  if (option === "communes") {
+    geoUrl = france;
+    communesData = communes.slice(0, 25);
   } else if (option === "departements") {
     geoUrl = departements;
   } else {
-    geoUrl = france;
-    communesData = communes.slice(0, 25);
+    geoUrl = regions;
   }
   useEffect(() => {
     setLoadingMap(false);

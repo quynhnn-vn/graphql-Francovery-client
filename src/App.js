@@ -18,7 +18,10 @@ const App = () => {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
+            <HomePage />
+          </Route>
+          <Route path="/home/:option">
             <HomePage />
           </Route>
           <Route path="/:location">
