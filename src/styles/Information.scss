@@ -1,0 +1,36 @@
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.info-card {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    margin: 10px 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.info-card:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transform: rotateZ(45deg);
+    border: solid 1px white;
+}
+.info-card:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    transform: rotateZ(45deg);
+}
+.info-card span {
+    color: white;
+    margin-top: 30px;
+}

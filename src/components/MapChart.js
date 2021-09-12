@@ -7,10 +7,10 @@ import {
   Marker,
 } from "react-simple-maps";
 import { Link } from "react-router-dom";
-import department from "../data/department.json";
-import commun from "../data/commun.json";
+import departements from "../data/departements.json";
+import communes from "../data/communes.json";
 import france from "../data/france.json";
-import cities from "../data/cities.json";
+import regions from "../data/regions.json";
 
 const chartStyle = {
   default: {
@@ -31,14 +31,14 @@ const chartStyle = {
 const MapChart = React.memo(({ setTooltipContent, option }) => {
   const [loadingMap, setLoadingMap] = useState(true);
   let geoUrl;
-  let citiesList = cities.slice(0, 10);
-  if (option === "department") {
-    geoUrl = department;
-  } else if (option === "commun") {
-    geoUrl = commun;
+  let communesData = communes.slice(0, 10);
+  if (option === "regions") {
+    geoUrl = regions;
+  } else if (option === "departements") {
+    geoUrl = departements;
   } else {
     geoUrl = france;
-    citiesList = cities.slice(0, 25);
+    communesData = communes.slice(0, 25);
   }
   useEffect(() => {
     setLoadingMap(false);
@@ -67,7 +67,7 @@ const MapChart = React.memo(({ setTooltipContent, option }) => {
                         key={geo.rsmKey}
                         geography={geo}
                         onMouseEnter={() => {
-                          setTooltipContent(`${NAME_1} — ${NAME_2}`);
+                          setTooltipContent(`${NAME_2} - ${NAME_1}`);
                         }}
                         onMouseLeave={() => {
                           setTooltipContent("");
@@ -119,18 +119,18 @@ const MapChart = React.memo(({ setTooltipContent, option }) => {
               })
             }
           </Geographies>
-          {citiesList.map((city) =>
+          {communesData.map((commune) =>
             loadingMap ? null : (
-              <Marker key={city.city} coordinates={[city.lng, city.lat]}>
-                <Link to={`/${city.city}`}>
+              <Marker key={commune.city} coordinates={[commune.lng, commune.lat]}>
+                <Link to={`/${commune.city}`}>
                   <circle
                     onMouseEnter={() => {
-                      setTooltipContent(`${city.city}`);
+                      setTooltipContent(`${commune.city} - ${commune.admin_name}`);
                     }}
                     onMouseLeave={() => {
                       setTooltipContent("");
                     }}
-                    r={option === "city" && city.population > 10000000 ? 10 : 3}
+                    r={option === "communes" && commune.population > 10000000 ? 10 : 3}
                     fill="#074A5E"
                   />
                 </Link>
@@ -140,10 +140,10 @@ const MapChart = React.memo(({ setTooltipContent, option }) => {
                   style={{
                     fontFamily: ["Lato", "sans-serif"],
                     fill: "#074A5E",
-                    fontSize: `${option === "city" ? "8px" : "10px"}`,
+                    fontSize: `${option === "communes" ? "8px" : "10px"}`,
                   }}
                 >
-                  {city.city}
+                  {commune.city}
                 </text>
               </Marker>
             )
