@@ -25,13 +25,45 @@
   height: 500px;
   text-align: center;
   background: #282828;
+  position: relative;
 }
 .slide {
   object-fit: cover;
   max-width: 900px;
   height: 500px;
 }
-
+.author {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: .7rem;
+  min-width: 100px;
+  padding: 0 5px;
+  a {
+    text-decoration: none;
+    color: #282828;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+  }
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+[aria-current="disabled"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
 /* Buttons */
 
 .slideshowDots {

@@ -33,10 +33,20 @@ export default function PhotoSlideshow({ data, location }) {
       <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-slideNumber * 100}%, 0, 0)` }}
-      > 
+      >
         {photosData.map((photo) => (
           <div className="slideset" key={photo.id}>
             <img className="slide" src={photo.urls.regular} alt="" />
+            <div className="author" aria-current={photo.user.portfolio_url ? "" : "disabled"}>
+              <a
+                href={photo.user.portfolio_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={photo.user.profile_image.small} alt="" />
+                <h4>{photo.user.username}</h4>
+              </a>
+            </div>
           </div>
         ))}
       </div>

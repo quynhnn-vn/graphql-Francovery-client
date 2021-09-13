@@ -34,10 +34,10 @@ const MapChart = React.memo(({ setTooltipContent }) => {
   const { option } = useParams();
   let geoUrl;
   let communesData = communes.slice(0, 10);
-  if (option === "communes") {
+  if (option === "commune") {
     geoUrl = france;
-    communesData = communes.slice(0, 25);
-  } else if (option === "departements") {
+    communesData = communes.slice(0, 100);
+  } else if (option === "departement") {
     geoUrl = departements;
   } else {
     geoUrl = regions;
@@ -64,7 +64,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                 const { NAME_1, NAME_2 } = geo.properties;
                 if (NAME_2) {
                   return (
-                    <Link to={`/${NAME_2.split(" ").join("-")}`}>
+                    <Link to={`/search/${NAME_2.split(" ").join("-")}`}>
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
@@ -80,7 +80,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                   );
                 } else if (!NAME_2 && NAME_1) {
                   return (
-                    <Link to={`/${NAME_1.split(" ").join("-")}`}>
+                    <Link to={`/search/${NAME_1.split(" ").join("-")}`}>
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
@@ -124,7 +124,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
           {communesData.map((commune) =>
             loadingMap ? null : (
               <Marker key={commune.city} coordinates={[commune.lng, commune.lat]}>
-                <Link to={`/${commune.city}`}>
+                <Link to={`/search/${commune.city}`}>
                   <circle
                     onMouseEnter={() => {
                       setTooltipContent(`${commune.city} - ${commune.admin_name}`);
@@ -132,21 +132,24 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                     onMouseLeave={() => {
                       setTooltipContent("");
                     }}
-                    r={option === "communes" && commune.population > 10000000 ? 10 : 3}
-                    fill="#074A5E"
+                    r={option === "commune" && commune.population > 10000000 ? 10 : 3}
+                    fill={option === "commune" ? "transparent" : "#074A5E"}
+                    stroke={option === "commune" ? "#074A5E" : "none"}
                   />
                 </Link>
-                <text
-                  textAnchor="middle"
-                  y={15}
-                  style={{
-                    fontFamily: ["Lato", "sans-serif"],
-                    fill: "#074A5E",
-                    fontSize: `${option === "communes" ? "8px" : "10px"}`,
-                  }}
-                >
-                  {commune.city}
-                </text>
+                {option !== "commune" ? (
+                                  <text
+                                  textAnchor="middle"
+                                  y={15}
+                                  style={{
+                                    fontFamily: ["Lato", "sans-serif"],
+                                    fill: "#074A5E",
+                                    fontSize: `${option === "commune" ? "8px" : "10px"}`,
+                                  }}
+                                >
+                                  {commune.city}
+                                </text>
+                ) : null}
               </Marker>
             )
           )}

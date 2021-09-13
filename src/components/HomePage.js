@@ -9,7 +9,7 @@ export default function HomePage() {
   const [loadingVideo, setLoadingVideo] = useState(true);
   const videoRef = useRef(null);
 
-  const options = ["regions", "departements", "communes"];
+  const options = ["region", "departement", "commune"];
 
   useEffect(() => {
       if (videoRef) {
@@ -42,7 +42,7 @@ export default function HomePage() {
       </video>
       <div>
         {options.map(option => (
-          <button>
+          <button key={option} >
             <Link to={`/home/${option}`}>{option}</Link>
           </button>
         ))}

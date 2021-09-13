@@ -1,0 +1,145 @@
+[
+ {
+   "CODE": 84,
+   "NOM": "Auvergne-Rhône-Alpes",
+   "NUM_ARROND": 39,
+   "NUM_COMMUNE": "4,030",
+   "POPULATION": "8,167,945",
+   "NIVEAU_VIE": 20944.3,
+   "PAUVRETE": 12.7,
+   "CHEF_LIEU": "Lyon",
+   "SUPERFICIE": 69711
+ },
+ {
+   "CODE": 27,
+   "NOM": "Bourgogne-Franche-Comté",
+   "NUM_ARROND": 24,
+   "NUM_COMMUNE": "3,702",
+   "POPULATION": "2,881,889",
+   "NIVEAU_VIE": 20088.7,
+   "PAUVRETE": 13.1,
+   "CHEF_LIEU": "Dijon",
+   "SUPERFICIE": 47784
+ },
+ {
+   "CODE": 53,
+   "NOM": "Bretagne",
+   "NUM_ARROND": 15,
+   "NUM_COMMUNE": "1,208",
+   "POPULATION": "3,425,074",
+   "NIVEAU_VIE": 20470,
+   "PAUVRETE": 10.8,
+   "CHEF_LIEU": "Rennes",
+   "SUPERFICIE": 27208
+ },
+ {
+   "CODE": 24,
+   "NOM": "Centre-Val de Loire",
+   "NUM_ARROND": 20,
+   "NUM_COMMUNE": "1,757",
+   "POPULATION": "2,631,697",
+   "NIVEAU_VIE": 20338.4,
+   "PAUVRETE": 12.9,
+   "CHEF_LIEU": "Orléans",
+   "SUPERFICIE": 39151
+ },
+ {
+   "CODE": 94,
+   "NOM": "Corse",
+   "NUM_ARROND": 5,
+   "NUM_COMMUNE": "360",
+   "POPULATION": "343,726",
+   "NIVEAU_VIE": 18926.7,
+   "PAUVRETE": 20.3,
+   "CHEF_LIEU": "Ajaccio",
+   "SUPERFICIE": 8680
+ },
+ {
+   "CODE": 44,
+   "NOM": "Grand Est",
+   "NUM_ARROND": 38,
+   "NUM_COMMUNE": "5,121",
+   "POPULATION": "5,658,527",
+   "NIVEAU_VIE": 20417.5,
+   "PAUVRETE": 14.2,
+   "CHEF_LIEU": "Strasbourg",
+   "SUPERFICIE": 57441
+ },
+ {
+   "CODE": 32,
+   "NOM": "Hauts-de-France",
+   "NUM_ARROND": 26,
+   "NUM_COMMUNE": "3,789",
+   "POPULATION": "6,096,682",
+   "NIVEAU_VIE": 18812,
+   "PAUVRETE": 18.3,
+   "CHEF_LIEU": "Lille",
+   "SUPERFICIE": 31806
+ },
+ {
+   "CODE": 11,
+   "NOM": "Île-de-France",
+   "NUM_ARROND": 25,
+   "NUM_COMMUNE": "1,268",
+   "POPULATION": "12,328,447",
+   "NIVEAU_VIE": 22522,
+   "PAUVRETE": 15.6,
+   "CHEF_LIEU": "Paris",
+   "SUPERFICIE": 12011
+ },
+ {
+   "CODE": 28,
+   "NOM": "Normandie",
+   "NUM_ARROND": 17,
+   "NUM_COMMUNE": "2,652",
+   "POPULATION": "3,400,150",
+   "NIVEAU_VIE": 19900,
+   "PAUVRETE": 13.6,
+   "CHEF_LIEU": "Rouen",
+   "SUPERFICIE": 29907
+ },
+ {
+   "CODE": 75,
+   "NOM": "Nouvelle-Aquitaine",
+   "NUM_ARROND": 41,
+   "NUM_COMMUNE": "4,314",
+   "POPULATION": "6,117,956",
+   "NIVEAU_VIE": 19991.7,
+   "PAUVRETE": 13.6,
+   "CHEF_LIEU": "Bordeaux",
+   "SUPERFICIE": 84036
+ },
+ {
+   "CODE": 76,
+   "NOM": "Occitanie",
+   "NUM_ARROND": 36,
+   "NUM_COMMUNE": "4,454",
+   "POPULATION": "6,009,622",
+   "NIVEAU_VIE": 19457.2,
+   "PAUVRETE": 17.2,
+   "CHEF_LIEU": "Toulouse",
+   "SUPERFICIE": 72724
+ },
+ {
+   "CODE": 52,
+   "NOM": "Pays de la Loire",
+   "NUM_ARROND": 16,
+   "NUM_COMMUNE": "1,238",
+   "POPULATION": "3,871,617",
+   "NIVEAU_VIE": 20149.5,
+   "PAUVRETE": 11.1,
+   "CHEF_LIEU": "Nantes",
+   "SUPERFICIE": 32082
+ },
+ {
+   "CODE": 93,
+   "NOM": "Provence-Alpes-Côte d'Azur",
+   "NUM_ARROND": 18,
+   "NUM_COMMUNE": "946",
+   "POPULATION": "5,128,856",
+   "NIVEAU_VIE": 19893,
+   "PAUVRETE": 17.5,
+   "CHEF_LIEU": "Marseille",
+   "SUPERFICIE": 31400
+ }
+]

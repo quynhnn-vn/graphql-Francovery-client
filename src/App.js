@@ -8,6 +8,7 @@ import {
 import HomePage from "./components/HomePage";
 import Department from "./components/Department";
 import SideBar from "./components/SideBar";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -21,10 +22,13 @@ const App = () => {
           <Route exact path="/home">
             <HomePage />
           </Route>
+          <Route exact path="/gallery">
+            <Gallery />
+          </Route>
           <Route path="/home/:option">
             <HomePage />
           </Route>
-          <Route path="/:location">
+          <Route path="/search/:location">
               <Department />
           </Route>
         </Switch>
