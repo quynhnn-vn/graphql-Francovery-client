@@ -11,7 +11,7 @@ export default function Department() {
     <div className="department">
       <Photos location={location} />
       <Information location={location} />
-      <Articles location={location} />
+      {/* <Articles location={location} /> */}
     </div>
   );
 }

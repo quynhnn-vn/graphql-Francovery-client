@@ -26,24 +26,29 @@ export const GET_PHOTOS = gql`
 `;
 
 export default function Gallery() {
-    // let galleryData = [];
-    // regionData.map((region) => {
-    //     const location = region.NOM;
-    //     const { loading, error, data } = useQuery(GET_PHOTOS, {
-    //         variables: { location }
-    //     });
-    //     if (loading) return "Loading...";
-    //     if (error) return `Error! ${error.message}`;
-    //     galleryData.push(data);
-    // })
-    // return (
-    //     <div className="gallery-container">
-    //         {galleryData.map(photo => (
-    //             JSON.stringify(photo)
-    //         ))}
-    //     </div>
-    // )
-    return (
-        <div></div>
-    )
+  // let location;
+  // let galleryData = [];
+
+  // React.useEffect(() => {
+  //   regionData.map((region) => {
+  //     location = region.NOM;
+  //     const { loading, error, data } = useQuery(GET_PHOTOS, {
+  //       variables: { location }
+  //     });
+  //     if (loading) return "Loading...";
+  //     if (error) return `Error! ${error.message}`;
+  //     galleryData.push(data);
+  // })
+  // }, [location]);
+
+  // return (
+  //       <div className="gallery-container">
+  //           {galleryData.map(photo => (
+  //               JSON.stringify(photo)
+  //           ))}
+  //       </div>
+  //   )
+  return (
+    <div>Hello</div>
+  )
 }

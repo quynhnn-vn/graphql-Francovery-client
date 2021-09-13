@@ -1,0 +1,884 @@
+[
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 1,
+    "NOM_DEPART": "Ain",
+    "POPULATION": "663,720",
+    "NIVEAU_VIE": 21699.6,
+    "PAUVRETE": 10.8
+  },
+  {
+    "CODE_REGION": 32,
+    "NOM_REGION": "Hauts-de-France",
+    "CODE_DEPART": 2,
+    "NOM_DEPART": "Aisne",
+    "POPULATION": "545,353",
+    "NIVEAU_VIE": 18477.6,
+    "PAUVRETE": 18.7
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 3,
+    "NOM_DEPART": "Allier",
+    "POPULATION": "346,156",
+    "NIVEAU_VIE": 19102,
+    "PAUVRETE": 15.4
+  },
+  {
+    "CODE_REGION": 93,
+    "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+    "CODE_DEPART": 4,
+    "NOM_DEPART": "Alpes-de-Haute-Provence",
+    "POPULATION": "168,613",
+    "NIVEAU_VIE": 19149.3,
+    "PAUVRETE": 17
+  },
+  {
+    "CODE_REGION": 93,
+    "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+    "CODE_DEPART": 6,
+    "NOM_DEPART": "Alpes-Maritimes",
+    "POPULATION": "1,100,444",
+    "NIVEAU_VIE": 20532.6,
+    "PAUVRETE": 16
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 7,
+    "NOM_DEPART": "Ardèche",
+    "POPULATION": "335,571",
+    "NIVEAU_VIE": 19384.4,
+    "PAUVRETE": 14.7
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 8,
+    "NOM_DEPART": "Ardennes",
+    "POPULATION": "278,300",
+    "NIVEAU_VIE": 18310.7,
+    "PAUVRETE": 19.4
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 9,
+    "NOM_DEPART": "Ariège",
+    "POPULATION": "157,120",
+    "NIVEAU_VIE": 18686.2,
+    "PAUVRETE": 18.2
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 10,
+    "NOM_DEPART": "Aube",
+    "POPULATION": "317,139",
+    "NIVEAU_VIE": 19255.3,
+    "PAUVRETE": 15.6
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 11,
+    "NOM_DEPART": "Aude",
+    "POPULATION": "381,578",
+    "NIVEAU_VIE": 17793.5,
+    "PAUVRETE": 21.7
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 12,
+    "NOM_DEPART": "Aveyron",
+    "POPULATION": "289,583",
+    "NIVEAU_VIE": 19424,
+    "PAUVRETE": 14.2
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 67,
+    "NOM_DEPART": "Bas-Rhin",
+    "POPULATION": "1,149,676",
+    "NIVEAU_VIE": 21647,
+    "PAUVRETE": 12.4
+  },
+  {
+    "CODE_REGION": 93,
+    "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+    "CODE_DEPART": 13,
+    "NOM_DEPART": "Bouches-du-Rhône",
+    "POPULATION": "2,058,818",
+    "NIVEAU_VIE": 19955.3,
+    "PAUVRETE": 18.6
+  },
+  {
+    "CODE_REGION": 28,
+    "NOM_REGION": "Normandie",
+    "CODE_DEPART": 14,
+    "NOM_DEPART": "Calvados",
+    "POPULATION": "708,236",
+    "NIVEAU_VIE": 20045.7,
+    "PAUVRETE": 12.8
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 15,
+    "NOM_DEPART": "Cantal",
+    "POPULATION": "149,758",
+    "NIVEAU_VIE": 19030,
+    "PAUVRETE": 14.4
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 16,
+    "NOM_DEPART": "Charente",
+    "POPULATION": "360,970",
+    "NIVEAU_VIE": 19450,
+    "PAUVRETE": 14.9
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 17,
+    "NOM_DEPART": "Charente-Maritime",
+    "POPULATION": "662,799",
+    "NIVEAU_VIE": 19800,
+    "PAUVRETE": 13.6
+  },
+  {
+    "CODE_REGION": 24,
+    "NOM_REGION": "Centre-Val de Loire",
+    "CODE_DEPART": 18,
+    "NOM_DEPART": "Cher",
+    "POPULATION": "310,656",
+    "NIVEAU_VIE": 19617,
+    "PAUVRETE": 14.6
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 19,
+    "NOM_DEPART": "Corrèze",
+    "POPULATION": "248,339",
+    "NIVEAU_VIE": 19537,
+    "PAUVRETE": 13.6
+  },
+  {
+    "CODE_REGION": 94,
+    "NOM_REGION": "Corse",
+    "CODE_DEPART": "2A",
+    "NOM_DEPART": "Corse-du-Sud",
+    "POPULATION": "160,294",
+    "NIVEAU_VIE": 19731.5,
+    "PAUVRETE": 17.7
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 21,
+    "NOM_DEPART": "Côte-d'Or",
+    "POPULATION": "545,283",
+    "NIVEAU_VIE": 21034.7,
+    "PAUVRETE": 11.4
+  },
+  {
+    "CODE_REGION": 53,
+    "NOM_REGION": "Bretagne",
+    "CODE_DEPART": 22,
+    "NOM_DEPART": "Côtes-d'Armor",
+    "POPULATION": "617,921",
+    "NIVEAU_VIE": 20018.5,
+    "PAUVRETE": 11.7
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 23,
+    "NOM_DEPART": "Creuse",
+    "POPULATION": "121,009",
+    "NIVEAU_VIE": 17984,
+    "PAUVRETE": 18.9
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 79,
+    "NOM_DEPART": "Deux-Sèvres",
+    "POPULATION": "385,029",
+    "NIVEAU_VIE": 19584,
+    "PAUVRETE": 12.5
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 24,
+    "NOM_DEPART": "Dordogne",
+    "POPULATION": "423,868",
+    "NIVEAU_VIE": 18971,
+    "PAUVRETE": 16.4
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 25,
+    "NOM_DEPART": "Doubs",
+    "POPULATION": "555,190",
+    "NIVEAU_VIE": 20924,
+    "PAUVRETE": 12.5
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 26,
+    "NOM_DEPART": "Drôme",
+    "POPULATION": "528,015",
+    "NIVEAU_VIE": 19569.2,
+    "PAUVRETE": 15.5
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 91,
+    "NOM_DEPART": "Essonne",
+    "POPULATION": "1,311,028",
+    "NIVEAU_VIE": 22954,
+    "PAUVRETE": 12.5
+  },
+  {
+    "CODE_REGION": 28,
+    "NOM_REGION": "Normandie",
+    "CODE_DEPART": 27,
+    "NOM_DEPART": "Eure",
+    "POPULATION": "613,320",
+    "NIVEAU_VIE": 20445,
+    "PAUVRETE": 12.8
+  },
+  {
+    "CODE_REGION": 24,
+    "NOM_REGION": "Centre-Val de Loire",
+    "CODE_DEPART": 28,
+    "NOM_DEPART": "Eure-et-Loir",
+    "POPULATION": "442,378",
+    "NIVEAU_VIE": 20829,
+    "PAUVRETE": 11.8
+  },
+  {
+    "CODE_REGION": 53,
+    "NOM_REGION": "Bretagne",
+    "CODE_DEPART": 29,
+    "NOM_DEPART": "Finistère",
+    "POPULATION": "936,959",
+    "NIVEAU_VIE": 20471.3,
+    "PAUVRETE": 10.4
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 30,
+    "NOM_DEPART": "Gard",
+    "POPULATION": "759,050",
+    "NIVEAU_VIE": 18602.8,
+    "PAUVRETE": 20.3
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 32,
+    "NOM_DEPART": "Gers",
+    "POPULATION": "198,043",
+    "NIVEAU_VIE": 19501.3,
+    "PAUVRETE": 15
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 33,
+    "NOM_DEPART": "Gironde",
+    "POPULATION": "1,626,287",
+    "NIVEAU_VIE": 20979.3,
+    "PAUVRETE": 12.6
+  },
+  {
+    "CODE_REGION": 94,
+    "NOM_REGION": "Corse",
+    "CODE_DEPART": "2B",
+    "NOM_DEPART": "Haute-Corse",
+    "POPULATION": "183,432",
+    "NIVEAU_VIE": 18200,
+    "PAUVRETE": 22.5
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 31,
+    "NOM_DEPART": "Haute-Garonne",
+    "POPULATION": "1,403,685",
+    "NIVEAU_VIE": 21974.5,
+    "PAUVRETE": 12.6
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 43,
+    "NOM_DEPART": "Haute-Loire",
+    "POPULATION": "234,434",
+    "NIVEAU_VIE": 19452.8,
+    "PAUVRETE": 12.7
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 52,
+    "NOM_DEPART": "Haute-Marne",
+    "POPULATION": "179,062",
+    "NIVEAU_VIE": 18887.1,
+    "PAUVRETE": 15.8
+  },
+  {
+    "CODE_REGION": 93,
+    "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+    "CODE_DEPART": 5,
+    "NOM_DEPART": "Hautes-Alpes",
+    "POPULATION": "145,309",
+    "NIVEAU_VIE": 19386.2,
+    "PAUVRETE": 14.5
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 70,
+    "NOM_DEPART": "Haute-Saône",
+    "POPULATION": "242,280",
+    "NIVEAU_VIE": 19177.5,
+    "PAUVRETE": 14.4
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 74,
+    "NOM_DEPART": "Haute-Savoie",
+    "POPULATION": "838,044",
+    "NIVEAU_VIE": 24375,
+    "PAUVRETE": 9.4
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 65,
+    "NOM_DEPART": "Hautes-Pyrénées",
+    "POPULATION": "235,322",
+    "NIVEAU_VIE": 19427.3,
+    "PAUVRETE": 14.8
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 87,
+    "NOM_DEPART": "Haute-Vienne",
+    "POPULATION": "380,092",
+    "NIVEAU_VIE": 19698,
+    "PAUVRETE": 15.3
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 68,
+    "NOM_DEPART": "Haut-Rhin",
+    "POPULATION": "779,291",
+    "NIVEAU_VIE": 21963.3,
+    "PAUVRETE": 12.7
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 92,
+    "NOM_DEPART": "Hauts-de-Seine",
+    "POPULATION": "1,635,499",
+    "NIVEAU_VIE": 25960.7,
+    "PAUVRETE": 12.2
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 34,
+    "NOM_DEPART": "Hérault",
+    "POPULATION": "1,177,177",
+    "NIVEAU_VIE": 18973.8,
+    "PAUVRETE": 19.8
+  },
+  {
+    "CODE_REGION": 53,
+    "NOM_REGION": "Bretagne",
+    "CODE_DEPART": 35,
+    "NOM_DEPART": "Ille-et-Vilaine",
+    "POPULATION": "1,094,018",
+    "NIVEAU_VIE": 20884.6,
+    "PAUVRETE": 10.5
+  },
+  {
+    "CODE_REGION": 24,
+    "NOM_REGION": "Centre-Val de Loire",
+    "CODE_DEPART": 36,
+    "NOM_DEPART": "Indre",
+    "POPULATION": "226,338",
+    "NIVEAU_VIE": 19072,
+    "PAUVRETE": 14.6
+  },
+  {
+    "CODE_REGION": 24,
+    "NOM_REGION": "Centre-Val de Loire",
+    "CODE_DEPART": 37,
+    "NOM_DEPART": "Indre-et-Loire",
+    "POPULATION": "620,014",
+    "NIVEAU_VIE": 20561,
+    "PAUVRETE": 12.1
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 38,
+    "NOM_DEPART": "Isère",
+    "POPULATION": "1,288,406",
+    "NIVEAU_VIE": 21406.7,
+    "PAUVRETE": 11.3
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 39,
+    "NOM_DEPART": "Jura",
+    "POPULATION": "268,874",
+    "NIVEAU_VIE": 20166.2,
+    "PAUVRETE": 12.2
+  },
+  {
+    "CODE_REGION": 4,
+    "NOM_REGION": "La Réunion",
+    "CODE_DEPART": 974,
+    "NOM_DEPART": "La Réunion",
+    "POPULATION": "865,507",
+    "NIVEAU_VIE": 13827.8,
+    "PAUVRETE": 41.8
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 40,
+    "NOM_DEPART": "Landes",
+    "POPULATION": "422,602",
+    "NIVEAU_VIE": 20147.8,
+    "PAUVRETE": 12
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 42,
+    "NOM_DEPART": "Loire",
+    "POPULATION": "777,897",
+    "NIVEAU_VIE": 19515,
+    "PAUVRETE": 14.5
+  },
+  {
+    "CODE_REGION": 52,
+    "NOM_REGION": "Pays de la Loire",
+    "CODE_DEPART": 44,
+    "NOM_DEPART": "Loire-Atlantique",
+    "POPULATION": "1,441,302",
+    "NIVEAU_VIE": 20997.3,
+    "PAUVRETE": 10.2
+  },
+  {
+    "CODE_REGION": 24,
+    "NOM_REGION": "Centre-Val de Loire",
+    "CODE_DEPART": 45,
+    "NOM_DEPART": "Loiret",
+    "POPULATION": "693,476",
+    "NIVEAU_VIE": 20790,
+    "PAUVRETE": 13
+  },
+  {
+    "CODE_REGION": 24,
+    "NOM_REGION": "Centre-Val de Loire",
+    "CODE_DEPART": 41,
+    "NOM_DEPART": "Loir-et-Cher",
+    "POPULATION": "338,835",
+    "NIVEAU_VIE": 20131.3,
+    "PAUVRETE": 12.7
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 46,
+    "NOM_DEPART": "Lot",
+    "POPULATION": "179,604",
+    "NIVEAU_VIE": 19506,
+    "PAUVRETE": 15.1
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 47,
+    "NOM_DEPART": "Lot-et-Garonne",
+    "POPULATION": "340,356",
+    "NIVEAU_VIE": 18756,
+    "PAUVRETE": 16.8
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 48,
+    "NOM_DEPART": "Lozère",
+    "POPULATION": "80,227",
+    "NIVEAU_VIE": 19110,
+    "PAUVRETE": 15
+  },
+  {
+    "CODE_REGION": 52,
+    "NOM_REGION": "Pays de la Loire",
+    "CODE_DEPART": 49,
+    "NOM_DEPART": "Maine-et-Loire",
+    "POPULATION": "835,856",
+    "NIVEAU_VIE": 19687.2,
+    "PAUVRETE": 11.7
+  },
+  {
+    "CODE_REGION": 28,
+    "NOM_REGION": "Normandie",
+    "CODE_DEPART": 50,
+    "NOM_DEPART": "Manche",
+    "POPULATION": "511,983",
+    "NIVEAU_VIE": 19548.1,
+    "PAUVRETE": 12.5
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 51,
+    "NOM_DEPART": "Marne",
+    "POPULATION": "579,127",
+    "NIVEAU_VIE": 20314.3,
+    "PAUVRETE": 14.3
+  },
+  {
+    "CODE_REGION": 2,
+    "NOM_REGION": "Martinique",
+    "CODE_DEPART": 972,
+    "NOM_DEPART": "Martinique",
+    "POPULATION": "373,762",
+    "NIVEAU_VIE": 16074,
+    "PAUVRETE": 32.1
+  },
+  {
+    "CODE_REGION": 52,
+    "NOM_REGION": "Pays de la Loire",
+    "CODE_DEPART": 53,
+    "NOM_DEPART": "Mayenne",
+    "POPULATION": "316,608",
+    "NIVEAU_VIE": 19530.7,
+    "PAUVRETE": 11.4
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 54,
+    "NOM_DEPART": "Meurthe-et-Moselle",
+    "POPULATION": "745,199",
+    "NIVEAU_VIE": 20397.8,
+    "PAUVRETE": 14.3
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 55,
+    "NOM_DEPART": "Meuse",
+    "POPULATION": "190,802",
+    "NIVEAU_VIE": 19342.5,
+    "PAUVRETE": 14.9
+  },
+  {
+    "CODE_REGION": 53,
+    "NOM_REGION": "Bretagne",
+    "CODE_DEPART": 56,
+    "NOM_DEPART": "Morbihan",
+    "POPULATION": "776,176",
+    "NIVEAU_VIE": 20302.2,
+    "PAUVRETE": 11.2
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 57,
+    "NOM_DEPART": "Moselle",
+    "POPULATION": "1,062,362",
+    "NIVEAU_VIE": 20403,
+    "PAUVRETE": 14.3
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 58,
+    "NOM_DEPART": "Nièvre",
+    "POPULATION": "211,256",
+    "NIVEAU_VIE": 19181.2,
+    "PAUVRETE": 15.7
+  },
+  {
+    "CODE_REGION": 32,
+    "NOM_REGION": "Hauts-de-France",
+    "CODE_DEPART": 59,
+    "NOM_DEPART": "Nord",
+    "POPULATION": "2,636,884",
+    "NIVEAU_VIE": 18740,
+    "PAUVRETE": 19.1
+  },
+  {
+    "CODE_REGION": 32,
+    "NOM_REGION": "Hauts-de-France",
+    "CODE_DEPART": 60,
+    "NOM_DEPART": "Oise",
+    "POPULATION": "844,905",
+    "NIVEAU_VIE": 20804.7,
+    "PAUVRETE": 13
+  },
+  {
+    "CODE_REGION": 28,
+    "NOM_REGION": "Normandie",
+    "CODE_DEPART": 61,
+    "NOM_DEPART": "Orne",
+    "POPULATION": "289,734",
+    "NIVEAU_VIE": 18864,
+    "PAUVRETE": 15.8
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 75,
+    "NOM_DEPART": "Paris",
+    "POPULATION": "2,192,485",
+    "NIVEAU_VIE": 26194.7,
+    "PAUVRETE": 16.1
+  },
+  {
+    "CODE_REGION": 32,
+    "NOM_REGION": "Hauts-de-France",
+    "CODE_DEPART": 62,
+    "NOM_DEPART": "Pas-de-Calais",
+    "POPULATION": "1,488,821",
+    "NIVEAU_VIE": 17894,
+    "PAUVRETE": 20.2
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 63,
+    "NOM_DEPART": "Puy-de-Dôme",
+    "POPULATION": "673,671",
+    "NIVEAU_VIE": 20687.2,
+    "PAUVRETE": 12.6
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 64,
+    "NOM_DEPART": "Pyrénées-Atlantiques",
+    "POPULATION": "698,710",
+    "NIVEAU_VIE": 20696,
+    "PAUVRETE": 12
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 66,
+    "NOM_DEPART": "Pyrénées-Orientales",
+    "POPULATION": "484,215",
+    "NIVEAU_VIE": 17999.4,
+    "PAUVRETE": 21.4
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 69,
+    "NOM_DEPART": "Rhône",
+    "POPULATION": "1,885,941",
+    "NIVEAU_VIE": 21457,
+    "PAUVRETE": 13.8
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 71,
+    "NOM_DEPART": "Saône-et-Loire",
+    "POPULATION": "568,023",
+    "NIVEAU_VIE": 19588.9,
+    "PAUVRETE": 13.1
+  },
+  {
+    "CODE_REGION": 52,
+    "NOM_REGION": "Pays de la Loire",
+    "CODE_DEPART": 72,
+    "NOM_DEPART": "Sarthe",
+    "POPULATION": "579,120",
+    "NIVEAU_VIE": 19755.5,
+    "PAUVRETE": 13.2
+  },
+  {
+    "CODE_REGION": 84,
+    "NOM_REGION": "Auvergne-Rhône-Alpes",
+    "CODE_DEPART": 73,
+    "NOM_DEPART": "Savoie",
+    "POPULATION": "446,332",
+    "NIVEAU_VIE": 21441.5,
+    "PAUVRETE": 10.4
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 77,
+    "NOM_DEPART": "Seine-et-Marne",
+    "POPULATION": "1,428,970",
+    "NIVEAU_VIE": 22191.3,
+    "PAUVRETE": 11.5
+  },
+  {
+    "CODE_REGION": 28,
+    "NOM_REGION": "Normandie",
+    "CODE_DEPART": 76,
+    "NOM_DEPART": "Seine-Maritime",
+    "POPULATION": "1,276,877",
+    "NIVEAU_VIE": 19978,
+    "PAUVRETE": 14.4
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 93,
+    "NOM_DEPART": "Seine-Saint-Denis",
+    "POPULATION": "1,639,416",
+    "NIVEAU_VIE": 16726,
+    "PAUVRETE": 28.6
+  },
+  {
+    "CODE_REGION": 32,
+    "NOM_REGION": "Hauts-de-France",
+    "CODE_DEPART": 80,
+    "NOM_DEPART": "Somme",
+    "POPULATION": "580,719",
+    "NIVEAU_VIE": 19059.5,
+    "PAUVRETE": 17
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 81,
+    "NOM_DEPART": "Tarn",
+    "POPULATION": "399,108",
+    "NIVEAU_VIE": 19315,
+    "PAUVRETE": 15.3
+  },
+  {
+    "CODE_REGION": 76,
+    "NOM_REGION": "Occitanie",
+    "CODE_DEPART": 82,
+    "NOM_DEPART": "Tarn-et-Garonne",
+    "POPULATION": "264,910",
+    "NIVEAU_VIE": 18848.1,
+    "PAUVRETE": 17.1
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 90,
+    "NOM_DEPART": "Territoire de Belfort",
+    "POPULATION": "144,992",
+    "NIVEAU_VIE": 20255.3,
+    "PAUVRETE": 15.2
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 94,
+    "NOM_DEPART": "Val-de-Marne",
+    "POPULATION": "1,405,700",
+    "NIVEAU_VIE": 21674.7,
+    "PAUVRETE": 16.2
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 95,
+    "NOM_DEPART": "Val-d'Oise",
+    "POPULATION": "1,248,901",
+    "NIVEAU_VIE": 20984.8,
+    "PAUVRETE": 16.6
+  },
+  {
+    "CODE_REGION": 93,
+    "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+    "CODE_DEPART": 83,
+    "NOM_DEPART": "Var",
+    "POPULATION": "1,084,710",
+    "NIVEAU_VIE": 20118.5,
+    "PAUVRETE": 15.9
+  },
+  {
+    "CODE_REGION": 93,
+    "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+    "CODE_DEPART": 84,
+    "NOM_DEPART": "Vaucluse",
+    "POPULATION": "570,962",
+    "NIVEAU_VIE": 18521.3,
+    "PAUVRETE": 20.4
+  },
+  {
+    "CODE_REGION": 52,
+    "NOM_REGION": "Pays de la Loire",
+    "CODE_DEPART": 85,
+    "NOM_DEPART": "Vendée",
+    "POPULATION": "698,731",
+    "NIVEAU_VIE": 19853.9,
+    "PAUVRETE": 10.1
+  },
+  {
+    "CODE_REGION": 75,
+    "NOM_REGION": "Nouvelle-Aquitaine",
+    "CODE_DEPART": 86,
+    "NOM_DEPART": "Vienne",
+    "POPULATION": "447,895",
+    "NIVEAU_VIE": 19816.2,
+    "PAUVRETE": 13.7
+  },
+  {
+    "CODE_REGION": 44,
+    "NOM_REGION": "Grand Est",
+    "CODE_DEPART": 88,
+    "NOM_DEPART": "Vosges",
+    "POPULATION": "377,569",
+    "NIVEAU_VIE": 19096.7,
+    "PAUVRETE": 15.8
+  },
+  {
+    "CODE_REGION": 27,
+    "NOM_REGION": "Bourgogne-Franche-Comté",
+    "CODE_DEPART": 89,
+    "NOM_DEPART": "Yonne",
+    "POPULATION": "345,991",
+    "NIVEAU_VIE": 19667.5,
+    "PAUVRETE": 14.3
+  },
+  {
+    "CODE_REGION": 11,
+    "NOM_REGION": "Île-de-France",
+    "CODE_DEPART": 78,
+    "NOM_DEPART": "Yvelines",
+    "POPULATION": "1,466,448",
+    "NIVEAU_VIE": 25550,
+    "PAUVRETE": 9.5
+  }
+]
