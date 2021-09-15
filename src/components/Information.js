@@ -1,53 +1,44 @@
 import React from "react";
 import "../styles/Information.scss";
-import regionData from "../data/regionData.json";
-import departmentData from "../data/departmentData.json";
-import communeData from "../data/communeData.json";
+import regionsInfo from "../data/info/regionsInfo.json";
+import departementsInfo from "../data/info/departementsInfo.json";
+import communesInfo from "../data/info/communesInfo.json";
+import { annotations } from "../data/annotations";
 
 export default function Information({ location }) {
   const [locationData, setLocationData] = React.useState({});
 
-  const findLocationData = React.useCallback(() => {
-    const region = regionData.find((item) => item.NOM === location);
+  React.useEffect(() => {
+    const region = regionsInfo.find((item) => item.RÉGION === location);
     if (region) {
-      return region;
+      setLocationData(region);
     } else {
-      const department = departmentData.find((item) => item.NOM_DEPART === location);
+      const department = departementsInfo.find((item) => item.DÉPARTEMENT === location);
       if (department) {
-        return department;
+        setLocationData(department);
       } else {
-        const commune = communeData.find((item) => item.NOM_COMMUNE === location);
+        const commune = communesInfo.find((item) => item.COMMUNE === location);
         if (commune) {
-          return commune;
+          setLocationData(commune);
         } else {
-          return null;
+          setLocationData("");
         }
       }
     }
   }, [location])
-
-  React.useEffect(() => {
-    setLocationData(findLocationData());
-  }, [findLocationData])
-  
+  console.log(locationData)
   return (
     <div className="info-container">
         {locationData ?
           Object.keys(locationData).map(key => (
-            <div className="info-card">
-              <span>{key}</span>
-              <span>{locationData[key]}</span>
-            </div>
-          )) : null
-        }
+            Object.keys(annotations).map((item, index) => (
+              item === key ? 
+              <div className="info-card" id={index}>
+                <span>{annotations[item][0]}</span>
+                <span>{key.split("_").join(" ")}</span>
+                <span>{annotations[item][1] ? (locationData[key]+" "+annotations[item][1]) : locationData[key]}</span>
+              </div> : null))
+          )) : null}
     </div>
-    // <div className="info-card">
-    //     <span>Region</span>
-    //     <span>{city.admin_name.split("-").join(" ")}</span>
-    //   </div>
-    //   <div className="info-card">
-    //     <span>Population</span>
-    //     <span>{city.population.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</span>
-    //   </div>
   );
 }

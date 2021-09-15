@@ -6,12 +6,11 @@ import {
   Geography,
   Marker,
 } from "react-simple-maps";
-import { Link } from "react-router-dom";
-import departements from "../data/departements.json";
-import communes from "../data/communes.json";
-import france from "../data/france.json";
-import regions from "../data/regions.json";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router-dom";
+import franceGeo from "../data/geo/franceGeo.json";
+import departementsGeo from "../data/geo/departementsGeo.json";
+import regionsGeo from "../data/geo/regionsGeo.json";
+import bigcitiesGeo from "../data/geo/bigcitiesGeo.json";
 
 const chartStyle = {
   default: {
@@ -33,14 +32,14 @@ const MapChart = React.memo(({ setTooltipContent }) => {
   const [loadingMap, setLoadingMap] = useState(true);
   const { option } = useParams();
   let geoUrl;
-  let communesData = communes.slice(0, 10);
-  if (option === "commune") {
-    geoUrl = france;
-    communesData = communes.slice(0, 100);
-  } else if (option === "departement") {
-    geoUrl = departements;
+  let bigcitiesData = bigcitiesGeo.slice(0, 10);
+  if (option === "Communes") {
+    geoUrl = franceGeo;
+    bigcitiesData = bigcitiesGeo.slice(0, 100);
+  } else if (option === "Départements") {
+    geoUrl = departementsGeo;
   } else {
-    geoUrl = regions;
+    geoUrl = regionsGeo;
   }
   useEffect(() => {
     setLoadingMap(false);
@@ -64,7 +63,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                 const { NAME_1, NAME_2 } = geo.properties;
                 if (NAME_2) {
                   return (
-                    <Link to={`/search/${NAME_2.split(" ").join("-")}`}>
+                    <Link to={`/map/${NAME_2.split(" ").join("-")}`}>
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
@@ -80,7 +79,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                   );
                 } else if (!NAME_2 && NAME_1) {
                   return (
-                    <Link to={`/search/${NAME_1.split(" ").join("-")}`}>
+                    <Link to={`/map/${NAME_1.split(" ").join("-")}`}>
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
@@ -121,33 +120,33 @@ const MapChart = React.memo(({ setTooltipContent }) => {
               })
             }
           </Geographies>
-          {communesData.map((commune) =>
+          {bigcitiesData.map((city) =>
             loadingMap ? null : (
-              <Marker key={commune.city} coordinates={[commune.lng, commune.lat]}>
-                <Link to={`/search/${commune.city}`}>
+              <Marker key={city.CITY} coordinates={[city.LNG, city.LAT]}>
+                <Link to={`/map/${city.CITY}/`}>
                   <circle
                     onMouseEnter={() => {
-                      setTooltipContent(`${commune.city} - ${commune.admin_name}`);
+                      setTooltipContent(`${city.CITY} - ${city.RÉGION}`);
                     }}
                     onMouseLeave={() => {
                       setTooltipContent("");
                     }}
-                    r={option === "commune" && commune.population > 10000000 ? 10 : 3}
-                    fill={option === "commune" ? "transparent" : "#074A5E"}
-                    stroke={option === "commune" ? "#074A5E" : "none"}
+                    r={option === "Communes" && city.POPULATION > 10000000 ? 10 : 3}
+                    fill={option === "Communes" ? "transparent" : "#074A5E"}
+                    stroke={option === "Communes" ? "#074A5E" : "none"}
                   />
                 </Link>
-                {option !== "commune" ? (
+                {option !== "Communes" ? (
                                   <text
                                   textAnchor="middle"
                                   y={15}
                                   style={{
                                     fontFamily: ["Lato", "sans-serif"],
                                     fill: "#074A5E",
-                                    fontSize: `${option === "commune" ? "8px" : "10px"}`,
+                                    fontSize: `${option === "Communes" ? "8px" : "10px"}`,
                                   }}
                                 >
-                                  {commune.city}
+                                  {city.CITY}
                                 </text>
                 ) : null}
               </Marker>

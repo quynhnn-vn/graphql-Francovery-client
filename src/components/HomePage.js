@@ -9,7 +9,7 @@ export default function HomePage() {
   const [loadingVideo, setLoadingVideo] = useState(true);
   const videoRef = useRef(null);
 
-  const options = ["region", "departement", "commune"];
+  const options = ["Régions", "Départements", "Communes"];
 
   useEffect(() => {
       if (videoRef) {

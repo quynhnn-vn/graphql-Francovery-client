@@ -42,7 +42,7 @@ export default function SideBar() {
               {isCollapse ? <h4>Search</h4> : (
                 <form>
                   <input type="search" value={searchTerm} placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} autoFocus required/>
-                  <button type="submit"><Link to={`/search/${searchTerm}`}><BsSearch /></Link></button>
+                  <button type="submit"><Link to={`/map/${searchTerm.split(" ").join("-")}`}><BsSearch /></Link></button>
                 </form>
               )}
             </MenuItem>

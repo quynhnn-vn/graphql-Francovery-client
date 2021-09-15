@@ -3,15 +3,17 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    max-width: 900px;
 }
 .info-card {
     position: relative;
     height: 150px;
     width: 150px;
-    text-align: center;
-    margin: 10px 40px 40px 0;
+    margin: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .info-card:before {
     position: absolute;
@@ -21,16 +23,17 @@
     height: 100%;
     width: 100%;
     transform: rotateZ(45deg);
-    border: solid 1px white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: .7rem;
 }
 .info-card:after {
     position: absolute;
-    top: 10px;
-    left: 10px;
     content: '';
     transform: rotateZ(45deg);
 }
 .info-card span {
     color: white;
-    margin-top: 30px;
+}
+.info-card .icons {
+    font-size: 25px;
 }

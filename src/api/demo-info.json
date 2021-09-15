@@ -1,0 +1,463 @@
+{
+    "results": [
+        {
+            "COMMUNE": "Brest",
+            "CODE_DÉPARTEMENT": 29,
+            "POPULATION": 149649,
+            "NOMBRE_ENTREPRISES": 7235,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 10.81,
+            "SALAIRE_MOYENNE_REGION": 10.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Abergement-Clémenciat",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 725,
+            "NOMBRE_ENTREPRISES": 22,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Abergement-de-Varey",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 167,
+            "NOMBRE_ENTREPRISES": 5,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Ambérieu-en-Bugey",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 11432,
+            "NOMBRE_ENTREPRISES": 809,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Ambérieux-en-Dombes",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 1407,
+            "NOMBRE_ENTREPRISES": 75,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Ambléon",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 86,
+            "NOMBRE_ENTREPRISES": 1,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Ambronay",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 2144,
+            "NOMBRE_ENTREPRISES": 101,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Ambutrix",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 586,
+            "NOMBRE_ENTREPRISES": 34,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Andert-et-Condon",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 275,
+            "NOMBRE_ENTREPRISES": 16,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Anglefort",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 772,
+            "NOMBRE_ENTREPRISES": 23,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Apremont",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 328,
+            "NOMBRE_ENTREPRISES": 12,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Aranc",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 275,
+            "NOMBRE_ENTREPRISES": 9,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Arandas",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 135,
+            "NOMBRE_ENTREPRISES": 8,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Arbent",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 3623,
+            "NOMBRE_ENTREPRISES": 287,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Arbignieu",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 431,
+            "NOMBRE_ENTREPRISES": 17,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Arbigny",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 330,
+            "NOMBRE_ENTREPRISES": 7,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Argis",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 389,
+            "NOMBRE_ENTREPRISES": 15,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Armix",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 15,
+            "NOMBRE_ENTREPRISES": 1,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Ars-sur-Formans",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 1100,
+            "NOMBRE_ENTREPRISES": 56,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Artemare",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 970,
+            "NOMBRE_ENTREPRISES": 81,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Asnières-sur-Saône",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 69,
+            "NOMBRE_ENTREPRISES": 5,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Attignat",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 1923,
+            "NOMBRE_ENTREPRISES": 100,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin diversifié"
+        },
+        {
+            "COMMUNE": "Bâgé-la-Ville",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 2318,
+            "NOMBRE_ENTREPRISES": 69,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Bâgé-le-Châtel",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 759,
+            "NOMBRE_ENTREPRISES": 53,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Balan",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 1534,
+            "NOMBRE_ENTREPRISES": 85,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Baneins",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 528,
+            "NOMBRE_ENTREPRISES": 21,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Beaupont",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 492,
+            "NOMBRE_ENTREPRISES": 21,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Beauregard",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 816,
+            "NOMBRE_ENTREPRISES": 31,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Bellignat",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 3505,
+            "NOMBRE_ENTREPRISES": 241,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Béligneux",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 2595,
+            "NOMBRE_ENTREPRISES": 122,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Bellegarde-sur-Valserine",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 10878,
+            "NOMBRE_ENTREPRISES": 700,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Belley",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 8002,
+            "NOMBRE_ENTREPRISES": 663,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Belleydoux",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 277,
+            "NOMBRE_ENTREPRISES": 9,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Belmont-Luthézieu",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 400,
+            "NOMBRE_ENTREPRISES": 13,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Bénonces",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 241,
+            "NOMBRE_ENTREPRISES": 10,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Bény",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 613,
+            "NOMBRE_ENTREPRISES": 24,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Béon",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 364,
+            "NOMBRE_ENTREPRISES": 15,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Béréziat",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 341,
+            "NOMBRE_ENTREPRISES": 13,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin diversifié"
+        },
+        {
+            "COMMUNE": "Bettant",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 685,
+            "NOMBRE_ENTREPRISES": 16,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Bey",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 221,
+            "NOMBRE_ENTREPRISES": 5,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Beynost",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 3528,
+            "NOMBRE_ENTREPRISES": 372,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Billiat",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 411,
+            "NOMBRE_ENTREPRISES": 20,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Birieux",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 145,
+            "NOMBRE_ENTREPRISES": 13,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Biziat",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 647,
+            "NOMBRE_ENTREPRISES": 25,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Blyes",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 691,
+            "NOMBRE_ENTREPRISES": 71,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "La-Boisse",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 2704,
+            "NOMBRE_ENTREPRISES": 133,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Boissey",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 202,
+            "NOMBRE_ENTREPRISES": 8,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Industriel"
+        },
+        {
+            "COMMUNE": "Bolozon",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 94,
+            "NOMBRE_ENTREPRISES": 5,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Bouligneux",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 290,
+            "NOMBRE_ENTREPRISES": 10,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        },
+        {
+            "COMMUNE": "Bourg-en-Bresse",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 40628,
+            "NOMBRE_ENTREPRISES": 3130,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Urbain"
+        },
+        {
+            "COMMUNE": "Bourg-Saint-Christophe",
+            "CODE_DÉPARTEMENT": 1,
+            "POPULATION": 824,
+            "NOMBRE_ENTREPRISES": 34,
+            "SALAIRES_MOYENNE_DEPARTEMENT": 11.41,
+            "SALAIRE_MOYENNE_REGION": 11.87,
+            "ORIENTATION_ÉCONOMIQUE": "Bassin Résidentiel"
+        }
+    ]
+}

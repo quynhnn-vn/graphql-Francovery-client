@@ -1,0 +1,702 @@
+[
+ {
+   "CITY": "Paris",
+   "LAT": 48.8566,
+   "LNG": 2.3522,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "2,187,526"
+ },
+ {
+   "CITY": "Marseille",
+   "LAT": 43.2964,
+   "LNG": 5.37,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "863,310"
+ },
+ {
+   "CITY": "Lyon",
+   "LAT": 45.76,
+   "LNG": 4.84,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "516,092"
+ },
+ {
+   "CITY": "Toulouse",
+   "LAT": 43.6045,
+   "LNG": 1.444,
+   "RÉGION": "Occitanie",
+   "POPULATION": "479,553"
+ },
+ {
+   "CITY": "Nice",
+   "LAT": 43.7034,
+   "LNG": 7.2663,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "340,017"
+ },
+ {
+   "CITY": "Nantes",
+   "LAT": 47.2181,
+   "LNG": -1.5528,
+   "RÉGION": "Pays-de-la-Loire",
+   "POPULATION": "309,346"
+ },
+ {
+   "CITY": "Montpellier",
+   "LAT": 43.6119,
+   "LNG": 3.8772,
+   "RÉGION": "Occitanie",
+   "POPULATION": "285,121"
+ },
+ {
+   "CITY": "Strasbourg",
+   "LAT": 48.5833,
+   "LNG": 7.7458,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "280,966"
+ },
+ {
+   "CITY": "Bordeaux",
+   "LAT": 44.84,
+   "LNG": -0.58,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "254,436"
+ },
+ {
+   "CITY": "Lille",
+   "LAT": 50.6278,
+   "LNG": 3.0583,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "232,787"
+ },
+ {
+   "CITY": "Rennes",
+   "LAT": 48.1147,
+   "LNG": -1.6794,
+   "RÉGION": "Bretagne",
+   "POPULATION": "216,815"
+ },
+ {
+   "CITY": "Reims",
+   "LAT": 49.2628,
+   "LNG": 4.0347,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "182,460"
+ },
+ {
+   "CITY": "Saint-Étienne",
+   "LAT": 45.4347,
+   "LNG": 4.3903,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "172,565"
+ },
+ {
+   "CITY": "Toulon",
+   "LAT": 43.1258,
+   "LNG": 5.9306,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "171,953"
+ },
+ {
+   "CITY": "Le-Havre",
+   "LAT": 49.49,
+   "LNG": 0.1,
+   "RÉGION": "Normandie",
+   "POPULATION": "170,147"
+ },
+ {
+   "CITY": "Grenoble",
+   "LAT": 45.1715,
+   "LNG": 5.7224,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "158,454"
+ },
+ {
+   "CITY": "Dijon",
+   "LAT": 47.3167,
+   "LNG": 5.0167,
+   "RÉGION": "Bourgogne-Franche-Comté",
+   "POPULATION": "156920"
+ },
+ {
+   "CITY": "Angers",
+   "LAT": 47.4736,
+   "LNG": -0.5542,
+   "RÉGION": "Pays-de-la-Loire",
+   "POPULATION": "152960"
+ },
+ {
+   "CITY": "Nîmes",
+   "LAT": 43.838,
+   "LNG": 4.361,
+   "RÉGION": "Occitanie",
+   "POPULATION": "150,610"
+ },
+ {
+   "CITY": "Villeurbanne",
+   "LAT": 45.7667,
+   "LNG": 4.8803,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "147,712"
+ },
+ {
+   "CITY": "Clermont-Ferrand",
+   "LAT": 45.7831,
+   "LNG": 3.0824,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "143,886"
+ },
+ {
+   "CITY": "Le-Mans",
+   "LAT": 48.0077,
+   "LNG": 0.1984,
+   "RÉGION": "Pays-de-la-Loire",
+   "POPULATION": "142,946"
+ },
+ {
+   "CITY": "Aix-en-Provence",
+   "LAT": 43.5263,
+   "LNG": 5.4454,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "142,482"
+ },
+ {
+   "CITY": "Brest",
+   "LAT": 48.39,
+   "LNG": -4.49,
+   "RÉGION": "Bretagne",
+   "POPULATION": "140,064"
+ },
+ {
+   "CITY": "Tours",
+   "LAT": 47.2436,
+   "LNG": 0.6892,
+   "RÉGION": "Centre-Val-de-Loire",
+   "POPULATION": "135,787"
+ },
+ {
+   "CITY": "Amiens",
+   "LAT": 49.892,
+   "LNG": 2.299,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "134,057"
+ },
+ {
+   "CITY": "Limoges",
+   "LAT": 45.8353,
+   "LNG": 1.2625,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "132,175"
+ },
+ {
+   "CITY": "Annecy",
+   "LAT": 45.916,
+   "LNG": 6.133,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "126,924"
+ },
+ {
+   "CITY": "Perpignan",
+   "LAT": 42.6986,
+   "LNG": 2.8956,
+   "RÉGION": "Occitanie",
+   "POPULATION": "120,158"
+ },
+ {
+   "CITY": "Boulogne-Billancourt",
+   "LAT": 48.8352,
+   "LNG": 2.2409,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "120071"
+ },
+ {
+   "CITY": "Orléans",
+   "LAT": 47.9025,
+   "LNG": 1.909,
+   "RÉGION": "Centre-Val-de-Loire",
+   "POPULATION": "116,685"
+ },
+ {
+   "CITY": "Metz",
+   "LAT": 49.1203,
+   "LNG": 6.1778,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "116,429"
+ },
+ {
+   "CITY": "Besançon",
+   "LAT": 47.24,
+   "LNG": 6.02,
+   "RÉGION": "Bourgogne-Franche-Comté",
+   "POPULATION": "115934"
+ },
+ {
+   "CITY": "Saint-Denis",
+   "LAT": 48.9356,
+   "LNG": 2.3539,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "111,135"
+ },
+ {
+   "CITY": "Argenteuil",
+   "LAT": 48.95,
+   "LNG": 2.25,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "110,210"
+ },
+ {
+   "CITY": "Rouen",
+   "LAT": 49.4428,
+   "LNG": 1.0886,
+   "RÉGION": "Normandie",
+   "POPULATION": "110,145"
+ },
+ {
+   "CITY": "Montreuil",
+   "LAT": 48.8611,
+   "LNG": 2.4436,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "109,897"
+ },
+ {
+   "CITY": "Mulhouse",
+   "LAT": 47.75,
+   "LNG": 7.34,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "109,443"
+ },
+ {
+   "CITY": "Caen",
+   "LAT": 49.18,
+   "LNG": -0.37,
+   "RÉGION": "Normandie",
+   "POPULATION": "105354"
+ },
+ {
+   "CITY": "Nancy",
+   "LAT": 48.6936,
+   "LNG": 6.1846,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "104,286"
+ },
+ {
+   "CITY": "Tourcoing",
+   "LAT": 50.7239,
+   "LNG": 3.1612,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "97,368"
+ },
+ {
+   "CITY": "Roubaix",
+   "LAT": 50.6901,
+   "LNG": 3.1817,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "96,990"
+ },
+ {
+   "CITY": "Nanterre",
+   "LAT": 48.8988,
+   "LNG": 2.1969,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "95,105"
+ },
+ {
+   "CITY": "Vitry-sur-Seine",
+   "LAT": 48.7875,
+   "LNG": 2.3928,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "93,557"
+ },
+ {
+   "CITY": "Avignon",
+   "LAT": 43.95,
+   "LNG": 4.8075,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "91,921"
+ },
+ {
+   "CITY": "Créteil",
+   "LAT": 48.7911,
+   "LNG": 2.4628,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "90,605"
+ },
+ {
+   "CITY": "Poitiers",
+   "LAT": 46.58,
+   "LNG": 0.34,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "88,291"
+ },
+ {
+   "CITY": "Dunkerque",
+   "LAT": 51.0383,
+   "LNG": 2.3775,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "87,353"
+ },
+ {
+   "CITY": "Aubervilliers",
+   "LAT": 48.9131,
+   "LNG": 2.3831,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "86375"
+ },
+ {
+   "CITY": "Versailles",
+   "LAT": 48.8053,
+   "LNG": 2.135,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "85,862"
+ },
+ {
+   "CITY": "Aulnay-sous-Bois",
+   "LAT": 48.9386,
+   "LNG": 2.4906,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "85,740"
+ },
+ {
+   "CITY": "Colombes",
+   "LAT": 48.9236,
+   "LNG": 2.2522,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "85177"
+ },
+ {
+   "CITY": "Courbevoic",
+   "LAT": 48.8978,
+   "LNG": 2.2531,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "81719"
+ },
+ {
+   "CITY": "Rueil-Malmaison",
+   "LAT": 48.876,
+   "LNG": 2.181,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "78152"
+ },
+ {
+   "CITY": "Champigny-sur-Marne",
+   "LAT": 48.8172,
+   "LNG": 2.5156,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "77630"
+ },
+ {
+   "CITY": "Béziers",
+   "LAT": 43.3476,
+   "LNG": 3.219,
+   "RÉGION": "Occitanie",
+   "POPULATION": "77177"
+ },
+ {
+   "CITY": "Pau",
+   "LAT": 43.3,
+   "LNG": -0.37,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "77130"
+ },
+ {
+   "CITY": "La-Rochelle",
+   "LAT": 46.1591,
+   "LNG": -1.1517,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "75735"
+ },
+ {
+   "CITY": "Saint-Maur-des-Fossés",
+   "LAT": 48.7994,
+   "LNG": 2.4997,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "74859"
+ },
+ {
+   "CITY": "Calais",
+   "LAT": 50.9481,
+   "LNG": 1.8564,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "73911"
+ },
+ {
+   "CITY": "Cannes",
+   "LAT": 43.5513,
+   "LNG": 7.0128,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "73868"
+ },
+ {
+   "CITY": "Antibes",
+   "LAT": 43.5808,
+   "LNG": 7.1239,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "72999"
+ },
+ {
+   "CITY": "Drancy",
+   "LAT": 48.93,
+   "LNG": 2.45,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "71318"
+ },
+ {
+   "CITY": "Ajaccio",
+   "LAT": 41.9267,
+   "LNG": 8.7369,
+   "RÉGION": "Corsica",
+   "POPULATION": "70659"
+ },
+ {
+   "CITY": "Mérignac",
+   "LAT": 44.8386,
+   "LNG": -0.6436,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "70105"
+ },
+ {
+   "CITY": "Saint-Nazaire",
+   "LAT": 47.2806,
+   "LNG": -2.2086,
+   "RÉGION": "Pays-de-la-Loire",
+   "POPULATION": "69993"
+ },
+ {
+   "CITY": "Colmar",
+   "LAT": 48.0817,
+   "LNG": 7.3556,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "69105"
+ },
+ {
+   "CITY": "Issy-les-Moulineaux",
+   "LAT": 48.8239,
+   "LNG": 2.27,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "68451"
+ },
+ {
+   "CITY": "Noisy-le-Grand",
+   "LAT": 48.8478,
+   "LNG": 2.5528,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "68183"
+ },
+ {
+   "CITY": "Courcouronnes",
+   "LAT": 48.6239,
+   "LNG": 2.4294,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "67967"
+ },
+ {
+   "CITY": "Vénissieux",
+   "LAT": 45.6978,
+   "LNG": 4.8867,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "65894"
+ },
+ {
+   "CITY": "Cergy",
+   "LAT": 49.0361,
+   "LNG": 2.0631,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "65177"
+ },
+ {
+   "CITY": "Bourges",
+   "LAT": 47.0844,
+   "LNG": 2.3964,
+   "RÉGION": "Centre-Val-de-Loire",
+   "POPULATION": "64551"
+ },
+ {
+   "CITY": "Levallois-Perret",
+   "LAT": 48.895,
+   "LNG": 2.2872,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "64379"
+ },
+ {
+   "CITY": "La-Seyne-sur-Mer",
+   "LAT": 43.1,
+   "LNG": 5.883,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "63936"
+ },
+ {
+   "CITY": "Pessac",
+   "LAT": 44.8067,
+   "LNG": -0.6311,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "63808"
+ },
+ {
+   "CITY": "Valence",
+   "LAT": 44.9333,
+   "LNG": 4.8917,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "63714"
+ },
+ {
+   "CITY": "Quimper",
+   "LAT": 47.9967,
+   "LNG": -4.0964,
+   "RÉGION": "Bretagne",
+   "POPULATION": "62985"
+ },
+ {
+   "CITY": "Antony",
+   "LAT": 48.7539,
+   "LNG": 2.2975,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "62570"
+ },
+ {
+   "CITY": "Ivry-sur-Seine",
+   "LAT": 48.8078,
+   "LNG": 2.3747,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "62052"
+ },
+ {
+   "CITY": "Montélimar",
+   "LAT": 44.5581,
+   "LNG": 4.7508,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "61861"
+ },
+ {
+   "CITY": "Troyes",
+   "LAT": 48.2997,
+   "LNG": 4.0792,
+   "RÉGION": "Grand-Est",
+   "POPULATION": "61652"
+ },
+ {
+   "CITY": "Clichy",
+   "LAT": 48.9044,
+   "LNG": 2.3064,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "61070"
+ },
+ {
+   "CITY": "Cherbourg",
+   "LAT": 49.6333,
+   "LNG": -1.6,
+   "RÉGION": "Normandie",
+   "POPULATION": "60991"
+ },
+ {
+   "CITY": "Montauban",
+   "LAT": 44.0181,
+   "LNG": 1.3558,
+   "RÉGION": "Occitanie",
+   "POPULATION": "60810"
+ },
+ {
+   "CITY": "Neuilly-sur-Seine",
+   "LAT": 48.8881,
+   "LNG": 2.2686,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "60361"
+ },
+ {
+   "CITY": "Chambéry",
+   "LAT": 45.57,
+   "LNG": 5.9118,
+   "RÉGION": "Auvergne-Rhône-Alpes",
+   "POPULATION": "58919"
+ },
+ {
+   "CITY": "Niort",
+   "LAT": 46.3258,
+   "LNG": -0.4606,
+   "RÉGION": "Nouvelle-Aquitaine",
+   "POPULATION": "58707"
+ },
+ {
+   "CITY": "Sarcelles",
+   "LAT": 48.9956,
+   "LNG": 2.3808,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "58587"
+ },
+ {
+   "CITY": "Pantin",
+   "LAT": 48.8966,
+   "LNG": 2.4017,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "57482"
+ },
+ {
+   "CITY": "Lorient",
+   "LAT": 47.75,
+   "LNG": -3.36,
+   "RÉGION": "Bretagne",
+   "POPULATION": "57149"
+ },
+ {
+   "CITY": "Le-Blanc-Mesnil",
+   "LAT": 48.9387,
+   "LNG": 2.4614,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "56783"
+ },
+ {
+   "CITY": "Beauvais",
+   "LAT": 49.4303,
+   "LNG": 2.0952,
+   "RÉGION": "Hauts-de-France",
+   "POPULATION": "56020"
+ },
+ {
+   "CITY": "Maisons-Alfort",
+   "LAT": 48.8058,
+   "LNG": 2.4378,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "55655"
+ },
+ {
+   "CITY": "Hyères",
+   "LAT": 43.1199,
+   "LNG": 6.1316,
+   "RÉGION": "Provence-Alpes-Côte-d’Azur",
+   "POPULATION": "55588"
+ },
+ {
+   "CITY": "Épinay-sur-Seine",
+   "LAT": 48.9553,
+   "LNG": 2.3092,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "55084"
+ },
+ {
+   "CITY": "Meaux",
+   "LAT": 48.9603,
+   "LNG": 2.8883,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "54991"
+ },
+ {
+   "CITY": "Chelles",
+   "LAT": 48.8833,
+   "LNG": 2.6,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "54917"
+ },
+ {
+   "CITY": "Villejuif",
+   "LAT": 48.7919,
+   "LNG": 2.3636,
+   "RÉGION": "Île-de-France",
+   "POPULATION": "54753"
+ },
+ {
+   "CITY": "Narbonne",
+   "LAT": 43.1836,
+   "LNG": 3.0042,
+   "RÉGION": "Occitanie",
+   "POPULATION": "54700"
+ }
+]

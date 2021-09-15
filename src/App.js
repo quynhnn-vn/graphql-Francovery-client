@@ -28,8 +28,8 @@ const App = () => {
           <Route path="/home/:option">
             <HomePage />
           </Route>
-          <Route path="/search/:location">
-              <Department />
+          <Route path="/map/:location">
+            <Department />
           </Route>
         </Switch>
       </div>

@@ -1,0 +1,962 @@
+[
+  {
+    "DÉPARTEMENT": "Ain",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "663,720",
+    "SUPERFICIE": 5167,
+    "DENSITÉ": 14.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 21699.6,
+    "TAUX_DE_PAUVRETÉ": 10.8,
+    "SITE_WEB": "http://www.ain.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Aisne",
+    "RÉGION": "Hauts-de-France",
+    "POPULATION": "545,353",
+    "SUPERFICIE": 5565,
+    "DENSITÉ": 20.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 18477.6,
+    "TAUX_DE_PAUVRETÉ": 18.7,
+    "SITE_WEB": "http://aisne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Allier",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "346,156",
+    "SUPERFICIE": 6925,
+    "DENSITÉ": 23.9,
+    "MÉDIANE_DU_NIVEAU_VIE": 19102,
+    "TAUX_DE_PAUVRETÉ": 15.4,
+    "SITE_WEB": "http://www.allier.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Alpes-de-Haute-Provence",
+    "RÉGION": "Provence-Alpes-Côte-d'Azur",
+    "POPULATION": "168,613",
+    "SUPERFICIE": 5726,
+    "DENSITÉ": 25,
+    "MÉDIANE_DU_NIVEAU_VIE": 19149.3,
+    "TAUX_DE_PAUVRETÉ": 17,
+    "SITE_WEB": "http://alpes-de-haute-provence.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Alpes-Maritimes",
+    "RÉGION": "Provence-Alpes-Côte-d'Azur",
+    "POPULATION": "1,100,444",
+    "SUPERFICIE": 5549,
+    "DENSITÉ": 25.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 20532.6,
+    "TAUX_DE_PAUVRETÉ": 16,
+    "SITE_WEB": "http://alpes-maritimes.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Ardèche",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "335,571",
+    "SUPERFICIE": 6211,
+    "DENSITÉ": 27.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 19384.4,
+    "TAUX_DE_PAUVRETÉ": 14.7,
+    "SITE_WEB": "http://www.ardeche.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Ardennes",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "278,300",
+    "SUPERFICIE": 6211,
+    "DENSITÉ": 28.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 18310.7,
+    "TAUX_DE_PAUVRETÉ": 19.4,
+    "SITE_WEB": "http://www.ardennes.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Ariège",
+    "RÉGION": "Occitanie",
+    "POPULATION": "157,120",
+    "SUPERFICIE": 6817,
+    "DENSITÉ": 29.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 18686.2,
+    "TAUX_DE_PAUVRETÉ": 18.2,
+    "SITE_WEB": "http://ariege.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Aube",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "317,139",
+    "SUPERFICIE": 6257,
+    "DENSITÉ": 30.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 19255.3,
+    "TAUX_DE_PAUVRETÉ": 15.6,
+    "SITE_WEB": "http://aube.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Aude",
+    "RÉGION": "Occitanie",
+    "POPULATION": "381,578",
+    "SUPERFICIE": 4890,
+    "DENSITÉ": 31.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 17793.5,
+    "TAUX_DE_PAUVRETÉ": 21.7,
+    "SITE_WEB": "http://www.aude.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Aveyron",
+    "RÉGION": "Occitanie",
+    "POPULATION": "289,583",
+    "SUPERFICIE": 6791,
+    "DENSITÉ": 31.9,
+    "MÉDIANE_DU_NIVEAU_VIE": 19424,
+    "TAUX_DE_PAUVRETÉ": 14.2,
+    "SITE_WEB": "http://www.aveyron.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Bas-Rhin",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "1,149,676",
+    "SUPERFICIE": 8735,
+    "DENSITÉ": 32,
+    "MÉDIANE_DU_NIVEAU_VIE": 21647,
+    "TAUX_DE_PAUVRETÉ": 12.4,
+    "SITE_WEB": "http://bas-rhin.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Bouches-du-Rhône",
+    "RÉGION": "Provence-Alpes-Côte-d'Azur",
+    "POPULATION": "2,058,818",
+    "SUPERFICIE": 5217,
+    "DENSITÉ": 33.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 19955.3,
+    "TAUX_DE_PAUVRETÉ": 18.6,
+    "SITE_WEB": "http://bouches-du-rhone.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Calvados",
+    "RÉGION": "Normandie",
+    "POPULATION": "708,236",
+    "SUPERFICIE": 4666,
+    "DENSITÉ": 40,
+    "MÉDIANE_DU_NIVEAU_VIE": 20045.7,
+    "TAUX_DE_PAUVRETÉ": 12.8,
+    "SITE_WEB": "http://www.calvados.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Cantal",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "149,758",
+    "SUPERFICIE": 4014,
+    "DENSITÉ": 40.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 19030,
+    "TAUX_DE_PAUVRETÉ": 14.4,
+    "SITE_WEB": "http://www.cantal.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Charente",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "360,970",
+    "SUPERFICIE": 5857,
+    "DENSITÉ": 40.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 19450,
+    "TAUX_DE_PAUVRETÉ": 14.9,
+    "SITE_WEB": "http://charente.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Charente-Maritime",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "662,799",
+    "SUPERFICIE": 7235,
+    "DENSITÉ": 41,
+    "MÉDIANE_DU_NIVEAU_VIE": 19800,
+    "TAUX_DE_PAUVRETÉ": 13.6,
+    "SITE_WEB": "http://charente-maritime.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Cher",
+    "RÉGION": "Centre-Val-de-Loire",
+    "POPULATION": "310,656",
+    "SUPERFICIE": 5360,
+    "DENSITÉ": 43.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 19617,
+    "TAUX_DE_PAUVRETÉ": 14.6,
+    "SITE_WEB": "http://cher.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Corrèze",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "248,339",
+    "SUPERFICIE": 7427,
+    "DENSITÉ": 44.9,
+    "MÉDIANE_DU_NIVEAU_VIE": 19537,
+    "TAUX_DE_PAUVRETÉ": 13.6,
+    "SITE_WEB": "http://correze.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Corse-du-Sud",
+    "RÉGION": "Corse",
+    "POPULATION": "160,294",
+    "SUPERFICIE": 6103,
+    "DENSITÉ": 45.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 19731.5,
+    "TAUX_DE_PAUVRETÉ": 17.7,
+    "SITE_WEB": "http://www.corse-du-sud.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Côte-d'Or",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "545,283",
+    "SUPERFICIE": 9243,
+    "DENSITÉ": 45.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 21034.7,
+    "TAUX_DE_PAUVRETÉ": 11.4,
+    "SITE_WEB": "http://www.cote-dor.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Côtes-d'Armor",
+    "RÉGION": "Bretagne",
+    "POPULATION": "617,921",
+    "SUPERFICIE": 7340,
+    "DENSITÉ": 45.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 20018.5,
+    "TAUX_DE_PAUVRETÉ": 11.7,
+    "SITE_WEB": "http://cotes-darmor.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Creuse",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "121,009",
+    "SUPERFICIE": 9060,
+    "DENSITÉ": 45.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 17984,
+    "TAUX_DE_PAUVRETÉ": 18.9,
+    "SITE_WEB": "http://creuse.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Deux-Sèvres",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "385,029",
+    "SUPERFICIE": 4977,
+    "DENSITÉ": 45.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 19584,
+    "TAUX_DE_PAUVRETÉ": 12.5,
+    "SITE_WEB": "https://www.deux-sevres.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Dordogne",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "423,868",
+    "SUPERFICIE": 5229,
+    "DENSITÉ": 50.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 18971,
+    "TAUX_DE_PAUVRETÉ": 16.4,
+    "SITE_WEB": "http://dordogne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Doubs",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "555,190",
+    "SUPERFICIE": 4464,
+    "DENSITÉ": 51.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 20924,
+    "TAUX_DE_PAUVRETÉ": 12.5,
+    "SITE_WEB": "https://www.doubs.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Drôme",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "528,015",
+    "SUPERFICIE": 6343,
+    "DENSITÉ": 51.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 19569.2,
+    "TAUX_DE_PAUVRETÉ": 15.5,
+    "SITE_WEB": "http://www.drome.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Essonne",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,311,028",
+    "SUPERFICIE": 4999,
+    "DENSITÉ": 51.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 22954,
+    "TAUX_DE_PAUVRETÉ": 12.5,
+    "SITE_WEB": "http://essonne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Eure",
+    "RÉGION": "Normandie",
+    "POPULATION": "613,320",
+    "SUPERFICIE": 6004,
+    "DENSITÉ": 51.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 20445,
+    "TAUX_DE_PAUVRETÉ": 12.8,
+    "SITE_WEB": "http://eure.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Eure-et-Loir",
+    "RÉGION": "Centre-Val-de-Loire",
+    "POPULATION": "442,378",
+    "SUPERFICIE": 5956,
+    "DENSITÉ": 58.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 20829,
+    "TAUX_DE_PAUVRETÉ": 11.8,
+    "SITE_WEB": "http://eure-et-loir.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Finistère",
+    "RÉGION": "Bretagne",
+    "POPULATION": "936,959",
+    "SUPERFICIE": 5175,
+    "DENSITÉ": 59,
+    "MÉDIANE_DU_NIVEAU_VIE": 20471.3,
+    "TAUX_DE_PAUVRETÉ": 10.4,
+    "SITE_WEB": "http://finistere.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Gard",
+    "RÉGION": "Occitanie",
+    "POPULATION": "759,050",
+    "SUPERFICIE": 5529,
+    "DENSITÉ": 59.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 18602.8,
+    "TAUX_DE_PAUVRETÉ": 20.3,
+    "SITE_WEB": "https://www.gard.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Gers",
+    "RÉGION": "Occitanie",
+    "POPULATION": "198,043",
+    "SUPERFICIE": 8763,
+    "DENSITÉ": 60.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 19501.3,
+    "TAUX_DE_PAUVRETÉ": 15,
+    "SITE_WEB": "http://gers.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Gironde",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "1,626,287",
+    "SUPERFICIE": 5874,
+    "DENSITÉ": 61.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 20979.3,
+    "TAUX_DE_PAUVRETÉ": 12.6,
+    "SITE_WEB": "https://www.gironde.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Corse",
+    "RÉGION": "Corse",
+    "POPULATION": "183,432",
+    "SUPERFICIE": 6139,
+    "DENSITÉ": 61.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 18200,
+    "TAUX_DE_PAUVRETÉ": 22.5,
+    "SITE_WEB": "http://www.haute-corse.gouv.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Garonne",
+    "RÉGION": "Occitanie",
+    "POPULATION": "1,403,685",
+    "SUPERFICIE": 5361,
+    "DENSITÉ": 61.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 21974.5,
+    "TAUX_DE_PAUVRETÉ": 12.6,
+    "SITE_WEB": "http://haute-garonne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Loire",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "234,434",
+    "SUPERFICIE": 5999,
+    "DENSITÉ": 62.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 19452.8,
+    "TAUX_DE_PAUVRETÉ": 12.7,
+    "SITE_WEB": "http://www.hauteloire.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Marne",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "179,062",
+    "SUPERFICIE": 6990,
+    "DENSITÉ": 62.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 18887.1,
+    "TAUX_DE_PAUVRETÉ": 15.8,
+    "SITE_WEB": "http://haute-marne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Hautes-Alpes",
+    "RÉGION": "Provence-Alpes-Côte-d'Azur",
+    "POPULATION": "145,309",
+    "SUPERFICIE": 8575,
+    "DENSITÉ": 63.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 19386.2,
+    "TAUX_DE_PAUVRETÉ": 14.5,
+    "SITE_WEB": "https://www.hautes-alpes.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Saône",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "242,280",
+    "SUPERFICIE": 5520,
+    "DENSITÉ": 67.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 19177.5,
+    "TAUX_DE_PAUVRETÉ": 14.4,
+    "SITE_WEB": "http://haute-saone.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Savoie",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "838,044",
+    "SUPERFICIE": 5758,
+    "DENSITÉ": 67.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 24375,
+    "TAUX_DE_PAUVRETÉ": 9.4,
+    "SITE_WEB": "http://haute-savoie.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Hautes-Pyrénées",
+    "RÉGION": "Occitanie",
+    "POPULATION": "235,322",
+    "SUPERFICIE": 8162,
+    "DENSITÉ": 68.9,
+    "MÉDIANE_DU_NIVEAU_VIE": 19427.3,
+    "TAUX_DE_PAUVRETÉ": 14.8,
+    "SITE_WEB": "https://www.hautespyrenees.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Haute-Vienne",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "380,092",
+    "SUPERFICIE": 3718,
+    "DENSITÉ": 70.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 19698,
+    "TAUX_DE_PAUVRETÉ": 15.3,
+    "SITE_WEB": "http://haute-vienne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Haut-Rhin",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "779,291",
+    "SUPERFICIE": 7369,
+    "DENSITÉ": 71.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 21963.3,
+    "TAUX_DE_PAUVRETÉ": 12.7,
+    "SITE_WEB": "http://haut-rhin.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Hauts-de-Seine",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,635,499",
+    "SUPERFICIE": 6028,
+    "DENSITÉ": 72.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 25960.7,
+    "TAUX_DE_PAUVRETÉ": 12.2,
+    "SITE_WEB": "http://hauts-de-seine.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Hérault",
+    "RÉGION": "Occitanie",
+    "POPULATION": "1,177,177",
+    "SUPERFICIE": 5880,
+    "DENSITÉ": 72.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 18973.8,
+    "TAUX_DE_PAUVRETÉ": 19.8,
+    "SITE_WEB": "http://herault.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Ille-et-Vilaine",
+    "RÉGION": "Bretagne",
+    "POPULATION": "1,094,018",
+    "SUPERFICIE": 6530,
+    "DENSITÉ": 80.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 20884.6,
+    "TAUX_DE_PAUVRETÉ": 10.5,
+    "SITE_WEB": "http://ille-et-vilaine.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Indre",
+    "RÉGION": "Centre-Val-de-Loire",
+    "POPULATION": "226,338",
+    "SUPERFICIE": 5938,
+    "DENSITÉ": 82.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 19072,
+    "TAUX_DE_PAUVRETÉ": 14.6,
+    "SITE_WEB": "http://indre.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Indre-et-Loire",
+    "RÉGION": "Centre-Val-de-Loire",
+    "POPULATION": "620,014",
+    "SUPERFICIE": 7970,
+    "DENSITÉ": 84,
+    "MÉDIANE_DU_NIVEAU_VIE": 20561,
+    "TAUX_DE_PAUVRETÉ": 12.1,
+    "SITE_WEB": "http://indre-et-loire.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Isère",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "1,288,406",
+    "SUPERFICIE": 6878,
+    "DENSITÉ": 87.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 21406.7,
+    "TAUX_DE_PAUVRETÉ": 11.3,
+    "SITE_WEB": "http://isere.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Jura",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "268,874",
+    "SUPERFICIE": 7645,
+    "DENSITÉ": 90.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 20166.2,
+    "TAUX_DE_PAUVRETÉ": 12.2,
+    "SITE_WEB": "http://jura.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Landes",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "422,602",
+    "SUPERFICIE": 6206,
+    "DENSITÉ": 90.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 20147.8,
+    "TAUX_DE_PAUVRETÉ": 12,
+    "SITE_WEB": "https://www.landes.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Loire",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "777,897",
+    "SUPERFICIE": 6170,
+    "DENSITÉ": 92,
+    "MÉDIANE_DU_NIVEAU_VIE": 19515,
+    "TAUX_DE_PAUVRETÉ": 14.5,
+    "SITE_WEB": "https://www.loire.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Loire-Atlantique",
+    "RÉGION": "Pays-de-la-Loire",
+    "POPULATION": "1,441,302",
+    "SUPERFICIE": 6864,
+    "DENSITÉ": 95.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 20997.3,
+    "TAUX_DE_PAUVRETÉ": 10.2,
+    "SITE_WEB": "http://loire-atlantique.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Loiret",
+    "RÉGION": "Centre-Val-de-Loire",
+    "POPULATION": "693,476",
+    "SUPERFICIE": 6040,
+    "DENSITÉ": 98.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 20790,
+    "TAUX_DE_PAUVRETÉ": 13,
+    "SITE_WEB": "http://loiret.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Loir-et-Cher",
+    "RÉGION": "Centre-Val-de-Loire",
+    "POPULATION": "338,835",
+    "SUPERFICIE": 6127,
+    "DENSITÉ": 99.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 20131.3,
+    "TAUX_DE_PAUVRETÉ": 12.7,
+    "SITE_WEB": "http://loir-et-cher.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Lot",
+    "RÉGION": "Occitanie",
+    "POPULATION": "179,604",
+    "SUPERFICIE": 6775,
+    "DENSITÉ": 101,
+    "MÉDIANE_DU_NIVEAU_VIE": 19506,
+    "TAUX_DE_PAUVRETÉ": 15.1,
+    "SITE_WEB": "https://lot.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Lot-et-Garonne",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "340,356",
+    "SUPERFICIE": 6720,
+    "DENSITÉ": 102.9,
+    "MÉDIANE_DU_NIVEAU_VIE": 18756,
+    "TAUX_DE_PAUVRETÉ": 16.8,
+    "SITE_WEB": "https://www.lotetgaronne.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Lozère",
+    "RÉGION": "Occitanie",
+    "POPULATION": "80,227",
+    "SUPERFICIE": 5234,
+    "DENSITÉ": 103.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 19110,
+    "TAUX_DE_PAUVRETÉ": 15,
+    "SITE_WEB": "http://lozere.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Maine-et-Loire",
+    "RÉGION": "Pays-de-la-Loire",
+    "POPULATION": "835,856",
+    "SUPERFICIE": 6823,
+    "DENSITÉ": 111.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 19687.2,
+    "TAUX_DE_PAUVRETÉ": 11.7,
+    "SITE_WEB": "https://www.maine-et-loire.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Manche",
+    "RÉGION": "Normandie",
+    "POPULATION": "511,983",
+    "SUPERFICIE": 7166,
+    "DENSITÉ": 114.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 19548.1,
+    "TAUX_DE_PAUVRETÉ": 12.5,
+    "SITE_WEB": "http://manche.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Marne",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "579,127",
+    "SUPERFICIE": 5762,
+    "DENSITÉ": 115,
+    "MÉDIANE_DU_NIVEAU_VIE": 20314.3,
+    "TAUX_DE_PAUVRETÉ": 14.3,
+    "SITE_WEB": "http://www.marne.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Mayenne",
+    "RÉGION": "Pays-de-la-Loire",
+    "POPULATION": "316,608",
+    "SUPERFICIE": 4116,
+    "DENSITÉ": 116.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 19530.7,
+    "TAUX_DE_PAUVRETÉ": 11.4,
+    "SITE_WEB": "http://mayenne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Meurthe-et-Moselle",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "745,199",
+    "SUPERFICIE": 5548,
+    "DENSITÉ": 124.9,
+    "MÉDIANE_DU_NIVEAU_VIE": 20397.8,
+    "TAUX_DE_PAUVRETÉ": 14.3,
+    "SITE_WEB": "http://meurthe-et-moselle.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Meuse",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "190,802",
+    "SUPERFICIE": 5853,
+    "DENSITÉ": 128.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 19342.5,
+    "TAUX_DE_PAUVRETÉ": 14.9,
+    "SITE_WEB": "http://meuse.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Morbihan",
+    "RÉGION": "Bretagne",
+    "POPULATION": "776,176",
+    "SUPERFICIE": 6733,
+    "DENSITÉ": 135.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 20302.2,
+    "TAUX_DE_PAUVRETÉ": 11.2,
+    "SITE_WEB": "http://morbihan.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Moselle",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "1,062,362",
+    "SUPERFICIE": 5246,
+    "DENSITÉ": 139.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 20403,
+    "TAUX_DE_PAUVRETÉ": 14.3,
+    "SITE_WEB": "http://moselle.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Nièvre",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "211,256",
+    "SUPERFICIE": 5887,
+    "DENSITÉ": 141,
+    "MÉDIANE_DU_NIVEAU_VIE": 19181.2,
+    "TAUX_DE_PAUVRETÉ": 15.7,
+    "SITE_WEB": "https://nievre.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Nord",
+    "RÉGION": "Hauts-de-France",
+    "POPULATION": "2,636,884",
+    "SUPERFICIE": 3567,
+    "DENSITÉ": 157.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 18740,
+    "TAUX_DE_PAUVRETÉ": 19.1,
+    "SITE_WEB": "http://nord.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Oise",
+    "RÉGION": "Hauts-de-France",
+    "POPULATION": "844,905",
+    "SUPERFICIE": 4781,
+    "DENSITÉ": 160.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 20804.7,
+    "TAUX_DE_PAUVRETÉ": 13,
+    "SITE_WEB": "http://oise.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Orne",
+    "RÉGION": "Normandie",
+    "POPULATION": "289,734",
+    "SUPERFICIE": 6775,
+    "DENSITÉ": 161.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 18864,
+    "TAUX_DE_PAUVRETÉ": 15.8,
+    "SITE_WEB": "http://www.orne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Paris",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "2,192,485",
+    "SUPERFICIE": 10000,
+    "DENSITÉ": 165.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 26194.7,
+    "TAUX_DE_PAUVRETÉ": 16.1,
+    "SITE_WEB": "https://www.paris.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Pas-de-Calais",
+    "RÉGION": "Hauts-de-France",
+    "POPULATION": "1,488,821",
+    "SUPERFICIE": 6216,
+    "DENSITÉ": 167.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 17894,
+    "TAUX_DE_PAUVRETÉ": 20.2,
+    "SITE_WEB": "http://pas-de-calais.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Puy-de-Dôme",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "673,671",
+    "SUPERFICIE": 7431,
+    "DENSITÉ": 171.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 20687.2,
+    "TAUX_DE_PAUVRETÉ": 12.6,
+    "SITE_WEB": "http://www.puy-de-dome.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Pyrénées-Atlantiques",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "698,710",
+    "SUPERFICIE": 5973,
+    "DENSITÉ": 181.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 20696,
+    "TAUX_DE_PAUVRETÉ": 12,
+    "SITE_WEB": "http://pyrenees-atlantiques.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Pyrénées-Orientales",
+    "RÉGION": "Occitanie",
+    "POPULATION": "484,215",
+    "SUPERFICIE": 4388,
+    "DENSITÉ": 191.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 17999.4,
+    "TAUX_DE_PAUVRETÉ": 21.4,
+    "SITE_WEB": "http://pyrenees-orientales.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Rhône",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "1,885,941",
+    "SUPERFICIE": 6101,
+    "DENSITÉ": 196.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 21457,
+    "TAUX_DE_PAUVRETÉ": 13.8,
+    "SITE_WEB": "http://rhone.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Saône-et-Loire",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "568,023",
+    "SUPERFICIE": 6278,
+    "DENSITÉ": 199.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 19588.9,
+    "TAUX_DE_PAUVRETÉ": 13.1,
+    "SITE_WEB": "http://www.sarthe.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Sarthe",
+    "RÉGION": "Pays-de-la-Loire",
+    "POPULATION": "579,120",
+    "SUPERFICIE": 6815,
+    "DENSITÉ": 214.1,
+    "MÉDIANE_DU_NIVEAU_VIE": 19755.5,
+    "TAUX_DE_PAUVRETÉ": 13.2,
+    "SITE_WEB": "http://www.sarthe.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Savoie",
+    "RÉGION": "Auvergne-Rhône-Alpes",
+    "POPULATION": "446,332",
+    "SUPERFICIE": 3525,
+    "DENSITÉ": 216.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 21441.5,
+    "TAUX_DE_PAUVRETÉ": 10.4,
+    "SITE_WEB": "http://savoie.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Seine-et-Marne",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,428,970",
+    "SUPERFICIE": 6671,
+    "DENSITÉ": 218.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 22191.3,
+    "TAUX_DE_PAUVRETÉ": 11.5,
+    "SITE_WEB": "http://seine-et-marne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Seine-Maritime",
+    "RÉGION": "Normandie",
+    "POPULATION": "1,276,877",
+    "SUPERFICIE": 6309,
+    "DENSITÉ": 225.8,
+    "MÉDIANE_DU_NIVEAU_VIE": 19978,
+    "TAUX_DE_PAUVRETÉ": 14.4,
+    "SITE_WEB": "http://seine-maritime.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Seine-Saint-Denis",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,639,416",
+    "SUPERFICIE": 609,
+    "DENSITÉ": 227.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 16726,
+    "TAUX_DE_PAUVRETÉ": 28.6,
+    "SITE_WEB": "http://seine-saint-denis.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Somme",
+    "RÉGION": "Hauts-de-France",
+    "POPULATION": "580,719",
+    "SUPERFICIE": 4755,
+    "DENSITÉ": 241.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 19059.5,
+    "TAUX_DE_PAUVRETÉ": 17,
+    "SITE_WEB": "http://somme.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Tarn",
+    "RÉGION": "Occitanie",
+    "POPULATION": "399,108",
+    "SUPERFICIE": 5915,
+    "DENSITÉ": 242.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 19315,
+    "TAUX_DE_PAUVRETÉ": 15.3,
+    "SITE_WEB": "https://www.tarn.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Tarn-et-Garonne",
+    "RÉGION": "Occitanie",
+    "POPULATION": "264,910",
+    "SUPERFICIE": 4299,
+    "DENSITÉ": 253.4,
+    "MÉDIANE_DU_NIVEAU_VIE": 18848.1,
+    "TAUX_DE_PAUVRETÉ": 17.1,
+    "SITE_WEB": "http://tarn-et-garonne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Territoire-de-Belfort",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "144,992",
+    "SUPERFICIE": 5087,
+    "DENSITÉ": 402.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 20255.3,
+    "TAUX_DE_PAUVRETÉ": 15.2,
+    "SITE_WEB": "http://territoire-de-belfort.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Val-de-Marne",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,405,700",
+    "SUPERFICIE": 5743,
+    "DENSITÉ": 452.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 21674.7,
+    "TAUX_DE_PAUVRETÉ": 16.2,
+    "SITE_WEB": "http://val-de-marne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Val-d'Oise",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,248,901",
+    "SUPERFICIE": 3249,
+    "DENSITÉ": 582.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 20984.8,
+    "TAUX_DE_PAUVRETÉ": 16.6,
+    "SITE_WEB": "http://val-doise.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Var",
+    "RÉGION": "Provence-Alpes-Côte-d'Azur",
+    "POPULATION": "1,084,710",
+    "SUPERFICIE": 2284,
+    "DENSITÉ": 636.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 20118.5,
+    "TAUX_DE_PAUVRETÉ": 15.9,
+    "SITE_WEB": "http://www.var.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Vaucluse",
+    "RÉGION": "Provence-Alpes-Côte-d'Azur",
+    "POPULATION": "570,962",
+    "SUPERFICIE": 1804,
+    "DENSITÉ": 729.3,
+    "MÉDIANE_DU_NIVEAU_VIE": 18521.3,
+    "TAUX_DE_PAUVRETÉ": 20.4,
+    "SITE_WEB": "http://www.vaucluse.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Vendée",
+    "RÉGION": "Pays-de-la-Loire",
+    "POPULATION": "698,731",
+    "SUPERFICIE": 1246,
+    "DENSITÉ": 1011.5,
+    "MÉDIANE_DU_NIVEAU_VIE": 19853.9,
+    "TAUX_DE_PAUVRETÉ": 10.1,
+    "SITE_WEB": "http://www.vendee.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Vienne",
+    "RÉGION": "Nouvelle-Aquitaine",
+    "POPULATION": "447,895",
+    "SUPERFICIE": 245,
+    "DENSITÉ": 5791.7,
+    "MÉDIANE_DU_NIVEAU_VIE": 19816.2,
+    "TAUX_DE_PAUVRETÉ": 13.7,
+    "SITE_WEB": "http://vienne.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Vosges",
+    "RÉGION": "Grand-Est",
+    "POPULATION": "377,569",
+    "SUPERFICIE": 236,
+    "DENSITÉ": 7074.2,
+    "MÉDIANE_DU_NIVEAU_VIE": 19096.7,
+    "TAUX_DE_PAUVRETÉ": 15.8,
+    "SITE_WEB": "http://vosges.gouv.fr"
+  },
+  {
+    "DÉPARTEMENT": "Yonne",
+    "RÉGION": "Bourgogne-Franche-Comté",
+    "POPULATION": "345,991",
+    "SUPERFICIE": 176,
+    "DENSITÉ": 9279.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 19667.5,
+    "TAUX_DE_PAUVRETÉ": 14.3,
+    "SITE_WEB": "https://www.yonne.fr/"
+  },
+  {
+    "DÉPARTEMENT": "Yvelines",
+    "RÉGION": "Île-de-France",
+    "POPULATION": "1,466,448",
+    "SUPERFICIE": 105,
+    "DENSITÉ": 20408.6,
+    "MÉDIANE_DU_NIVEAU_VIE": 25550,
+    "TAUX_DE_PAUVRETÉ": 9.5,
+    "SITE_WEB": "http://yvelines.gouv.fr"
+  }
+]
