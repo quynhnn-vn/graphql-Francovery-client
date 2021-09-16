@@ -7,19 +7,16 @@ import {
 } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Department from "./components/Department";
-import SideBar from "./components/SideBar";
 import Gallery from "./components/Gallery";
+import NewSidebar from "./components/NewSidebar";
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <SideBar />
+        <NewSidebar />
         <Switch>
           <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/home">
             <HomePage />
           </Route>
           <Route exact path="/gallery">
@@ -28,7 +25,7 @@ const App = () => {
           <Route path="/home/:option">
             <HomePage />
           </Route>
-          <Route path="/map/:location">
+          <Route path="/:location/:lat?/:lon?">
             <Department />
           </Route>
         </Switch>

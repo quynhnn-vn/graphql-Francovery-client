@@ -8,16 +8,23 @@ import { annotations } from "../data/annotations";
 export default function Information({ location }) {
   const [locationData, setLocationData] = React.useState({});
 
+  const compareText = (str1, str2) => {
+    str1 = str1.toLowerCase().split(" ").join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    str2 = str2.toLowerCase().split(" ").join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (str1 === str2) return true;
+    else return false;
+  }
+
   React.useEffect(() => {
-    const region = regionsInfo.find((item) => item.RÉGION === location);
+    const region = regionsInfo.find((item) => compareText(item.RÉGION, location));
     if (region) {
       setLocationData(region);
     } else {
-      const department = departementsInfo.find((item) => item.DÉPARTEMENT === location);
+      const department = departementsInfo.find((item) => compareText(item.DÉPARTEMENT, location));
       if (department) {
         setLocationData(department);
       } else {
-        const commune = communesInfo.find((item) => item.COMMUNE === location);
+        const commune = communesInfo.find((item) => compareText(item.COMMUNE, location));
         if (commune) {
           setLocationData(commune);
         } else {
@@ -26,7 +33,7 @@ export default function Information({ location }) {
       }
     }
   }, [location])
-  console.log(locationData)
+  
   return (
     <div className="info-container">
         {locationData ?

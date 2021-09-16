@@ -1,0 +1,126 @@
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    display: flex;
+    align-items: center;
+    img {
+      height: 100px;
+      width: auto;
+    }  
+}
+
+.navbar form {
+    border-radius: 0.7rem;
+    margin-right: 2rem;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    .icons {
+        color: #074A5E;
+    }
+}
+.navbar form {
+    input, button {
+        height: 50px;
+        border: 0;
+        font-size: 15px;
+    }
+    input[type="search"] {
+        width: 100%;
+        background: #fff;
+        padding: 0 10px;
+        border-radius: 0.7rem;
+        transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+        transition-property: width, border-radius;
+        z-index: 1;
+        position: relative;
+    }
+    button[type="submit"] {
+        display: none;
+        width: 50px;
+        font-weight: bold;
+        background: #0082A3;
+        border-radius: 0 0.7rem 0.7rem 0;
+        .nav-icons {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    input:not(:placeholder-shown) {
+        border-radius: 0.7rem 0 0 0.7rem;
+        width: calc(100% - 50px);
+        + button {
+          display: block;
+        }
+    }
+
+} 
+
+.nav-menu {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  &.active {
+    left: 0;
+    transition: 350ms;
+    z-index: 9999;
+  }
+}
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    &:hover {
+        background-color: #0082A3;
+        color: white;
+    }
+  }
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+.nav-icons {
+    color: #0082A3;
+}
