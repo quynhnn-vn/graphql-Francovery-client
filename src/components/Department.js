@@ -5,17 +5,19 @@ import Photos from "./Photos";
 import Articles from "./Articles";
 import Information from "./Information";
 import DepartmentMap from "./DepartmentMap";
+import Weather from "./Weather";
 
 export default function Department() {
   const { location } = useParams();
   return (
     <div className="department-container">
       <Photos location={location} />
-      <div className="map-info-container">
+      <Weather location={location} />
+      {/* <div className="map-info-container">
         <DepartmentMap location={location} />
         <Information location={location} />
       </div>
-      <Articles location={location} />
+      <Articles location={location} /> */}
     </div>
   );
 }
