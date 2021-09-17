@@ -1,68 +1,87 @@
 import React, { useState, useEffect } from "react";
 import {
-//   ComposedChart,
-//   Line,
-//   Legend,
-//   Scatter,
-//   Bar,
+  ComposedChart,
+  Line,
+  Legend,
+  //Scatter,
+  Bar,
   Area,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  AreaChart,
   ResponsiveContainer,
 } from "recharts";
+//import CustomTooltip from "./CustomTooltip";
 
 export default function WeatherChart({ data }) {
-  const [chartData, setChartData] = useState([]);
+  const [tempData, setTempData] = useState([]);
+  const [otherData, setOtherData] = useState([]);
+  const [isTempMode, setIsTempMode] = useState(true);
 
   useEffect(() => {
     if (data && data.weather) {
-      setChartData(
-        data.weather.list.map((item) => {
-          return {
-            temp: item.main.temp,
-            temp_min: item.main.temp_min,
-            temp_max: item.main.temp_max,
-            time: item.dt_txt,
-          };
-        })
-      );
+      setTempData(data.weather.list.map(item => {
+        return {
+          time: item.dt_txt,
+          temp: item.main.temp,
+          feels_like: item.main.feels_like,
+        }
+      }))
+      setOtherData(data.weather.list.map(item => {
+        return {
+          time: item.dt_txt,
+          wind: item.wind.speed,
+          clouds: item.clouds.all,
+          humidity: item.main.humidity,
+        }
+      }))
     } else {
-      setChartData([]);
+      setTempData([]);
+      setOtherData([]);
     }
   }, [data]);
-
+  
   return (
-    <ResponsiveContainer width={600} height={400}>
-      <AreaChart data={chartData}>
-        <Area
-          type="monotone"
-          dataKey="temp"
-          stackId="1"
-          stroke="#8884d8"
-          fill="#8884d8"
-        />
-        <Area
-          type="monotone"
-          dataKey="temp_min"
-          stackId="1"
-          stroke="#82ca9d"
-          fill="#82ca9d"
-        />
-        <Area
-          type="monotone"
-          dataKey="temp_max"
-          stackId="1"
-          stroke="#ffc658"
-          fill="#ffc658"
-        />
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="time" />
-        <YAxis />
-        <Tooltip />
-      </AreaChart>
+    <>
+    <ResponsiveContainer width={600} height={500}>
+      <ComposedChart
+          width={500}
+          height={300}
+          data={isTempMode ? tempData : otherData}
+          margin={{
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20,
+          }}
+        >
+          {isTempMode ? (
+            <>
+            <CartesianGrid stroke="#f5f5f5" strokeDasharray="5 5"/>
+            <XAxis dataKey="time" angle={-45} textAnchor="end"/>
+            <YAxis />
+              {/* <Tooltip content={<CustomTooltip />} /> */}
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="temp" barSize={20} fill="#8884d8" />
+              <Line type="monotone" dataKey="feels_like" stroke="#82ca9d" />
+            </>
+          ) : (
+            <>
+            <CartesianGrid stroke="#f5f5f5" />
+            <XAxis dataKey="time" scale="band" />
+            <YAxis />
+              <Tooltip />
+              <Legend />
+              <Area dataKey="clouds" fill="#413ea0" />
+              <Area dataKey="humidity" fill="#82ca9d" />
+              <Line type="monotone" dataKey="winds" stroke="#82ca9d" />
+            </>
+          )}
+        </ComposedChart>
     </ResponsiveContainer>
+    <button onClick={() => setIsTempMode(!isTempMode)}>{isTempMode ? "Other info" : "Temperature" }</button>
+    </>
   );
 }
