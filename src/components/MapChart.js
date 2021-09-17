@@ -7,9 +7,9 @@ import {
   Marker,
 } from "react-simple-maps";
 import { Link, useParams } from "react-router-dom";
-import franceGeo from "../data/geo/franceGeo.json";
 import departementsGeo from "../data/geo/departementsGeo.json";
 import regionsGeo from "../data/geo/regionsGeo.json";
+import communesGeo from "../data/geo/communesGeo.json";
 import bigcitiesGeo from "../data/geo/bigcitiesGeo.json";
 
 const MapChart = React.memo(({ setTooltipContent }) => {
@@ -21,8 +21,8 @@ const MapChart = React.memo(({ setTooltipContent }) => {
   let bigcitiesData = bigcitiesGeo.slice(0, 10);
 
   if (option === "communes") {
-    geoUrl = franceGeo;
-    bigcitiesData = bigcitiesGeo.slice(0, 50);
+    geoUrl = communesGeo;
+    bigcitiesData = bigcitiesGeo.slice(0, 10);
   } else if (option === "departements") {
     geoUrl = departementsGeo;
   } else {
@@ -68,52 +68,60 @@ const MapChart = React.memo(({ setTooltipContent }) => {
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
               geographies.map((geo) => {
-                const props = geo.properties;
-                return props.NAME_1 ? (
-                  <Link
-                    to={`/${props.NAME_2 ? props.NAME_2.split(" ").join("-") : props.NAME_1.split(" ").join("-")}`}
-                  >
-                    <Geography
+                const { NAME_1, NAME_2, NAME_3, LAT, LNG} = geo.properties;
+                if (NAME_3) {
+                  return (
+                    <Link to={`/${NAME_3.split(" ").join("-")}`}>
+                      <Geography
                       key={geo.rsmKey}
                       geography={geo}
-                      onMouseEnter={() => {
-                        props.NAME_2
-                          ? setTooltipContent(
-                              `${props.NAME_2.split("-").join(
-                                " "
-                              )} - ${props.NAME_1.split("-").join(" ")}`
-                            )
-                          : setTooltipContent(
-                              props.NAME_1.split("-").join(" ")
-                            );
-                      }}
+                      onMouseEnter={() => { setTooltipContent(
+                              `${NAME_3.split("-").join(" ")} - ${NAME_2.split("-").join(" ")}`
+                            )}}
                       onMouseLeave={() => {
                         setTooltipContent("");
                       }}
                       style={chartStyle}
                     />
-                  </Link>
-                ) : (
+                    </Link> )
+                } else if (!NAME_3 && NAME_2) {
+                  return (
+                  <Link to={`/${NAME_2.split(" ").join("-")}`}>
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={() => { setTooltipContent(
+                              `${NAME_2.split("-").join(" ")} - ${NAME_1.split("-").join(" ")}`
+                            )}}
+                      onMouseLeave={() => {
+                        setTooltipContent("");
+                      }}
+                      style={chartStyle}
+                    />
+                  </Link>)
+                } else {
+                  return (
+                  <Link to={`/${NAME_1.split(" ").join("-")}/${LAT}/${LNG}`}>
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    style={{
-                      default: chartStyle.default,
-                      hover: {
-                        fill: "transparent",
-                        stroke: "#0082A3",
-                        outline: "none",
-                      },
+                    onMouseEnter={() => { setTooltipContent(
+                            `${NAME_1.split("-").join(" ")}`
+                          )}}
+                    onMouseLeave={() => {
+                      setTooltipContent("");
                     }}
+                    style={chartStyle}
                   />
-                );
+                </Link> )
+                }
               })
             }
           </Geographies>
           {bigcitiesData.map((city) =>
             loadingMap ? null : (
               <Marker key={city.CITY} coordinates={[city.LNG, city.LAT]}>
-                <Link to={`/${city.CITY.split(" ").join("-")}/${city.LAT}/${city.LNG}`}>
+                <Link to={`/${city.CITY.split(" ").join("-")}`}>
                   <g
                     fill="none"
                     stroke="#074A5E"

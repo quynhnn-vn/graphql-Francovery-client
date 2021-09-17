@@ -8,16 +8,17 @@ import DepartmentMap from "./DepartmentMap";
 import Weather from "./Weather";
 
 export default function Department() {
-  const { location } = useParams();
+  const { location, lat, lon } = useParams();
+
   return (
     <div className="department-container">
       <Photos location={location} />
-      <Weather location={location} />
-      {/* <div className="map-info-container">
+      <Information location={location} />
+      <div className="map-info-container">
         <DepartmentMap location={location} />
-        <Information location={location} />
+        <Weather location={location} lat={lat} lon={lon} />
       </div>
-      <Articles location={location} /> */}
+      <Articles location={location} />
     </div>
   );
 }
