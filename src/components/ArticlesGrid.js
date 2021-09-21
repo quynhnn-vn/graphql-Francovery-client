@@ -12,8 +12,8 @@ export default function ArticlesGrid({ data }) {
   }
   return (
     <div className="article-container">
-    {smallData.map(article => (
-        <a className="card" href={article.url} target="_blank" rel="noreferrer">
+    {smallData.map((article, index) => (
+        <a key={index} className="card" href={article.url} target="_blank" rel="noreferrer">
           <div className="card-header">
             <img src={article.urlToImage} alt=""/>
           </div>
