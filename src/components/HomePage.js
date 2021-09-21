@@ -20,12 +20,12 @@ export default function HomePage() {
       }
   })
   return (
-    <>
+    <div className="homepage-container">
       <video ref={videoRef} autoPlay loop muted style={{opacity: loadingVideo ? 0 : 0.7}}>
         <source src={backgroundVideo} type="video/mp4" />
       </video>
       <MapChart setTooltipContent={setContent}/>
       <ReactTooltip>{content}</ReactTooltip>
-    </>
+    </div>
   );
 }

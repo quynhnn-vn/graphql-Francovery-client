@@ -9,22 +9,38 @@ export default function Information({ location }) {
   const [locationData, setLocationData] = React.useState({});
 
   const compareText = (str1, str2) => {
-    str1 = str1.toLowerCase().split(" ").join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    str2 = str2.toLowerCase().split(" ").join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    str1 = str1
+      .toLowerCase()
+      .split(" ")
+      .join("-")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    str2 = str2
+      .toLowerCase()
+      .split(" ")
+      .join("-")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
     if (str1 === str2) return true;
     else return false;
-  }
+  };
 
   React.useEffect(() => {
-    const region = regionsInfo.find((item) => compareText(item.RÉGION, location));
+    const region = regionsInfo.find((item) =>
+      compareText(item.RÉGION, location)
+    );
     if (region) {
       setLocationData(region);
     } else {
-      const department = departementsInfo.find((item) => compareText(item.DÉPARTEMENT, location));
+      const department = departementsInfo.find((item) =>
+        compareText(item.DÉPARTEMENT, location)
+      );
       if (department) {
         setLocationData(department);
       } else {
-        const commune = communesInfo.find((item) => compareText(item.COMMUNE, location));
+        const commune = communesInfo.find((item) =>
+          compareText(item.COMMUNE, location)
+        );
         if (commune) {
           setLocationData(commune);
         } else {
@@ -32,20 +48,39 @@ export default function Information({ location }) {
         }
       }
     }
-  }, [location])
-  
+  }, [location]);
+
   return (
     <div className="info-container">
-        {locationData ?
-          Object.keys(locationData).map(key => (
-            Object.keys(annotations).map((item, index) => (
-              item === key ? 
-              <div className="info-card" id={index}>
-                <span>{annotations[item][0]}</span>
-                <span>{key.split("_").join(" ")}</span>
-                <span>{annotations[item][1] ? (locationData[key]+" "+annotations[item][1]) : locationData[key]}</span>
-              </div> : null))
-          )) : null}
+      {locationData
+        ? Object.keys(locationData).map((keyItem) =>
+            Object.keys(annotations).map((annoItem, index) =>
+              annoItem === keyItem ? (
+                <div className="info-card" key={index}>
+                  <span>{annotations[annoItem][0]}</span>
+                  <span>{keyItem.split("_").join(" ")}</span>
+                  {keyItem === "SITE_WEB" ? (
+                    <span>
+                      <a
+                        href={locationData[keyItem]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {locationData[keyItem]}
+                      </a>
+                    </span>
+                  ) : (
+                    <span>
+                      {annotations[annoItem][1]
+                        ? locationData[keyItem] + " " + annotations[annoItem][1]
+                        : locationData[keyItem]}
+                    </span>
+                  )}
+                </div>
+              ) : null
+            )
+          )
+        : null}
     </div>
   );
 }

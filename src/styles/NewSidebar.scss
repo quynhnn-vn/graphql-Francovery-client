@@ -1,70 +1,74 @@
 .navbar {
-  background-color: transparent;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-bars {
-    margin-left: 2rem;
-    font-size: 2rem;
-    background: none;
-    display: flex;
-    align-items: center;
-    img {
-      height: 100px;
-      width: auto;
-    }  
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  display: flex;
+  align-items: center;
+  img {
+    height: 100px;
+    width: auto;
+  }
 }
 
 .navbar form {
-    border-radius: 0.7rem;
-    margin-right: 2rem;
+  border-radius: 0.7rem;
+  margin-right: 2rem;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  .icons {
+    color: #074a5e;
+  }
+}
+.navbar form {
+  input,
+  button {
     height: 50px;
-    width: 250px;
-    display: flex;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    .icons {
-        color: #074A5E;
+    border: 0;
+    font-size: 15px;
+  }
+  input[type="search"] {
+    width: 100%;
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 0.7rem;
+    transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+  button[type="submit"] {
+    display: none;
+    width: 50px;
+    font-weight: bold;
+    background: #0082a3;
+    border-radius: 0 0.7rem 0.7rem 0;
+    .nav-icons {
+      text-decoration: none;
+      color: white;
     }
+  }
+  input:not(:placeholder-shown) {
+    border-radius: 0.7rem 0 0 0.7rem;
+    width: calc(100% - 50px);
+    + button {
+      display: block;
+    }
+  }
 }
-.navbar form {
-    input, button {
-        height: 50px;
-        border: 0;
-        font-size: 15px;
-    }
-    input[type="search"] {
-        width: 100%;
-        background: #fff;
-        padding: 0 10px;
-        border-radius: 0.7rem;
-        transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
-        transition-property: width, border-radius;
-        z-index: 1;
-        position: relative;
-    }
-    button[type="submit"] {
-        display: none;
-        width: 50px;
-        font-weight: bold;
-        background: #0082A3;
-        border-radius: 0 0.7rem 0.7rem 0;
-        .nav-icons {
-            text-decoration: none;
-            color: white;
-        }
-    }
-    input:not(:placeholder-shown) {
-        border-radius: 0.7rem 0 0 0.7rem;
-        width: calc(100% - 50px);
-        + button {
-          display: block;
-        }
-    }
-
-} 
 
 .nav-menu {
   background-color: white;
@@ -99,8 +103,8 @@
     padding: 0 16px;
     border-radius: 4px;
     &:hover {
-        background-color: #0082A3;
-        color: white;
+      background-color: #0082a3;
+      color: white;
     }
   }
 }
@@ -117,10 +121,10 @@
   align-items: center;
 }
 
-span {
+li span {
   margin-left: 16px;
 }
 
 .nav-icons {
-    color: #0082A3;
+  color: #0082a3;
 }

@@ -1,3 +1,13 @@
+import React from 'react'
+
+export default function Gallery() {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+
 // import React from 'react'
 // // import { gql, useQuery } from "@apollo/client";
 // // import regionData from "../data/regionData.json";

@@ -1,6 +1,40 @@
 .weather-chart-container {
-
+    width: 100%;
+    border-radius: 0.7rem;
+    border: solid 1px #c4c4c4;
+    h3 {
+        color: white;
+    }
+    button {
+        font-family: inherit;
+        color: white;
+        background: none;
+        border-radius: .5rem;
+        border: solid 1px #c4c4c4;
+        height: 50px;
+        width: 150px;
+        margin: 10px 5px;
+        &:hover {
+            cursor: pointer;
+            background: white;
+            color: #282828;
+            border-color: white;
+        }
+        &:disabled {
+            color: white;
+            background: none;
+            cursor:inherit;
+        }
+    }
 }
+
 .custom-tooltip {
+    display: flex;
+    flex-direction: column;
     background: white;
+    color: #282828;
+    opacity: 0.9;
+    padding: 20px 10px;
+    line-height: 25px;
+    border-radius: .7rem;
 }

@@ -13,10 +13,12 @@ export default function Department() {
   return (
     <div className="department-container">
       <Photos location={location} />
-      <Information location={location} />
-      <div className="map-info-container">
-        <DepartmentMap location={location} />
-        <Weather location={location} lat={lat} lon={lon} />
+      <div className="map-weather-info-container">
+        <Information location={location} />
+        <div className="map-info-container">
+          <DepartmentMap location={location} />
+          <Weather location={location} lat={lat} lon={lon} />
+        </div>
       </div>
       <Articles location={location} />
     </div>
