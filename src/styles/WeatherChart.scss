@@ -1,16 +1,17 @@
 .weather-chart-container {
-    width: 100%;
+    width: 500px;
+    height: 500px;
     border-radius: 0.7rem;
-    border: solid 1px #c4c4c4;
+    background: #333333;
     h3 {
         color: white;
     }
     button {
         font-family: inherit;
         color: white;
-        background: none;
+        background: #282828;
+        border-color: #282828;
         border-radius: .5rem;
-        border: solid 1px #c4c4c4;
         height: 50px;
         width: 150px;
         margin: 10px 5px;
@@ -18,11 +19,8 @@
             cursor: pointer;
             background: white;
             color: #282828;
-            border-color: white;
         }
         &:disabled {
-            color: white;
-            background: none;
             cursor:inherit;
         }
     }

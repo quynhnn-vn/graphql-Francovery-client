@@ -51,6 +51,8 @@ export default function Information({ location }) {
   }, [location]);
 
   return (
+    <div>
+    <h2>À PROPOS</h2>
     <div className="info-container">
       {locationData
         ? Object.keys(locationData).map((keyItem) =>
@@ -81,6 +83,7 @@ export default function Information({ location }) {
             )
           )
         : null}
+    </div>
     </div>
   );
 }

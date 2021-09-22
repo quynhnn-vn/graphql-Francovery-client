@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import "../styles/HomePage.scss";
 import ReactTooltip from "react-tooltip";
 import MapChart from "./MapChart";
-import backgroundVideo from "../data/background.mp4";
 
 export default function HomePage() {
   const [content, setContent] = useState("");
@@ -22,7 +21,7 @@ export default function HomePage() {
   return (
     <div className="homepage-container">
       <video ref={videoRef} autoPlay loop muted style={{opacity: loadingVideo ? 0 : 0.7}}>
-        <source src={backgroundVideo} type="video/mp4" />
+        <source src="/pics/background.mp4" type="video/mp4" />
       </video>
       <MapChart setTooltipContent={setContent}/>
       <ReactTooltip>{content}</ReactTooltip>

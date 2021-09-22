@@ -6,7 +6,6 @@ import * as BsIcons from "react-icons/bs";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NewSidebar.scss";
-import logo from "../data/logo.png";
 
 const SidebarData = [
   {
@@ -33,12 +32,6 @@ const SidebarData = [
     icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
   },
-  {
-    title: "Products",
-    path: "/products",
-    icon: <FaIcons.FaCartPlus />,
-    cName: "nav-text",
-  },
 ];
 
 function NewSidebar() {
@@ -55,14 +48,14 @@ function NewSidebar() {
             <FaIcons.FaBars onClick={showSidebar} className="nav-icons" />
           </Link>
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <img src="/pics/logo.png" alt="logo" />
           </Link>
         </div>
         <form>
           <input
             type="search"
             value={searchTerm}
-            placeholder="Search..."
+            placeholder="Je recherche une commune, un département..."
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <button type="submit">

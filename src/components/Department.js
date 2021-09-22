@@ -6,6 +6,7 @@ import Articles from "./Articles";
 import Information from "./Information";
 import DepartmentMap from "./DepartmentMap";
 import Weather from "./Weather";
+import Footer from "./Footer";
 
 export default function Department() {
   const { location, lat, lon } = useParams();
@@ -13,14 +14,16 @@ export default function Department() {
   return (
     <div className="department-container">
       <Photos location={location} />
-      <div className="map-weather-info-container">
-        <Information location={location} />
+      <Information location={location} />
+      <div>
+        <h2>CARTE & MÉTÉO</h2>
         <div className="map-info-container">
           <DepartmentMap location={location} />
           <Weather location={location} lat={lat} lon={lon} />
         </div>
       </div>
       <Articles location={location} />
+      <Footer />
     </div>
   );
 }

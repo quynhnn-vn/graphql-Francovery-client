@@ -2,20 +2,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 50%;
+  gap: 25px;
+  max-width: 1100px;
+  margin-bottom: 70px;
 }
 .info-card {
   position: relative;
-  height: 150px;
-  width: 170px;
-  margin: 30px;
+  height: 200px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.7rem;
-  border: solid 1px #c4c4c4;
+  background: #333333;
 }
 
 .info-card span {

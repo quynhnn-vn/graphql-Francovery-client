@@ -6,13 +6,14 @@ export default function ArticlesGrid({ data }) {
   const articlesData = data.articles.articles;
   let smallData = [];
   if (articlesData.length > 8) {
-    smallData = articlesData.slice(0, 10);
+    smallData = articlesData.slice(0, 12);
   } else {
     smallData = articlesData;
   }
   return (
     <div>
-      <h1>ACTUALITÉS LIÉES</h1>
+        <h2>ACTUALITÉS LIÉES</h2>
+
       <div className="article-container">
         {smallData.map((article, index) => (
           <a
