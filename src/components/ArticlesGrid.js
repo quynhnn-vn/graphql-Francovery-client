@@ -8,7 +8,7 @@ export default function ArticlesGrid({ data }) {
   return (
     <div>
       <h2>ACTUALITÉS LIÉES</h2>
-      <div className="article-container">
+      <div className="articles-container">
         {articlesData.slice(0, 12).map((article, index) => (
           <a
             key={index}

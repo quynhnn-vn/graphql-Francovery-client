@@ -1,6 +1,7 @@
-.article-container {
+.articles-container {
   display: flex;
   max-width: 1100px;
+  min-height: 100px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;

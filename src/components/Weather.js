@@ -1,6 +1,7 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
 import WeatherChart from "./WeatherChart";
+import Loading from "./Loading";
 
 export const GET_WEATHER = gql`
   query getWeather($location: String, $lat: String, $lon: String) {
@@ -21,7 +22,6 @@ export const GET_WEATHER = gql`
 `;
 
 export default function Weather({ location, lat, lon }) {
-  
   const skip = lat === undefined || lon === undefined;
   const { loading, error, data } = useQuery(
     GET_WEATHER,
@@ -34,10 +34,7 @@ export default function Weather({ location, lat, lon }) {
         }
   );
 
-  if (loading) return "Loading...";
-  if (error) return `Error ${error.message}`;
-  return (
-    <WeatherChart data={data} />
-  )
-
+ if (loading) return <Loading name="weather-chart-container" />;
+  if (error) return `Error! ${error.message}`;
+  return <WeatherChart data={data} />;
 }

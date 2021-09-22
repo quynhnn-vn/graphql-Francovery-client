@@ -1,6 +1,7 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
 import ArticlesGrid from "./ArticlesGrid";
+import Loading from "./Loading";
 
 /** PHOTOS gql query to retreive all photos */
 export const GET_ARTICLES = gql`
@@ -28,7 +29,7 @@ export default function Articles({ location }) {
   const { loading, error, data } = useQuery(GET_ARTICLES, {
     variables: { location },
   });
-  if (loading) return "Loading...";
+  if (loading) return <Loading name="articles-container" />;
   if (error) return `Error! ${error.message}`;
   return <ArticlesGrid data={data} />;
 }
