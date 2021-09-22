@@ -9,21 +9,27 @@ export default function HomePage() {
   const videoRef = useRef(null);
 
   useEffect(() => {
-      if (videoRef) {
-        videoRef.current.addEventListener("loadeddata", () => {
-            setLoadingVideo(false);
-        });
-        videoRef.current.removeEventListener("loadeddata", () => {
-          setLoadingVideo(true);
-        })
-      }
-  })
+    if (videoRef) {
+      videoRef.current.addEventListener("loadeddata", () => {
+        setLoadingVideo(false);
+      });
+      videoRef.current.removeEventListener("loadeddata", () => {
+        setLoadingVideo(true);
+      });
+    }
+  });
   return (
     <div className="homepage-container">
-      <video ref={videoRef} autoPlay loop muted style={{opacity: loadingVideo ? 0 : 0.7}}>
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        style={{ opacity: loadingVideo ? 0 : 0.7 }}
+      >
         <source src="/pics/background.mp4" type="video/mp4" />
       </video>
-      <MapChart setTooltipContent={setContent}/>
+      <MapChart setTooltipContent={setContent} />
       <ReactTooltip>{content}</ReactTooltip>
     </div>
   );

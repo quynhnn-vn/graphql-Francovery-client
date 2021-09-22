@@ -1,4 +1,4 @@
-.navbar {
+.navbar-container {
   background-color: white;
   position: fixed;
   top: 0;
@@ -11,7 +11,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.menu-bars {
+.menu-button {
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
@@ -23,7 +23,7 @@
   }
 }
 
-.navbar form {
+.navbar-container form {
   border-radius: 0.7rem;
   margin-right: 2rem;
   height: 50px;
@@ -34,7 +34,7 @@
     color: #074a5e;
   }
 }
-.navbar form {
+.navbar-container form {
   input,
   button {
     height: 50px;
@@ -93,9 +93,10 @@
   align-items: center;
   list-style: none;
   height: 60px;
+  margin: auto 20px;
   a {
     text-decoration: none;
-    color: black;
+    color: #074A5E;
     font-size: 18px;
     width: 95%;
     height: 100%;
@@ -111,12 +112,13 @@
 }
 
 .nav-menu-items {
-  width: 100%;
+  padding: 0;
 }
 
 .navbar-toggle {
   width: 100%;
   height: 80px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -128,4 +130,10 @@ li span {
 
 .nav-icons {
   color: #0082a3;
+  padding: 10px;
+  &:hover {
+    color: white;
+    background: #0082a3;
+    border-radius: 4px;
+  }
 }

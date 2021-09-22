@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Information.scss";
+
 import regionsInfo from "../data/info/regionsInfo.json";
 import departementsInfo from "../data/info/departementsInfo.json";
 import communesInfo from "../data/info/communesInfo.json";
@@ -22,10 +23,10 @@ export default function Information({ location }) {
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
     if (str1 === str2) return true;
-    else return false;
+    return false;
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const region = regionsInfo.find((item) =>
       compareText(item.RÉGION, location)
     );
@@ -52,38 +53,40 @@ export default function Information({ location }) {
 
   return (
     <div>
-    <h2>À PROPOS</h2>
-    <div className="info-container">
-      {locationData
-        ? Object.keys(locationData).map((keyItem) =>
-            Object.keys(annotations).map((annoItem, index) =>
-              annoItem === keyItem ? (
-                <div className="info-card" key={index}>
-                  <span>{annotations[annoItem][0]}</span>
-                  <span>{keyItem.split("_").join(" ")}</span>
-                  {keyItem === "SITE_WEB" ? (
-                    <span>
-                      <a
-                        href={locationData[keyItem]}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {locationData[keyItem]}
-                      </a>
-                    </span>
-                  ) : (
-                    <span>
-                      {annotations[annoItem][1]
-                        ? locationData[keyItem] + " " + annotations[annoItem][1]
-                        : locationData[keyItem]}
-                    </span>
-                  )}
-                </div>
-              ) : null
+      <h2>À PROPOS</h2>
+      <div className="info-container">
+        {locationData
+          ? Object.keys(locationData).map((keyItem) =>
+              Object.keys(annotations).map((annoItem, index) =>
+                annoItem === keyItem ? (
+                  <div className="info-card" key={index}>
+                    <span>{annotations[annoItem][0]}</span>
+                    <span>{keyItem.split("_").join(" ")}</span>
+                    {keyItem === "SITE_WEB" ? (
+                      <span>
+                        <a
+                          href={locationData[keyItem]}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {locationData[keyItem]}
+                        </a>
+                      </span>
+                    ) : (
+                      <span>
+                        {annotations[annoItem][1]
+                          ? locationData[keyItem] +
+                            " " +
+                            annotations[annoItem][1]
+                          : locationData[keyItem]}
+                      </span>
+                    )}
+                  </div>
+                ) : null
+              )
             )
-          )
-        : null}
-    </div>
+          : null}
+      </div>
     </div>
   );
 }

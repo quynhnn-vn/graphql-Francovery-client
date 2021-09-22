@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/DepartmentMap.scss";
 
-export default function DepartmentMap({ location }) {
+export default function GoogleMap({ location }) {
   return (
     <div className="google-map">
       <iframe

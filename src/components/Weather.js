@@ -7,22 +7,12 @@ export const GET_WEATHER = gql`
     weather(location: $location, lat: $lat, lon: $lon) {
       list {
         dt_txt
-        wind {
-          speed
-        }
         clouds {
           all
-        }
-        weather {
-          main
-          description
-          icon
         }
         main {
           temp
           feels_like
-          temp_min
-          temp_max
           humidity
         }
       }

@@ -1,17 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/PhotoSlideshow.scss";
 
-const delay = 5000;
-
 export default function PhotoSlideshow({ data, location }) {
   const [slideNumber, setSlideNumber] = useState(0);
   const timeoutRef = useRef(null);
+
   const photosData = data.photos.results;
-  function resetTimeout() {
+  const delay = 5000;
+
+  const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-  }
+  };
 
   useEffect(() => {
     resetTimeout();
@@ -28,16 +29,19 @@ export default function PhotoSlideshow({ data, location }) {
   }, [slideNumber, photosData.length]);
 
   return (
-    <div className="slideshow">
+    <div className="slideshow-container">
       <h2>{location.split("-").join(" ").toUpperCase()}</h2>
       <div
-        className="slideshowSlider"
+        className="slideshow-slider"
         style={{ transform: `translate3d(${-slideNumber * 100}%, 0, 0)` }}
       >
         {photosData.map((photo) => (
           <div className="slideset" key={photo.id}>
             <img className="slide" src={photo.urls.regular} alt="" />
-            <div className="author" aria-current={photo.user.portfolio_url ? "" : "disabled"}>
+            <div
+              className="author"
+              aria-current={photo.user.portfolio_url ? "" : "disabled"}
+            >
               <a
                 href={photo.user.portfolio_url}
                 target="_blank"
@@ -50,11 +54,11 @@ export default function PhotoSlideshow({ data, location }) {
           </div>
         ))}
       </div>
-      <div className="slideshowDots">
+      <div className="slideshow-dots">
         {photosData.map((_, index) => (
           <div
             key={index}
-            className={`slideshowDot${slideNumber === index ? " active" : ""}`}
+            className={`slideshow-dot${slideNumber === index ? " active" : ""}`}
             onClick={() => {
               setSlideNumber(index);
             }}

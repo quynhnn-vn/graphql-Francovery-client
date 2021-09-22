@@ -4,7 +4,7 @@ import ArticlesGrid from "./ArticlesGrid";
 
 /** PHOTOS gql query to retreive all photos */
 export const GET_ARTICLES = gql`
-query getArticles($location: String!) {
+  query getArticles($location: String!) {
     articles(location: $location) {
       articles {
         title
@@ -30,7 +30,5 @@ export default function Articles({ location }) {
   });
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
-  return (
-    <ArticlesGrid data={data}/>
-  );
+  return <ArticlesGrid data={data} />;
 }

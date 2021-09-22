@@ -1,14 +1,15 @@
 import React from "react";
-import "../styles/Department.scss";
+import "../styles/LocationDetails.scss";
+
 import { useParams } from "react-router";
 import Photos from "./Photos";
 import Articles from "./Articles";
 import Information from "./Information";
-import DepartmentMap from "./DepartmentMap";
+import GoogleMap from "./GoogleMap";
 import Weather from "./Weather";
 import Footer from "./Footer";
 
-export default function Department() {
+export default function LocationDetails() {
   const { location, lat, lon } = useParams();
 
   return (
@@ -18,7 +19,7 @@ export default function Department() {
       <div>
         <h2>CARTE & MÉTÉO</h2>
         <div className="map-info-container">
-          <DepartmentMap location={location} />
+          <GoogleMap location={location} />
           <Weather location={location} lat={lat} lon={lon} />
         </div>
       </div>

@@ -18,7 +18,6 @@ export const GET_PHOTOS = gql`
         }
         urls {
           regular
-          full
         }
       }
     }
@@ -34,7 +33,5 @@ export default function Photos({ location }) {
   });
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
-  return (
-    <PhotoSlideshow data={data} location={location} />
-  )
+  return <PhotoSlideshow data={data} location={location} />;
 }

@@ -1,51 +1,52 @@
+import React, { useState } from "react";
+import "../styles/Sidebar.scss";
+import { Link, useHistory } from "react-router-dom";
+
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
 import * as BsIcons from "react-icons/bs";
-
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "../styles/NewSidebar.scss";
 
 const SidebarData = [
   {
-    title: "Home",
+    title: "Accueil",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiIcons.AiOutlineHome />,
     cName: "nav-text",
   },
   {
     title: "Régions",
     path: "/home/regions",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <BsIcons.BsMap />,
     cName: "nav-text",
   },
   {
     title: "Départements",
     path: "/home/departements",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <BsIcons.BsMap />,
     cName: "nav-text",
   },
   {
     title: "Communes",
     path: "/home/communes",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <BsIcons.BsMap />,
     cName: "nav-text",
   },
 ];
 
-function NewSidebar() {
-  const [sidebar, setSidebar] = useState(false);
+function Sidebar() {
+  const history = useHistory();
+  const [isShowSidebar, setIsShowSidebar] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-
-  const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
-      <div className="navbar">
-        <div className="menu-bars">
+      <div className="navbar-container">
+        <div className="menu-button">
           <Link to="#">
-            <FaIcons.FaBars onClick={showSidebar} className="nav-icons" />
+            <FaIcons.FaBars
+              className="nav-icons"
+              onClick={() => setIsShowSidebar(!isShowSidebar)}
+            />
           </Link>
           <Link to="/">
             <img src="/pics/logo.png" alt="logo" />
@@ -57,18 +58,28 @@ function NewSidebar() {
             value={searchTerm}
             placeholder="Je recherche une commune, un département..."
             onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyPress={(e) => {
+              if (e.key === "Enter" && searchTerm) {
+                history.push(`/${searchTerm.split(" ").join("-")}`);
+              }
+            }}
           />
           <button type="submit">
-            <Link to={`/${searchTerm.split(" ").join("-")}`}>
+            <Link
+              to={searchTerm ? `/${searchTerm.split(" ").join("-")}` : null}
+            >
               <BsIcons.BsSearch className="nav-icons" />
             </Link>
           </button>
         </form>
       </div>
-      <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <ul className="nav-menu-items" onClick={showSidebar}>
+      <nav className={isShowSidebar ? "nav-menu active" : "nav-menu"}>
+        <ul
+          className="nav-menu-items"
+          onClick={() => setIsShowSidebar(!isShowSidebar)}
+        >
           <li className="navbar-toggle">
-            <Link to="#" className="menu-bars">
+            <Link to="#" className="menu-button">
               <AiIcons.AiOutlineClose className="nav-icons" />
             </Link>
           </li>
@@ -88,4 +99,4 @@ function NewSidebar() {
   );
 }
 
-export default NewSidebar;
+export default Sidebar;

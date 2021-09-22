@@ -4,18 +4,12 @@ import moment from "moment";
 
 export default function ArticlesGrid({ data }) {
   const articlesData = data.articles.articles;
-  let smallData = [];
-  if (articlesData.length > 8) {
-    smallData = articlesData.slice(0, 12);
-  } else {
-    smallData = articlesData;
-  }
+
   return (
     <div>
-        <h2>ACTUALITÉS LIÉES</h2>
-
+      <h2>ACTUALITÉS LIÉES</h2>
       <div className="article-container">
-        {smallData.map((article, index) => (
+        {articlesData.slice(0, 12).map((article, index) => (
           <a
             key={index}
             className="card"
@@ -32,7 +26,7 @@ export default function ArticlesGrid({ data }) {
             </div>
             <div className="card-source">
               <h5>{article.source.name}</h5>
-              <small>{moment(article.publishedAt).fromNow()}</small>
+              <p>{moment(article.publishedAt).fromNow()}</p>
             </div>
           </a>
         ))}

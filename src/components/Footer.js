@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Footer.scss";
 
-const copyright = [
+const licenseData = [
   {
     logo: "/pics/unsplash-logo.png",
     url: "https://unsplash.com/developers",
@@ -23,7 +23,7 @@ const copyright = [
 export default function Footer() {
   return (
     <div className="footer-container">
-      {copyright.map((item, index) => (
+      {licenseData.map((item, index) => (
         <a key={index} href={item.url} target="_blank" rel="noreferrer">
           <img src={item.logo} alt="logo" />
         </a>

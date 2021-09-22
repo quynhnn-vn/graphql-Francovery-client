@@ -1,37 +1,28 @@
-import "./App.css";
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import Department from "./components/Department";
-import Gallery from "./components/Gallery";
-import NewSidebar from "./components/NewSidebar";
+import LocationDetails from "./components/LocationDetails";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <NewSidebar />
+        <Sidebar />
         <Switch>
           <Route exact path="/">
             <HomePage />
-          </Route>
-          <Route exact path="/gallery">
-            <Gallery />
           </Route>
           <Route path="/home/:option">
             <HomePage />
           </Route>
           <Route path="/:location/:lat?/:lon?">
-            <Department />
+            <LocationDetails />
           </Route>
         </Switch>
       </div>
     </Router>
-  )
+  );
 };
 
 export default App;
