@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/DepartmentMap.scss";
+import "../styles/GoogleMap.scss";
 
 export default function GoogleMap({ location }) {
   return (
