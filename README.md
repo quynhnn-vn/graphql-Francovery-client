@@ -1,6 +1,6 @@
 # React & GraphQL Apollo Server: Francovery
 
-This project was created for foreigners who want to learn about France, especially about administrative divions.
+This project was created for foreigners who want to learn about France, especially about administrative divisions.
 This website includes the following functions:
 
 At homepage:
