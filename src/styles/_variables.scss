@@ -4,18 +4,22 @@ $black: #333333;
 $darkBlack: #282828;
 $white: #ffffff;
 $grey: #f5f5f5;
-
 $borderRadius: 0.7rem;
-$small: 50px;
-$medium: 350px;
-$large: 500px;
-$x-large: 1100px;
 
-:export {
-    skyBlue: $skyBlue;
-    darkBlue: $darkBlue;
-    black: $black;
-    darkblack: $darkBlack;
-    grey: $grey;
-    white: $white;
+@mixin set-position($top: 0, $left: 0) {
+    top: $top;
+    left: $left;
+}
+
+@mixin set-size($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin set-flex($justify-content: center, $align-items: center, $flex-direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
 }

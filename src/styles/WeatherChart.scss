@@ -1,21 +1,19 @@
 @import 'variables';
 
 .weather-chart-container {
-    width: 500px;
-    height: 500px;
-    border-radius: 0.7rem;
+    @include set-size(500px, 500px);
+    border-radius: $borderRadius;
     background: $black;
     h3 {
         color: $white;
     }
     button {
+        @include set-size(150px, 50px);
         font-family: inherit;
         color: $white;
         background: $darkBlack;
         border-color: $darkBlack;
-        border-radius: .5rem;
-        height: 50px;
-        width: 150px;
+        border-radius: $borderRadius;
         margin: 10px 5px;
         &:hover {
             cursor: pointer;
@@ -23,7 +21,7 @@
             color: $darkBlack;
         }
         &:disabled {
-            cursor: inherit;
+            cursor: default;
             color: $white;
             background: $darkBlack;
             border-color: $darkBlack;
@@ -32,12 +30,11 @@
 }
 
 .custom-tooltip {
-    display: flex;
-    flex-direction: column;
+    @include set-flex(center, center, column);
     background: $white;
     color: $darkBlack;
     opacity: 0.9;
     padding: 20px 10px;
     line-height: 25px;
-    border-radius: .7rem;
+    border-radius: $borderRadius;
 }

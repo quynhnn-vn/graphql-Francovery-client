@@ -2,6 +2,6 @@
 
 .loading {
     color: $white;
-    max-width: 10%;
+    @include set-size(50px !important, auto) ;
     background-color: $darkBlack !important;
 }

@@ -1,11 +1,12 @@
+@import 'variables';
+
 .homepage-container {
   margin-top: 107px;
 }
 video {
     position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
+    @include set-size(100%, auto);
+    @include set-position(0, 0);
     z-index: -1;
     transition: opacity 2s ease-in-out;
 }

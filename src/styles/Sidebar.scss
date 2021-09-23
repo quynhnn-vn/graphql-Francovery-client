@@ -1,36 +1,31 @@
 @import 'variables';
 
 .navbar-container {
-  background-color: $white;
   position: fixed;
+  @include set-size(100%);
+  @include set-flex(space-between, center);
   top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: $white;
   z-index: 9999;
   opacity: 0.9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-button {
+  @include set-flex(center, center);
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
-  display: flex;
-  align-items: center;
   img {
-    height: 100px;
-    width: auto;
+    @include set-size(auto, 100px);
   }
 }
 
 .navbar-container form {
-  border-radius: 0.7rem;
+  @include set-size(350px, 50px);
+  @include set-flex;
+  border-radius: $borderRadius;
   margin-right: 2rem;
-  height: 50px;
-  width: 350px;
-  display: flex;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   .icons {
     color: $darkBlue;
@@ -39,15 +34,15 @@
 .navbar-container form {
   input,
   button {
-    height: 50px;
-    border: 0;
+    @include set-size(auto, 50px);
+    border: none;
     font-size: 15px;
   }
   input[type="search"] {
-    width: 100%;
+    @include set-size(100%, 100%);
     background: $white;
     padding: 0 10px;
-    border-radius: 0.7rem;
+    border-radius: $borderRadius;
     transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
     transition-property: width, border-radius;
     z-index: 1;
@@ -55,17 +50,17 @@
   }
   button[type="submit"] {
     display: none;
-    width: 50px;
+    @include set-size(50px, 100%);
     font-weight: bold;
     background: $skyBlue;
-    border-radius: 0 0.7rem 0.7rem 0;
+    border-radius: 0 $borderRadius $borderRadius 0;
     .nav-icons {
       text-decoration: none;
       color: $white;
     }
   }
   input:not(:placeholder-shown) {
-    border-radius: 0.7rem 0 0 0.7rem;
+    border-radius: $borderRadius 0 0 $borderRadius;
     width: calc(100% - 50px);
     + button {
       display: block;
@@ -74,38 +69,32 @@
 }
 
 .nav-menu {
-  background-color: $white;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   position: fixed;
-  top: 0;
-  left: -100%;
+  @include set-position(0,-100%);
+  @include set-size(auto, 100%);
+  @include set-flex(center, flex-start);
+  background-color: $white;
   transition: 850ms;
   &.active {
-    left: 0;
+    @include set-position(0, 0);
     transition: 350ms;
     z-index: 9999;
   }
 }
 
 .nav-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include set-flex(flex-start, center);
+  @include set-size(auto, 60px);
   list-style: none;
-  height: 60px;
   margin: auto 20px;
   a {
+    @include set-size(95%, 100%);
+    @include set-flex(flex-start, center);
     text-decoration: none;
     color: $darkBlue;
     font-size: 18px;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
     padding: 0 16px;
-    border-radius: 4px;
+    border-radius: $borderRadius;
     &:hover {
       background-color: $skyBlue;
       color: $white;
@@ -118,12 +107,9 @@
 }
 
 .navbar-toggle {
-  width: 100%;
-  height: 80px;
+  @include set-size(100%, 80px);
+  @include set-flex(flex-start, center);
   margin-bottom: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 li span {
