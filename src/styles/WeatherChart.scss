@@ -1,27 +1,32 @@
+@import 'variables';
+
 .weather-chart-container {
     width: 500px;
     height: 500px;
     border-radius: 0.7rem;
-    background: #333333;
+    background: $black;
     h3 {
-        color: white;
+        color: $white;
     }
     button {
         font-family: inherit;
-        color: white;
-        background: #282828;
-        border-color: #282828;
+        color: $white;
+        background: $darkBlack;
+        border-color: $darkBlack;
         border-radius: .5rem;
         height: 50px;
         width: 150px;
         margin: 10px 5px;
         &:hover {
             cursor: pointer;
-            background: white;
-            color: #282828;
+            background: $white;
+            color: $darkBlack;
         }
         &:disabled {
-            cursor:inherit;
+            cursor: inherit;
+            color: $white;
+            background: $darkBlack;
+            border-color: $darkBlack;
         }
     }
 }
@@ -29,8 +34,8 @@
 .custom-tooltip {
     display: flex;
     flex-direction: column;
-    background: white;
-    color: #282828;
+    background: $white;
+    color: $darkBlack;
     opacity: 0.9;
     padding: 20px 10px;
     line-height: 25px;

@@ -1,5 +1,7 @@
+@import 'variables';
+
 .loading {
-    color: white;
+    color: $white;
     max-width: 10%;
-    background-color: #282828 !important;
+    background-color: $darkBlack !important;
 }

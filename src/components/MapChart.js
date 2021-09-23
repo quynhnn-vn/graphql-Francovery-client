@@ -35,9 +35,10 @@ const MapChart = React.memo(({ setTooltipContent }) => {
 
   const chartStyle = {
     default: {
-      fill: "transparent",
+      fill: "#f5f5f5",
       stroke: "#0082a3",
       outline: "none",
+      opacity: "0.5",
     },
     hover: {
       fill: "#074a5e",

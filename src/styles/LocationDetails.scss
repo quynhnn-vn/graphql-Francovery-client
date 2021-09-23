@@ -1,9 +1,11 @@
+@import 'variables';
+
 .department-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: #282828;
+    background: $darkBlack;
 }
 .map-info-container {
     max-width: 100%;

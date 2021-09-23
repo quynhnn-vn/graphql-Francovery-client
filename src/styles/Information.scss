@@ -1,3 +1,5 @@
+@import 'variables';
+
 .info-container {
   display: flex;
   flex-wrap: wrap;
@@ -15,17 +17,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.7rem;
-  background: #333333;
+  background: $black;
 }
 
 .info-card span {
-  color: white;
+  color: $white;
   margin: 0 10px;
 }
 .info-card span a {
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: $white;
   word-break: break-all;
   &:hover {
       text-decoration: underline;

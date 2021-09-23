@@ -1,0 +1,21 @@
+$skyBlue: #0082a3;
+$darkBlue: #074a5e;
+$black: #333333;
+$darkBlack: #282828;
+$white: #ffffff;
+$grey: #f5f5f5;
+
+$borderRadius: 0.7rem;
+$small: 50px;
+$medium: 350px;
+$large: 500px;
+$x-large: 1100px;
+
+:export {
+    skyBlue: $skyBlue;
+    darkBlue: $darkBlue;
+    black: $black;
+    darkblack: $darkBlack;
+    grey: $grey;
+    white: $white;
+}
