@@ -2,6 +2,7 @@
 
 .department-container {
     @include set-flex(space-between, center, column);
+    @include set-size(100%, auto);
     background: $darkBlack;
 }
 .map-info-container {

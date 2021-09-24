@@ -1,12 +1,12 @@
 @import 'variables';
 
 .footer-container {
-    @include set-size(100%, 100px);
+    @include set-size(100%, auto);
     @include set-flex(space-evenly, center);
-    gap: 20px;
+    column-gap: 20px;
     background: $black;
     img {
-        width: 150px;
+        max-width: 120px;
     }
     a:hover {
         opacity: 0.6;

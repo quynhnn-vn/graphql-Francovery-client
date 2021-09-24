@@ -1,8 +1,8 @@
-@import 'variables';
+@import "variables";
 
 .navbar-container {
   position: fixed;
-  @include set-size(100%);
+  @include set-size(100%, 100px);
   @include set-flex(space-between, center);
   top: 0;
   background-color: $white;
@@ -17,12 +17,12 @@
   font-size: 2rem;
   background: none;
   img {
-    @include set-size(auto, 100px);
+    max-height: 90px;
   }
 }
 
 .navbar-container form {
-  @include set-size(350px, 50px);
+  @include set-size(25%, 50%);
   @include set-flex;
   border-radius: $borderRadius;
   margin-right: 2rem;
@@ -70,7 +70,7 @@
 
 .nav-menu {
   position: fixed;
-  @include set-position(0,-100%);
+  @include set-position(0, -100%);
   @include set-size(auto, 100%);
   @include set-flex(center, flex-start);
   background-color: $white;
@@ -88,7 +88,7 @@
   list-style: none;
   margin: auto 20px;
   a {
-    @include set-size(95%, 100%);
+    @include set-size(100%, 100%);
     @include set-flex(flex-start, center);
     text-decoration: none;
     color: $darkBlue;
@@ -118,10 +118,44 @@ li span {
 
 .nav-icons {
   color: $skyBlue;
-  padding: 10px;
   &:hover {
     color: $white;
     background: $skyBlue;
     border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-button {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    max-width: 60%;
+    img {
+      max-height: 70px;
+    }
+  }
+  .navbar-container form {
+    max-width: 30%;
+    max-height: 50%;
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-container {
+    max-width: 100%;
+    max-height: fit-content;
+  }
+  .menu-button {
+    margin-left: 0.5rem;
+    max-width: 70%;
+    img {
+      max-height: 50px;
+    }
+  }
+  .navbar-container form {
+    width: 30%;
+    max-height: 40%;
+    margin-right: 0.5rem;
   }
 }

@@ -56,7 +56,7 @@ function Sidebar() {
           <input
             type="search"
             value={searchTerm}
-            placeholder="Je recherche une commune, un département..."
+            placeholder="Je recherche ..."
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={(e) => {
               if (e.key === "Enter" && searchTerm) {

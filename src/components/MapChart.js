@@ -18,6 +18,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
   const { option } = useParams();
   const [loadingMap, setLoadingMap] = useState(true);
   const [screenWidth, setScreenWidth] = useState(0);
+  const [screenHeight, setScreenHeight] = useState(0);
 
   let geoUrl;
   if (option === "communes") {
@@ -31,6 +32,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
   useEffect(() => {
     setLoadingMap(false);
     setScreenWidth(window.innerWidth);
+    setScreenHeight(window.innerHeight);
   }, []);
 
   const chartStyle = {
@@ -46,25 +48,35 @@ const MapChart = React.memo(({ setTooltipContent }) => {
     },
   };
 
+  const configProjection = () => {
+    if (screenWidth > 768) {
+      return {
+        rotate: [-2, -45.7, 0],
+        scale: screenWidth * 2.5,
+      }
+    } else if (screenWidth > 600 && screenWidth <= 768) {
+      return {
+        rotate: [-2, -45.7, 0],
+        scale: screenWidth * 4,
+      }
+    } else {
+      return {
+        rotate: [-2, -45.7, 0],
+        scale: screenWidth * 5.5,
+      }
+    }   
+  }
+
   return (
     <div className="map-chart">
       <ComposableMap
         data-tip=""
         projection="geoAzimuthalEqualArea"
-        projectionConfig={
-          screenWidth > 600
-            ? {
-                rotate: [-2, -46.5, 0],
-                scale: 2000,
-              }
-            : {
-                rotate: [-2.5, -46.5, 0],
-                scale: 4000,
-              }
-        }
-        height={screenWidth > 600 ? 350 : 800}
+        projectionConfig={configProjection()}
+        height={screenHeight}
+        width={screenWidth}
       >
-        <ZoomableGroup>
+        <ZoomableGroup zoom={1}>
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
               geographies.map((geo) => {
@@ -167,7 +179,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
                     y={10}
                     style={{
                       fill: "#4e4c4c",
-                      fontSize: "10px",
+                      fontSize: "15px",
                     }}
                   >
                     {city.CITY}
