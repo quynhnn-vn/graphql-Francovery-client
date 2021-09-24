@@ -60,6 +60,7 @@ function Sidebar() {
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={(e) => {
               if (e.key === "Enter" && searchTerm) {
+                e.preventDefault();
                 history.push(`/${searchTerm.split(" ").join("-")}`);
               }
             }}

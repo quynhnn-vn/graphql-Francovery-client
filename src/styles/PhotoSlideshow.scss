@@ -81,9 +81,9 @@
     left: 50%;
   }
   .slideset {
-    @include set-size(100%, 300px);
+    @include set-size(100%, 400px);
   }
   .slide {
-    @include set-size(auto, 300px);
+    @include set-size(auto, 400px);
   }
 }
