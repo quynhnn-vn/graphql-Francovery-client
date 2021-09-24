@@ -5,8 +5,8 @@
 }
 .info-container {
   max-width: 100%;
-  @include set-flex(space-between, center);
-  gap: 25px;
+  @include set-flex(center, center);
+  gap: 53px;
   margin-bottom: 100px;
 }
 .info-card {
