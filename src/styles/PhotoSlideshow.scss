@@ -10,7 +10,6 @@
   position: absolute;
   z-index: 1;
   max-width: 150px;
-  //@include set-position(8px, 45px);
 }
 .slideshow-slider {
   white-space: nowrap;
@@ -26,7 +25,6 @@
 .slide {
   object-fit: cover;
   @include set-size(auto, 600px);
-  max-width: 1100px;
 }
 .author {
   position: absolute;
@@ -76,9 +74,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-}
-
-@media only screen and (max-width: 600px) {
-
+  .slideshow-container {
+    max-width: 100%;
+  }
+  .slideshow-container h2 {
+    left: 50%;
+  }
+  .slideset {
+    @include set-size(100%, 300px);
+  }
+  .slide {
+    @include set-size(auto, 300px);
+  }
 }

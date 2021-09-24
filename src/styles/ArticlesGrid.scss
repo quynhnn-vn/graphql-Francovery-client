@@ -14,7 +14,7 @@
   background: $black;
   border-radius: $borderRadius;
   overflow: hidden;
-  @include set-size(20%, 400px);
+  @include set-size(230px, 400px);
   text-decoration: none;
   color: $white;
 }
@@ -23,7 +23,8 @@
   object-fit: cover;
 }
 .card-body {
-  @include set-flex(center, center, column);
+  @include set-flex(space-between, center, column);
+  row-gap: 10px;
   padding: 0 7px;
 }
 .card-body p {
@@ -39,4 +40,17 @@
   h5 {
     margin: 0;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .acticles-list-container {
+    max-width: 90%;
+  }
+  .articles-container {
+    @include set-flex(center, center);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
 }

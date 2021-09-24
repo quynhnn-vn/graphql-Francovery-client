@@ -33,3 +33,12 @@
 .info-card .icons {
   font-size: 25px;
 }
+
+@media only screen and (max-width: 768px) {
+  .infomation-container {
+    max-width: 90%;
+  }
+  .info-container {
+    @include set-flex(center, center);
+  }
+}

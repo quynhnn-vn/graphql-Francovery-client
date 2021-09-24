@@ -9,7 +9,7 @@
         color: $white;
     }
     button {
-        @include set-size(150px, 50px);
+        @include set-size(40%, 50px);
         font-family: inherit;
         color: $white;
         background: $darkBlack;
@@ -38,4 +38,10 @@
     padding: 20px 10px;
     line-height: 25px;
     border-radius: $borderRadius;
+}
+
+@media only screen and (max-width: 768px) {
+    .weather-chart-container {
+        width: 100%;
+    }
 }
