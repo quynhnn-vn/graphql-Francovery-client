@@ -16,9 +16,9 @@ export default function LocationDetails() {
     <div className="department-container">
       <Photos location={location} />
       <Information location={location} />
-      <div>
+      <div className="chart-container">
         <h2>CARTE & MÉTÉO</h2>
-        <div className="map-info-container">
+        <div className="map-weather-container">
           <GoogleMap location={location} />
           <Weather location={location} lat={lat} lon={lon} />
         </div>

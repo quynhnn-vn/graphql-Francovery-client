@@ -52,7 +52,7 @@ export default function Information({ location }) {
   }, [location]);
 
   return (
-    <div>
+    <div className="infomation-container">
       <h2>À PROPOS</h2>
       <div className="info-container">
         {locationData

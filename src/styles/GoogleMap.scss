@@ -1,7 +1,8 @@
 @import 'variables';
 
 .google-map {
-    @include set-size(500px, 500px);
+    width: 45%;
+    height: 500px;
     iframe {
         @include set-size(100%, 100%);
         border-radius: $borderRadius;

@@ -2,15 +2,15 @@
 
 .slideshow-container {
   position: relative;
-  @include set-size(1100px, 700px);
-  margin-top: 107px;
+  max-width: 70%;
+  margin: 100px 0;
   overflow: hidden;
 }
 .slideshow-container h2 {
   position: absolute;
   z-index: 1;
-  @include set-size(150px, auto);
-  @include set-position(8px, 45px);
+  max-width: 150px;
+  //@include set-position(8px, 45px);
 }
 .slideshow-slider {
   white-space: nowrap;
@@ -32,7 +32,7 @@
   position: absolute;
   bottom: 0px;
   right: 10%;
-  padding: 0 5px;
+  padding: 5px;
   background-color: $white;
   opacity: 0.6;
   border-radius: $borderRadius;
@@ -73,4 +73,12 @@
 
 .slideshow-dot.active {
   background-color: $black;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
 }

@@ -1,14 +1,17 @@
 @import 'variables';
 
+.infomation-container {
+  max-width: 70%;
+}
 .info-container {
-  @include set-size(1100px, auto);
-  @include set-flex(center, center);
+  max-width: 100%;
+  @include set-flex(space-between, center);
   gap: 25px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 .info-card {
   position: relative;
-  @include set-size(200px, 200px);
+  @include set-size(170px, 170px);
   @include set-flex(center, center, column);
   border-radius: $borderRadius;
   background: $black;

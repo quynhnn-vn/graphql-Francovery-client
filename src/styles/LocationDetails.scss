@@ -1,13 +1,15 @@
 @import 'variables';
 
 .department-container {
+    max-width: 100%;
     @include set-flex(space-between, center, column);
-    @include set-size(100%, auto);
     background: $darkBlack;
 }
-.map-info-container {
+.chart-container {
+  width: 70%;
+}
+.map-weather-container {
+    max-width: 100%;
     @include set-flex(space-between, center);
-    @include set-size(1100px, auto);
-    column-gap: 90px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }

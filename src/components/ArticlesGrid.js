@@ -6,7 +6,7 @@ export default function ArticlesGrid({ data }) {
   const articlesData = data.articles.articles;
 
   return (
-    <div>
+    <div className="acticles-list-container">
       <h2>ACTUALITÉS LIÉES</h2>
       <div className="articles-container">
         {articlesData.slice(0, 12).map((article, index) => (
