@@ -13,24 +13,34 @@ At detail page:
 - Provide google map and weather forecast chart of the location
 - List recent articles related to that location
 
+## API and dataset description
+
+This project collects data from the following sources:
+- [GADM maps and data](https://gadm.org/index.html) for TopoJSON France map
+- [Unsplash API](https://unsplash.com/developers) for image data
+- [Insee France](https://www.insee.fr/fr/recherche/recherche-statistiques) for statistical data
+- [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started) for map data
+- [OpenWeather API](https://openweathermap.org/api) for weather data
+- [NewsAPI](https://newsapi.org/) for news data
+
 ## Available Scripts
 
 To run this project locally:
 
-- First of all, you need to download the server repository:
+1. First of all, you need to download the server repository:
 `git clone https://github.com/quynhnn-vn/graphql-francovery-server.git`
 
-- In `graphql-francovery-server` directory, you can run:
+2. In `graphql-francovery-server` directory, you can run:
 `yarn install` to install required dependencies and
 `yarn start` to start the GraphQL API server
 
-- Now you can download this directory:
+3. Now you can download this directory:
 `git clone https://github.com/quynhnn-vn/graphql-francovery-client.git`
 
-- In `graphql-francovery-client` directory, same as above, you run
+4. In `graphql-francovery-client` directory, same as above, you run
 `yarn install` and
 `yarn start`
 
-- This will start the application and open up localhost:3000 in your web browser.
+5. This will start the application and open up localhost:3000 in your web browser.
 
 

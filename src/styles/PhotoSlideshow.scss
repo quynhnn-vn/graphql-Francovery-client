@@ -8,12 +8,13 @@
 }
 .slideshow-container h2 {
   position: absolute;
+  left: 40px;
   z-index: 1;
   max-width: 150px;
 }
 .slideshow-slider {
   white-space: nowrap;
-  transition: ease 3000ms;
+  transition: ease 2s;
 }
 .slideset {
   position: relative;
@@ -79,6 +80,9 @@
   }
   .slideshow-container h2 {
     left: 50%;
+  }
+  .slideshow-slider {
+    transition: ease 1s;
   }
   .slideset {
     @include set-size(100%, 400px);
