@@ -1,25 +1,10 @@
 import React from "react";
 import "../styles/Footer.scss";
+import { licenseData } from "../data/annotations";
 
-const licenseData = [
-  {
-    logo: "/pics/unsplash-logo.png",
-    url: "https://unsplash.com/developers",
-  },
-  {
-    logo: "/pics/google-logo.png",
-    url: "https://developers.google.com/maps",
-  },
-  {
-    logo: "/pics/open-logo.png",
-    url: "https://openweathermap.org/",
-  },
-  {
-    logo: "/pics/news-logo.png",
-    url: "https://newsapi.org/",
-  },
-];
-
+/*
+  Footer component takes license data to render a footer for API licences
+*/
 export default function Footer() {
   return (
     <div className="footer-container">

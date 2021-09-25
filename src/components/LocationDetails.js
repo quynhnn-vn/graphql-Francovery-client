@@ -9,6 +9,10 @@ import GoogleMap from "./GoogleMap";
 import Weather from "./Weather";
 import Footer from "./Footer";
 
+/*
+  LocationDetails is the component that contains all details about a location,
+  will trigger Photos, Information, GoogleMap, Weather, Articles and Footer components
+*/
 export default function LocationDetails() {
   const { location, lat, lon } = useParams();
 

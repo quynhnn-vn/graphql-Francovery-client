@@ -3,7 +3,7 @@ import { gql, useQuery } from "@apollo/client";
 import ArticlesGrid from "./ArticlesGrid";
 import Loading from "./Loading";
 
-/** PHOTOS gql query to retreive all photos */
+/* Query to retreive articles related to a location */
 export const GET_ARTICLES = gql`
   query getArticles($location: String!) {
     articles(location: $location) {
@@ -13,7 +13,6 @@ export const GET_ARTICLES = gql`
         url
         urlToImage
         publishedAt
-        content
         source {
           name
         }
@@ -23,13 +22,14 @@ export const GET_ARTICLES = gql`
 `;
 
 /*
- * Photos is the components where I display an album of photos fetched with useQuery with the TRACKS query
- */
+  Articles data after fetched with useQuery and GET_ARTICLES query
+  will be send to ArticlesGrid component for rendering
+*/
 export default function Articles({ location }) {
   const { loading, error, data } = useQuery(GET_ARTICLES, {
     variables: { location },
   });
   if (loading) return <Loading name="articles-container" />;
   if (error) return `Error! ${error.message}`;
-  return <ArticlesGrid data={data} />;
+  return <ArticlesGrid data={data.articles.articles} />;
 }

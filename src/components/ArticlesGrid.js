@@ -2,14 +2,17 @@ import React from "react";
 import "../styles/ArticlesGrid.scss";
 import moment from "moment";
 
+/*
+  ArticlesGrid component takes articles data to render a grid of articles,
+  each card in the grid which is a link to full articles,
+  has a thumbnail, title, description, source and published time
+*/
 export default function ArticlesGrid({ data }) {
-  const articlesData = data.articles.articles;
-
   return (
     <div className="acticles-list-container">
       <h2>ACTUALITÉS LIÉES</h2>
       <div className="articles-container">
-        {articlesData.slice(0, 12).map((article, index) => (
+        {data.slice(0, 12).map((article, index) => (
           <a
             key={index}
             className="card"

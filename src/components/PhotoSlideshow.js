@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/PhotoSlideshow.scss";
 
+/*
+  PhotoSlideshow takes photos data and displays this data as a slide show
+  attached with the information of authors.
+*/
 export default function PhotoSlideshow({ data, location }) {
   const [slideNumber, setSlideNumber] = useState(0);
   const timeoutRef = useRef(null);
-
-  const photosData = data.photos.results;
   const delay = 5000;
 
   const resetTimeout = () => {
@@ -19,14 +21,14 @@ export default function PhotoSlideshow({ data, location }) {
     timeoutRef.current = setTimeout(
       () =>
         setSlideNumber((prevIndex) =>
-          prevIndex === photosData.length - 1 ? 0 : prevIndex + 1
+          prevIndex === data.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
     return () => {
       resetTimeout();
     };
-  }, [slideNumber, photosData.length]);
+  }, [slideNumber, data.length]);
 
   return (
     <div className="slideshow-container">
@@ -35,7 +37,7 @@ export default function PhotoSlideshow({ data, location }) {
         className="slideshow-slider"
         style={{ transform: `translate3d(${-slideNumber * 100}%, 0, 0)` }}
       >
-        {photosData.map((photo) => (
+        {data.map((photo) => (
           <div className="slideset" key={photo.id}>
             <img className="slide" src={photo.urls.regular} alt="" />
             <div
@@ -55,7 +57,7 @@ export default function PhotoSlideshow({ data, location }) {
         ))}
       </div>
       <div className="slideshow-dots">
-        {photosData.map((_, index) => (
+        {data.map((_, index) => (
           <div
             key={index}
             className={`slideshow-dot${slideNumber === index ? " active" : ""}`}

@@ -9,7 +9,13 @@ import {
   ComposedChart,
   ResponsiveContainer,
 } from "recharts";
+import { getDate, getDayOfWeek } from "../utils/helpers";
 
+/*
+  WeatherChart component renders all 6 charts:
+  3 charts for temperature forecast in the next 3 days,
+  3 charts for humidity and cloudiness in the next 3 days
+*/
 export default function WeatherChart({ data }) {
   const [isTempMode, setIsTempMode] = useState(true);
   const [tempData, setTempData] = useState([[], [], []]);
@@ -49,33 +55,6 @@ export default function WeatherChart({ data }) {
       setOtherData([]);
     }
   }, [data.weather]);
-
-  const getDate = (index) => {
-    let today = new Date();
-    today.setDate(today.getDate() + index);
-    return today.toJSON().slice(0, 10);
-  };
-
-  const getDayOfWeek = (date) => {
-    const newDay = new Date(date);
-    const day = newDay.getDay();
-    switch (day) {
-      case 1:
-        return "lun.";
-      case 2:
-        return "mar.";
-      case 3:
-        return "mer.";
-      case 4:
-        return "jeu.";
-      case 5:
-        return "ven.";
-      case 6:
-        return "sam.";
-      default:
-        return "dim.";
-    }
-  };
 
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
@@ -163,8 +142,18 @@ export default function WeatherChart({ data }) {
           ))}
         </div>
       )}
-      <button onClick={() => setIsTempMode(true)} disabled={isTempMode ? true : false}>Température</button>
-      <button onClick={() => setIsTempMode(false)} disabled={isTempMode ? false : true}>Nuages et Humidité</button>
+      <button
+        onClick={() => setIsTempMode(true)}
+        disabled={isTempMode ? true : false}
+      >
+        Température
+      </button>
+      <button
+        onClick={() => setIsTempMode(false)}
+        disabled={isTempMode ? false : true}
+      >
+        Nuages et Humidité
+      </button>
     </div>
   );
 }

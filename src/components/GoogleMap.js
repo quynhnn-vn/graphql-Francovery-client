@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/GoogleMap.scss";
 
+/*
+  Googlemap component renders an embeded google map with query is the location string
+*/
 export default function GoogleMap({ location }) {
   return (
     <div className="google-map">

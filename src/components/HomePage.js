@@ -3,6 +3,10 @@ import "../styles/HomePage.scss";
 import ReactTooltip from "react-tooltip";
 import MapChart from "./MapChart";
 
+/*
+  HomePage component render a video as background,
+  a France map with tooltip displayed when hovering over each part of the map
+*/
 export default function HomePage() {
   const [content, setContent] = useState("");
   const [loadingVideo, setLoadingVideo] = useState(true);
@@ -18,6 +22,7 @@ export default function HomePage() {
       });
     }
   });
+
   return (
     <div className="homepage-container">
       <video

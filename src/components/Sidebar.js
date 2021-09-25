@@ -1,38 +1,16 @@
 import React, { useState } from "react";
 import "../styles/Sidebar.scss";
 import { Link, useHistory } from "react-router-dom";
-
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
+import { SidebarData } from "../data/annotations";
 
-const SidebarData = [
-  {
-    title: "Accueil",
-    path: "/",
-    icon: <AiIcons.AiOutlineHome />,
-    cName: "nav-text",
-  },
-  {
-    title: "Régions",
-    path: "/home/regions",
-    icon: <BsIcons.BsMap />,
-    cName: "nav-text",
-  },
-  {
-    title: "Départements",
-    path: "/home/departements",
-    icon: <BsIcons.BsMap />,
-    cName: "nav-text",
-  },
-  {
-    title: "Communes",
-    path: "/home/communes",
-    icon: <BsIcons.BsMap />,
-    cName: "nav-text",
-  },
-];
-
+/*
+  Sidebar component renders a top and a side navigation.
+  The top navigation includes a search form and a button to trigger the side navigation.
+  The side navigation includes a list of options to back to homepage or change the map in homepage
+*/
 function Sidebar() {
   const history = useHistory();
   const [isShowSidebar, setIsShowSidebar] = useState(false);

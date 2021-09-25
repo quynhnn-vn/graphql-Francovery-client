@@ -13,12 +13,24 @@ import departementsGeo from "../data/geo/departementsGeo.json";
 import regionsGeo from "../data/geo/regionsGeo.json";
 import communesGeo from "../data/geo/communesGeo.json";
 import bigcitiesGeo from "../data/geo/bigcitiesGeo.json";
+import { configProjection } from "../utils/helpers";
 
+/*
+  MapChart uses Geojson data to render 3 types of map
+  in three division levels: régions, départements and communes.
+  It also renders the top 15 biggest cities of France in the map.
+*/
 const MapChart = React.memo(({ setTooltipContent }) => {
   const { option } = useParams();
   const [loadingMap, setLoadingMap] = useState(true);
   const [screenWidth, setScreenWidth] = useState(0);
   const [screenHeight, setScreenHeight] = useState(0);
+
+  useEffect(() => {
+    setLoadingMap(false);
+    setScreenWidth(window.innerWidth);
+    setScreenHeight(window.innerHeight);
+  }, []);
 
   let geoUrl;
   if (option === "communes") {
@@ -28,12 +40,6 @@ const MapChart = React.memo(({ setTooltipContent }) => {
   } else {
     geoUrl = regionsGeo;
   }
-
-  useEffect(() => {
-    setLoadingMap(false);
-    setScreenWidth(window.innerWidth);
-    setScreenHeight(window.innerHeight);
-  }, []);
 
   const chartStyle = {
     default: {
@@ -48,31 +54,13 @@ const MapChart = React.memo(({ setTooltipContent }) => {
     },
   };
 
-  const configProjection = () => {
-    if (screenWidth > 768) {
-      return {
-        rotate: [-2, -45.7, 0],
-        scale: screenWidth * 2.5,
-      }
-    } else if (screenWidth > 600 && screenWidth <= 768) {
-      return {
-        rotate: [-2, -45.7, 0],
-        scale: screenWidth * 4,
-      }
-    } else {
-      return {
-        rotate: [-2, -45.7, 0],
-        scale: screenWidth * 5.5,
-      }
-    }   
-  }
 
   return (
     <div className="map-chart">
       <ComposableMap
         data-tip=""
         projection="geoAzimuthalEqualArea"
-        projectionConfig={configProjection()}
+        projectionConfig={configProjection(screenWidth)}
         height={screenHeight}
         width={screenWidth}
       >

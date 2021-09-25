@@ -1,30 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Information.scss";
 
 import regionsInfo from "../data/info/regionsInfo.json";
 import departementsInfo from "../data/info/departementsInfo.json";
 import communesInfo from "../data/info/communesInfo.json";
 import { annotations } from "../data/annotations";
+import { compareText } from "../utils/helpers"
 
+/*
+  Information component takes a location string, search for location data in /data/info directory
+  in order: région, département then commune and render this data with icons and units
+*/
 export default function Information({ location }) {
-  const [locationData, setLocationData] = React.useState({});
-
-  const compareText = (str1, str2) => {
-    str1 = str1
-      .toLowerCase()
-      .split(" ")
-      .join("-")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
-    str2 = str2
-      .toLowerCase()
-      .split(" ")
-      .join("-")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
-    if (str1 === str2) return true;
-    return false;
-  };
+  const [locationData, setLocationData] = useState({});
 
   useEffect(() => {
     const region = regionsInfo.find((item) =>
