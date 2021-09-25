@@ -13,6 +13,8 @@ At detail page:
 - Provide google map and weather forecast chart of the location
 - List recent articles related to that location
 
+Check out the deployed version here: (https://francovery-qnn.netlify.app/)[https://francovery-qnn.netlify.app/]
+
 ## API and dataset description
 
 This project collects data from the following sources:
