@@ -7,7 +7,7 @@ At homepage:
 - Display map of France by administrative division levels: `régions`, `départments` and `communes`
 - Select a location to view detailed information
 
-At detail page:
+At details page:
 - Provide a collection of images searched by keyword which is the place name
 - Display information about population, population density, average salary... of the location
 - Provide google map and weather forecast chart of the location
