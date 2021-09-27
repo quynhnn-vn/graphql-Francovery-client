@@ -1,15 +1,8 @@
-import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as BiIcons from "react-icons/bi";
 
 // Icons and texts for Sidebar component
 export const SidebarData = [
-  {
-    title: "Accueil",
-    path: "/",
-    icon: <AiIcons.AiOutlineHome />,
-    cName: "nav-text",
-  },
   {
     title: "Régions",
     path: "/home/regions",
