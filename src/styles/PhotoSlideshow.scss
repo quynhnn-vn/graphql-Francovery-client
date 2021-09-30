@@ -5,28 +5,30 @@
   max-width: 70%;
   margin: 100px 0;
   overflow: hidden;
+  h2 {
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+    max-width: 150px;
+  }
+  .slideshow-slider {
+    white-space: nowrap;
+    transition: ease 2s;
+  }
 }
-.slideshow-container h2 {
-  position: absolute;
-  left: 40px;
-  z-index: 1;
-  max-width: 150px;
-}
-.slideshow-slider {
-  white-space: nowrap;
-  transition: ease 2s;
-}
+
 .slideset {
   position: relative;
   display: inline-block;
   @include set-size(100%, 600px);
   text-align: center;
   background: $darkBlack;
+  .slide {
+    object-fit: cover;
+    @include set-size(auto, 600px);
+  }
 }
-.slide {
-  object-fit: cover;
-  @include set-size(auto, 600px);
-}
+
 .author {
   position: absolute;
   bottom: 0px;
@@ -49,13 +51,13 @@
     cursor: pointer;
   }
 }
+
 [aria-current="disabled"] {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
   color: $darkBlack;
 }
-/* Buttons */
 
 .slideshow-dots {
   text-align: center;
@@ -68,26 +70,26 @@
   cursor: pointer;
   margin: 15px 7px 0px;
   background-color: $grey;
-}
-
-.slideshow-dot.active {
-  background-color: $black;
+  .active {
+    background-color: $black;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .slideshow-container {
     max-width: 100%;
+    h2 {
+      left: 50%;
+    }
+    .slideshow-slider {
+      transition: ease 1s;
+    }
   }
-  .slideshow-container h2 {
-    left: 50%;
-  }
-  .slideshow-slider {
-    transition: ease 1s;
-  }
+
   .slideset {
     @include set-size(100%, 400px);
-  }
-  .slide {
-    @include set-size(auto, 400px);
+    .slide {
+      @include set-size(auto, 400px);
+    }
   }
 }
