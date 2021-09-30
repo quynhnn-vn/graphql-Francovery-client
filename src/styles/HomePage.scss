@@ -3,27 +3,7 @@
 .homepage-container {
   margin-top: 100px;
 }
-video {
-    position: fixed;
-    max-width: 100%;
-    @include set-position(0, 0);
-    z-index: -1;
-    transition: opacity 2s ease-in-out;
-}
-@media only screen and (max-width: 768px) {
-  video {
-    display: none;
-  }
-  .map-chart {
-    background: url("../data/background-mobile.png") repeat-y left top;
-  }
-}
 
-@media only screen and (max-width: 600px) {
-    video {
-      display: none;
-    }
-    .map-chart {
-      background: url("../data/background-mobile.png") repeat-y left top;
-    }
+.map-chart {
+  background: url("../data/background.png");
 }
