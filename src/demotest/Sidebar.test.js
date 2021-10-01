@@ -14,8 +14,8 @@ const getClassShowNavBtn = async () => {
       .findElement(By.id("nav-menu"))
       .getAttribute("class");
     return className;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -23,14 +23,18 @@ const getClassHideNavBtn = async () => {
   try {
     await driver.get("http://localhost:3000/Bretagne");
     await driver.findElement(By.id("show-nav-btn")).click();
-    await driver.wait(
-      until.elementIsEnabled(driver.findElement(By.id("hide-nav-btn"))),
-      5000
-    ).click();
-    const className = await driver.findElement(By.id("nav-menu")).getAttribute("class");
+    await driver
+      .wait(
+        until.elementIsEnabled(driver.findElement(By.id("hide-nav-btn"))),
+        5000
+      )
+      .click();
+    const className = await driver
+      .findElement(By.id("nav-menu"))
+      .getAttribute("class");
     return className;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -46,8 +50,8 @@ const getTextEnterSearch = async () => {
     );
     const text = await element.getText();
     return text;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -57,8 +61,8 @@ const getHomePage = async () => {
     await driver.findElement(By.id("home-btn")).click();
     const text = await driver.getCurrentUrl();
     return text;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -66,13 +70,11 @@ const getRegionsMap = async () => {
   try {
     await driver.get("http://localhost:3000/Bretagne");
     await driver.findElement(By.id("show-nav-btn")).click();
-    await driver
-      .wait(until.elementLocated(By.id("regions-btn")), 5000)
-      .click();
+    await driver.wait(until.elementLocated(By.id("regions-btn")), 5000).click();
     const text = await driver.getCurrentUrl();
     return text;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -85,8 +87,8 @@ const getDepartmentsMap = async () => {
       .click();
     const text = await driver.getCurrentUrl();
     return text;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -99,8 +101,8 @@ const getCommunesMap = async () => {
       .click();
     const text = await driver.getCurrentUrl();
     return text;
-  } finally {
-    await driver.quit();
+  } catch (err) {
+    console.log(err);
   }
 };
 
@@ -115,7 +117,7 @@ describe("Sidebar component : ", () => {
     driver.quit();
   });
 
-  it("displays when clicking show button- check if class name is active", async () => {
+  it("displays when clicking show button - check if class name is active", async () => {
     return getClassShowNavBtn().then((className) => {
       assert.equal(className, "nav-menu active");
     });
@@ -127,34 +129,33 @@ describe("Sidebar component : ", () => {
     });
   });
 
-  it("displays location name when entering search form", async () => {
+  it("displays location name when entering search form - check h2 value", async () => {
     return getTextEnterSearch().then((text) => {
       assert.equal(text, "BRETAGNE");
     });
   });
 
-  it("displays home page when clicking home button", async () => {
+  it("displays home page when clicking home button - check url value", async () => {
     return getHomePage().then((text) => {
       assert.equal(text, "http://localhost:3000/");
     });
   });
 
-  it("displays regions map when clicking regions button", async () => {
+  it("displays regions map when clicking regions button - check url value", async () => {
     return getRegionsMap().then((text) => {
       assert.equal(text, "http://localhost:3000/home/regions");
     });
   });
 
-  it("displays departments map when clicking departments button", async () => {
+  it("displays departments map when clicking departments button - check url value", async () => {
     return getDepartmentsMap().then((text) => {
       assert.equal(text, "http://localhost:3000/home/departements");
     });
   });
 
-  it("displays communes map when clicking communes button", async () => {
+  it("displays communes map when clicking communes button - check url value", async () => {
     return getCommunesMap().then((text) => {
       assert.equal(text, "http://localhost:3000/home/communes");
     });
   });
-
 });

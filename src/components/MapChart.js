@@ -65,7 +65,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
         width={screenWidth}
       >
         <ZoomableGroup zoom={1}>
-          <Geographies geography={geoUrl}>
+          <Geographies geography={geoUrl} id="map-container">
             {({ geographies }) =>
               geographies.map((geo) => {
                 const { NAME_1, NAME_2, NAME_3, LAT, LNG } = geo.properties;
