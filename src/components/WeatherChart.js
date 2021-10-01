@@ -79,7 +79,7 @@ export default function WeatherChart({ data }) {
     <div className="weather-chart-container">
       {isTempMode && tempData && otherData ? (
         <div className="weather-chart">
-          <h3>Prévisions météo à 3 jours - Température</h3>
+          <h3>Météo à 3 jours - Température</h3>
           {tempData.map((item, index) => (
             <ResponsiveContainer width="100%" height={120} key={index}>
               <ComposedChart
@@ -111,7 +111,7 @@ export default function WeatherChart({ data }) {
         </div>
       ) : (
         <div className="weather-chart">
-          <h3>Prévisions météo à 3 jours - Nuages et Humidité</h3>
+          <h3>Météo à 3 jours - Nuages et Humidité</h3>
           {otherData.map((item, index) => (
             <ResponsiveContainer width="100%" height={120} key={index}>
               <ComposedChart
