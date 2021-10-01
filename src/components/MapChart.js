@@ -56,7 +56,7 @@ const MapChart = React.memo(({ setTooltipContent }) => {
 
 
   return (
-    <div className="map-chart">
+    <div className="map-chart" id="map-chart">
       <ComposableMap
         data-tip=""
         projection="geoAzimuthalEqualArea"

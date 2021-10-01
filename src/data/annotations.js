@@ -8,18 +8,21 @@ export const SidebarData = [
     path: "/home/regions",
     icon: <BsIcons.BsMap />,
     cName: "nav-text",
+    id: "regions-btn",
   },
   {
     title: "Départements",
     path: "/home/departements",
     icon: <BsIcons.BsMap />,
     cName: "nav-text",
+    id: "departments-btn",
   },
   {
     title: "Communes",
     path: "/home/communes",
     icon: <BsIcons.BsMap />,
     cName: "nav-text",
+    id: "communes-btn",
   },
 ];
 

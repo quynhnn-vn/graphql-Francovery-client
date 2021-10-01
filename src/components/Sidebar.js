@@ -20,19 +20,20 @@ function Sidebar() {
     <>
       <div className="navbar-container">
         <div className="menu-button">
-          <Link to="#">
+          <Link to="#" id="show-nav-btn">
             <FaIcons.FaBars
               className="nav-icons"
               onClick={() => setIsShowSidebar(!isShowSidebar)}
             />
           </Link>
-          <Link to="/">
+          <Link to="/" id="home-btn">
             <img src="/pics/logo.png" alt="logo" />
           </Link>
         </div>
-        <form>
+        <form id="search-form">
           <input
             type="search"
+            id="search-input"
             value={searchTerm}
             placeholder="Je recherche ..."
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -43,7 +44,7 @@ function Sidebar() {
               }
             }}
           />
-          <button type="submit">
+          <button type="submit" id="search-btn">
             <Link
               to={searchTerm ? `/${searchTerm.split(" ").join("-")}` : null}
             >
@@ -52,19 +53,24 @@ function Sidebar() {
           </button>
         </form>
       </div>
-      <nav className={isShowSidebar ? "nav-menu active" : "nav-menu"}>
+      <nav
+        id="nav-menu"
+        className={isShowSidebar ? "nav-menu active" : "nav-menu"}
+      >
+        <Link
+          to="#"
+          id="hide-nav-btn"
+          onClick={() => setIsShowSidebar(!isShowSidebar)}
+        >
+          <AiIcons.AiOutlineClose className="nav-icons"/>
+        </Link>
         <ul
           className="nav-menu-items"
           onClick={() => setIsShowSidebar(!isShowSidebar)}
         >
-          <li className="navbar-toggle">
-            <Link to="#" className="menu-button">
-              <AiIcons.AiOutlineClose className="nav-icons" />
-            </Link>
-          </li>
           {SidebarData.map((item, index) => {
             return (
-              <li key={index} className={item.cName}>
+              <li key={index} id={item.id} className={item.cName}>
                 <Link to={item.path}>
                   {item.icon}
                   <span>{item.title}</span>

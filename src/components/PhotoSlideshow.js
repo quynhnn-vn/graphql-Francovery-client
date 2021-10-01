@@ -32,7 +32,7 @@ export default function PhotoSlideshow({ data, location }) {
 
   return (
     <div className="slideshow-container">
-      <h2>{location.split("-").join(" ").toUpperCase()}</h2>
+      <h2 id="location-name">{location.split("-").join(" ").toUpperCase()}</h2>
       <div
         className="slideshow-slider"
         style={{ transform: `translate3d(${-slideNumber * 100}%, 0, 0)` }}

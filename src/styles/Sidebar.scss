@@ -71,8 +71,8 @@
 .nav-menu {
   position: fixed;
   @include set-position(0, -100%);
-  @include set-size(auto, 100%);
-  @include set-flex(center, flex-start);
+  @include set-size(200px, 100%);
+  @include set-flex(flex-start, flex-start, column);
   background-color: $white;
   transition: 850ms;
   &.active {
@@ -81,12 +81,23 @@
     z-index: 9999;
   }
 }
+#hide-nav-btn {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  .nav-icons {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+  }
+}
 
 .nav-text {
   @include set-flex(flex-start, center);
-  @include set-size(auto, 60px);
+  @include set-size(100%, 60px);
   list-style: none;
-  margin: auto 20px;
+  padding: 0 5px;
   a {
     @include set-size(100%, 100%);
     @include set-flex(flex-start, center);
@@ -103,13 +114,8 @@
 }
 
 .nav-menu-items {
-  padding: 0;
-}
-
-.navbar-toggle {
-  @include set-size(100%, 80px);
-  @include set-flex(flex-start, center);
-  margin-bottom: 30px;
+  @include set-size(100%, auto);
+  @include set-flex(flex-start, flex-start, column);
 }
 
 li span {
@@ -138,6 +144,9 @@ li span {
     max-width: 30%;
     max-height: 50%;
     margin-right: 0.5rem;
+  }
+  #hide-nav-btn .nav-icons{
+    font-size: 1.5rem;
   }
 }
 
