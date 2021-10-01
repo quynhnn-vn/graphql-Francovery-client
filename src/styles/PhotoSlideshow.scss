@@ -65,14 +65,14 @@
 
 .slideshow-dot {
   display: inline-block;
-  @include set-size(10px, 10px);
+  @include set-size(13px, 13px);
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
   background-color: $grey;
-  .active {
-    background-color: $black;
-  }
+}
+.active {
+  background-color: $black;
 }
 
 @media only screen and (max-width: 768px) {
