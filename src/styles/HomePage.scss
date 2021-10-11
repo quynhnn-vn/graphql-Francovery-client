@@ -1,9 +1,10 @@
-@import 'variables';
+@import "variables";
 
 .homepage-container {
   margin-top: 100px;
 }
 
 .map-chart {
-  background: url("../data/background.png");
+  background-image: url("../data/background.png");
+  background-size: cover;
 }
